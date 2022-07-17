@@ -10,6 +10,52 @@ img {
 	hight: auto;
 }
 
+.wraper,
+.wrap-about,
+.wrap-novelties,
+.wrap-heder,
+.wrap-footer {
+	width: 100%;
+	border: 1px solid #000;
+}
 
+.wrap-intro,
+.wrap-popular-goods,
+.wrap-instagram {
+	width: 1110px;
+	border: 1px solid #000;
+}
+
+.wraper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wrap-heder {
+	height: 270px;
+
+}
+
+.wrap-intro{
+	height: 570px;
+
+}
+
+.wrap-popular-goods {
+	height: 450px;
+}
+.wrap-novelties {
+	height: 270px;
+}
+.wrap-instagram {
+	height: 320px;
+}
+.wrap-about {
+	height: 615px;
+}
+.wrap-footer {
+	height: 414px;
+}
 
 
