@@ -307,6 +307,8 @@ header{
 	font-size: 18px;
 	line-height: 22px;
 	color: #FFFFFF;
+
+	display: inline-block;
 }
 
 #menu-2 li{
