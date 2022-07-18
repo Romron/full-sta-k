@@ -89,12 +89,6 @@ body{
 	width: 100%;
 }
 
-.wrap-intro,
-.wrap-instagram {
-	min-width: 1110px;
-	border: 1px solid #000;
-}
-
 .wraper{
 	display: flex;
 	flex-direction: column;
@@ -473,8 +467,13 @@ color: #FFFFFF;
 	height: 100%;
 }
 
+.popular-goods{
+	margin-bottom: 90px;
+}
+
 .popular-goods,
-.novelties {
+.novelties,
+.instagram{
 	width: 1110px;
 	height: 450px;
 	display: flex;
@@ -483,7 +482,8 @@ color: #FFFFFF;
 }
 
 .popular-goods__row,
-.novelties__row  {
+.novelties__row,
+.instagram__row  {
 	width: 100%;
 	height: 45px;
 	display: flex;
@@ -524,7 +524,8 @@ height: 14px;
 }
 
 .popular-goods__cards-block,
-.novelties__cards-block{
+.novelties__cards-block,
+.instagram__foto-block{
 	width: 100%;
 	height: 386px;
 	display: flex;
@@ -546,6 +547,7 @@ height: 14px;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
+	margin-bottom: 90px;
 }
 
 .novelties__row {
@@ -561,12 +563,110 @@ height: 14px;
 	background-color: #fff;
 }
 
-.wrap-instagram {
-	height: 320px;
+.instagram {
+	height: 318px;
+	margin-bottom: 90px;
 }
+
+.instagram__row {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 36px;
+	color: #3C3C3C;	
+}
+
+.instagram__foto-block {
+	height: 255px;
+}
+
+.instagram__foto img{
+	width: 100%;
+	height: 100%;
+}
+
+.instagram__foto {
+	height: 255px;
+	width: 255px;
+}
+
 .wrap-about {
+	width: 100%;
 	height: 615px;
+	background: #0E4243;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
+.about {
+	width: 1110px;
+	height: 463px;
+	display: flex;
+	justify-content: center;
+	/*align-items: center;*/
+
+}
+
+.about__foto {
+	position: relative;
+	width: 540px;
+	height: 463px;
+	border-radius: 5px;
+}
+
+.about__foto img{
+	position: absolute;
+	left: 0px;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+	object-position: center;
+}
+
+
+.about__text-text p{
+	display: block;
+}
+
+.about__text{
+	width: 540px;
+	margin-left: 30px;
+}
+
+.about__text,
+.about__text-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+
+.about__title {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 36px;
+	color: #FFFFFF;
+}
+.about__text-text {
+	font-family: 'Calibri';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 22px;
+	color: #FFFFFF;
+}
+
+
+
+
+
+
+
 .wrap-footer {
 	height: 414px;
 	
