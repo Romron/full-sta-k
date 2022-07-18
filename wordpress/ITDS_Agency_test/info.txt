@@ -5,3 +5,10 @@
 
 
 	Hanna Kaminska 095-727-74-76  telegramm
+
+
+
+
+TODO 
+	Поправить шрифты 
+		.intro-main-block__text
