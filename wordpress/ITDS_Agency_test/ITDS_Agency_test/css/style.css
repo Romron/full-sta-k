@@ -507,7 +507,7 @@ color: #FFFFFF;
 .arow-block__arow-right{
 	width: 45px;
 	height: 45px;
-	background: #0E4243;
+	background-color: #0E4243;
 	border-radius: 5px;
 	display: flex;
 	justify-content: center;
@@ -550,7 +550,7 @@ height: 14px;
 }
 
 .fon-white{
-	background-color: #fff;
+	background: #fff;
 }
 
 .instagram {
@@ -1013,7 +1013,6 @@ main{
 }
 .arrow-cat-slider__left{
 	left: -22px;
-	background-color: #fff;
 }
 
 .cat-slider__card-goods {
@@ -1037,12 +1036,6 @@ main{
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-
-
-	/* border: 1px solid #0515fd; */
-}
-
-.view__title {
 }
 
 .view__preview {
@@ -1060,7 +1053,14 @@ main{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-
 }
-.pagination {
+
+
+.goods-block {
+	width: 100%;
+	min-height: 1076px;
+
+
+	border: 1px solid #0515fd;
+	
 }
