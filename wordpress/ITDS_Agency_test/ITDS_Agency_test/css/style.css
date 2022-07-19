@@ -525,13 +525,6 @@ height: 14px;
 	display: flex;
 	justify-content: space-between;
 }
-.product-card {
-	width: 255px;
-	height: 386px;
-	background: #FFFFFF;
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-	border-radius: 5px;
-}
 
 .wrap-novelties {
 	width: 100%;
@@ -792,4 +785,133 @@ footer a{
 	color: rgba(255, 255, 255, 0.6);
 }
 
+/*--------- product-card --------*/
+.product-card {
+	width: 255px;
+	height: 386px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
 
+}
+
+.product-card__row{
+	width: 100%;
+	min-height: 50px;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 25px;
+
+}
+
+.wrap-rat-1 img {
+	width: 25px;
+	height: 25px;
+}
+
+.wrap-rat-1 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #828282;
+	width: 57px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.wrap-rat-2 img{
+	width: 25px;
+	height: 25px;
+}
+
+.wrap-rat-2{
+	width: 64px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.product-rating {
+	padding: 22px 25px 14px 25px;;
+}
+
+.product-foto img{
+	position: absolute;
+	left: 0px;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+	object-position: center;
+}
+
+.product-foto {
+	height: 161px;
+	position: relative;
+}
+.product-title {
+	font-family: 'Calibri';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+	color: #4F4F4F;
+
+}
+.product-status {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 18px;
+	color: #828282;
+
+}
+
+.product-price__block-price{
+	width: 73px;
+	height: 45px;
+
+	
+}
+
+.product-price {
+	padding-right: 25px ;
+}
+
+.old-price {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	text-decoration-line: line-through;
+	color: #C0C0C0;	
+}
+.new-price {
+	font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+color: #0E4243;
+}
+
+#bye{
+	width: 100px;
+	height: 45px;	
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	color: #FFFFFF;
+
+	background: #0E4243;
+border-radius: 5px;
+}
