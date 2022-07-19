@@ -1024,7 +1024,6 @@ main{
 	height: 150px;
 	left: 432px;
 	top: 459px;
-	background: url(image.png);
 	filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15));
 	border-radius: 5px;
 }
@@ -1059,8 +1058,287 @@ main{
 .goods-block {
 	width: 100%;
 	min-height: 1076px;
+}
+
+.goods-foto-wiht-slider {
+	width: 535px;
+	height: 426px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.goods-foto-wiht-slider__foto {
+	position: relative;
+	width: 426px;
+	height: 426px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+
+}
+
+.goods-foto-wiht-slider__foto > img{
+	position: absolute;
+	left: 0px;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit:contain;
+	object-position: center;
+}
 
 
-	border: 1px solid #0515fd;
-	
+.goods-foto-wiht-slider__slider {
+	width: 85px;
+	height:  426px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.goods-foto-wiht-slider__slider-card {
+	width: 85px;
+	height: 85px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	position: relative;
+}
+
+.goods-foto-wiht-slider__slider-card > img {
+	position: absolute;
+	left: 0px;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit:contain;
+	object-position: center;
+}
+
+.goods-slider-arrow-up,
+.goods-slider-arrow-down {
+	width: 20px;
+	height: 10px;
+}
+.goods-slider-arrow-down {}
+
+.goods-block__slider-row{
+	width: 1110px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.goods-discription {
+	width: 540px;
+	height: 426px;
+}
+
+.goods-discription__title-row {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.goods-discription__title {
+	font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 36px;
+color: #0E4243;
+}
+
+.goods-discription__status {
+	width: 170px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.goods-discription__status-status {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 18px;
+	color: #828282;
+	width: 90px;
+}
+
+.goods-discription__status-status img{
+	width: 20px;
+	height: 20px;
+}
+
+.goods-discription__rating {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #828282;
+}
+
+.goods-discription__text{
+	font-family: 'Calibri';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	color: #3C3C3C;
+	height: 232px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+.goods-discription__price {
+	width: 219px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 35px 0;
+}
+.goods-discription__old-price {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 20px;
+	text-decoration-line: line-through;
+	color: #C0C0C0;
+}
+.goods-discription__new-price {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 20px;
+	color: #0E4243;
+}
+.goods-discription__buttons {
+	width: 100%;
+		display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.amount {
+	width: 65px;
+	height: 45px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+}
+
+.amount p:nth-of-type(2n+1){
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 20px;
+	color: #3C3C3C;
+}
+
+.amount  p{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 20px;
+	color: #0E4243;
+}
+
+
+#goods-discription__bye {
+	width: 160px;
+	height: 45px;
+	background: #0E4243;
+	border: none;
+	border-radius: 5px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+
+#goods-discription__bye-on-one-click {
+	width: 160px;
+	height: 45px;
+	background: #FFFFFF;
+	border: none;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 20px;
+	color: #3C3C3C;
+}
+
+.row-info-card {
+	width: 100%;
+	height: 120px;
+	margin: 60px	0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.info-card {
+	width: 255px;
+	height: 120px;
+	background: #0E4243;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: space-around;
+	padding: 12px;
+
+	position: relative;
+
+}
+
+/*.info-card__text-wrap {}*/
+
+.info-card__title {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	color: #FFFFFF;
+}
+.info-card__text {
+	font-family: 'Calibri';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 22px;
+	color: #FFFFFF;
+}
+.info-card__img {
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	right: 12px;
+	top:	12px;
+}
+
+.tabs-block {
+	width: 100%;
+	height: 426px;
+	margin-bottom: 77px;
+
+	border: 1px solid #000;
+
 }
