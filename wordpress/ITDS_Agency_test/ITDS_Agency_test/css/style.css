@@ -1308,8 +1308,6 @@ color: #0E4243;
 
 }
 
-/*.info-card__text-wrap {}*/
-
 .info-card__title {
 	font-family: 'Bebas Neue';
 	font-style: normal;
@@ -1338,7 +1336,401 @@ color: #0E4243;
 	width: 100%;
 	height: 426px;
 	margin-bottom: 77px;
+	position: relative;
+	
 
-	border: 1px solid #000;
+}
+
+.wrap-title-tabs {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	position: relative;
+	left: 112px;
+
+	height: 113px;
+	width: 671px;
+
+}
+.title-tab {
+	width: 199px;
+	height: 87px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+
+	font-family: 'Bebas Neue';
+	/* font-style: normal;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 29px; */
+	color: #0E4243;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 28px;
+
+}
+
+.title-tab-active{
+	width: 215px;
+	height: 87px;
+	background: #E9E5CE;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	align-self: flex-start;
+	
+	color: #0E4243;
+	padding-bottom: 0;
+
+}
+.wrap-tabs {
+	position: absolute;
+	width: 1110px;
+	height: 356px;
+
+	background: #FFFFFF;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	
+	bottom: 0px;
+	z-index: 5;
+}
+.tab {
+	width: 1110px;
+	height: 356px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	position: absolute;
+}
+
+.tab-hide{
+	display: none;
+}
+
+.tab__text{
+	width: 940px;
+	height: 291px;
+	font-family: 'Calibri';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 22px;
+	color: #000000;
+	margin: 41px 0px 0px 149px;
+	
+}
+
+
+.order-block {
+	width: 1110px;
+	height: 545px;
+	margin-bottom: 70px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.contact-block,
+.delive-block,
+.payment-block,
+.your-oder-block{
+	background: #FFFFFF;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+}
+
+.contaner-1{
+	width: 730px;
+	height: 545px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.contact-block {
+	width: 730px;
+	height: 219px;
+	padding: 28px;
+
+}
+
+.contact-block__filds-name,
+.contact-block__filds-surname,
+.contact-block__filds-phone-namber,
+.contact-block__filds-address{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 18px;
+	color: #828282;
+	background: #FFFFFF;
+	border: 1px solid #E8E8E8;
+	border-radius: 5px;
+	width: 322px;
+	height: 45px;
+}
+
+.contact-block__title {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 24px;
+	color: #0E4243;
+	margin-bottom: 19px;
+}
+.contact-block__filds {
+	width: 674px;
+	height: 110px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.delive-block,
+.payment-block,
+.your-oder-block {
+	width: 350px;
+	height: 296px;
+	padding: 32px 28px;
+	display: flex;
+	flex-direction: column;
+
+	/* border: 1px solid #0515fd; */
+}
+
+.order-block__fild {
+	width: 301px;
+	height: 58px;
+	display: flex;
+	justify-content: space-between;
+
+	/* border: 1px solid #0515fd; */
+	
+}
+
+.order-block__fild-text{
+	width: 88%;
+	
+}
+
+.order-block__title {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 24px;
+	color: #0E4243;
+	margin-bottom: 22px;
+	
+}
+.order-block__fild-title {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+	color: #0E4243;
+}
+.order-block__fild-text a {
+	color: rgba(130, 130, 130, 0.7);
+	
+}
+
+.order-block__fild-text {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 18px;
+	color: rgba(130, 130, 130, 0.7);
+}
+
+
+.order-block__fild input[type='radio'] {
+	position: relative;
+	height: 21px;
+	width: 21px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+ }
+ 
+ .order-block__fild input[type='radio']::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #ffffff;
+	border: 2px solid #828282;
+ }
+ 
+ .order-block__fild input[type='radio']:checked::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #0E4243;
+	border: 1px solid #0E4243;
+	transform: translate(-50%, -50%);
+	visibility: visible;
+ }
+
+.contaner-2{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.your-oder-block {
+	width: 350px;
+	height: 470px;
+	display: flex;
+	flex-direction: column;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+}
+
+.goods-card-oder__block{
+	/* display: flex;
+	flex-direction: column; */
+	flex-grow: 1;
+	width: 301px;
+
+
+	/* border: 1px solid #0515fd; */
+	
+}
+
+.goods-card-oder {
+	height: 69px;
+	display: flex;
+	align-items: center;
+
+	border-top: 1px solid rgba(14, 66, 67, 0.2);
+	
+}
+
+
+.goods-card-oder:nth-child(1) {
+	border-top: none;
+}
+
+
+.goods-card-oder__foto {
+	width: 74px;
+	height: 69px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.goods-card-oder__foto img{
+	position: absolute;
+	left: 0px;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit:contain;
+	object-position: center;
+
+}
+
+.goods-card-oder__contaner{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	flex-grow: 1;
+	justify-content: space-between;
+	height: 47px;
+}
+
+.goods-card-oder__title {
+	font-family: 'Calibri';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	color: #4F4F4F;
+}
+.goods-card-oder__price {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	color: #0E4243;
+}
+.goods-card-oder__amount {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.goods-card-oder__del {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.goods-card-oder__del{
+	width: 24px;
+	height: 24px;
+}
+
+.result-block {
+	width: 301px;
+	height: 69px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 1px solid rgba(14, 66, 67, 0.2);
+}
+
+.result-block__text,
+.result-block__summa{
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 24px;
+	color: #0E4243;
+}
+
+#order{
+	width: 350px;
+	height: 45px;
+	background: #0E4243;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	color: #FFFFFF;
 
 }
