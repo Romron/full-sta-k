@@ -44,6 +44,11 @@ function ITDS_Agency_test_posttype_product_card() {
 add_action( 'init', 'ITDS_Agency_test_posttype_product_card' );
 
 
+add_action('add_meta_boxes', 'my_extra_fields', 1);
+
+function my_extra_fields() {
+	add_meta_box( 'extra_fields', 'Дополнительные поля', 'extra_fields_box_func', 'post', 'normal', 'high'  );
+}
 
 
 
