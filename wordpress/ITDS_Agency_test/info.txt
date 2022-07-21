@@ -6,6 +6,12 @@
 
 	Hanna Kaminska 095-727-74-76  telegramm
 
+wordpress
+	Название сайта  		itds_agency_test 
+	Имя пользователя		admin
+	Пароль 					itds_agency_test--parol
+
+
 
 
 
