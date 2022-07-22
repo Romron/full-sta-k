@@ -48,13 +48,9 @@
       </div>
       <div class="block-goods">
 
+
+   
 <?php 
-     echo" <br> ************************************** <br>";
-     $arr_post_meta = get_post_meta(post_id:26);
-     print_r($arr_post_meta);
-     echo" <br> ************************************** <br>";
-     echo" <br> ";
-     echo" <br> ************************************** <br>";
      
      $posts = get_posts( array(
          'numberposts' => -1,
@@ -75,46 +71,36 @@
          setup_postdata( $post );
       
          print_r($post);
+         echo "<br>********************** <br>";
+
+         $arr_filds = get_post_meta(the_ID(),'status',1);
+         print_r($arr_filds);
+
       }
       
-
-         echo" <br> ************************************** <br>";
          
-         ?>
-
-<?php
-
-         echo" <br> *+++++++++++++++++++++++++++++++++++* <br>";
-         
-         
-         $args = array( 'post_type' => 'product-card***', 'posts_per_page' => 10 );
+         $args = array( 'post_type' => 'product-card', 'posts_per_page' => 10 );
          $the_query = new WP_Query( $args );
          ?>
          <?php if ( $the_query->have_posts() ) : ?>
             <?php 
-            //while ( $the_query->have_posts() ) : $the_query->the_post(); 
+            while ( $the_query->have_posts() ) : $the_query->the_post(); 
             
             // print_r($the_query);
             $the_query->the_post();
-            echo (the_ID()); 
+            // echo (the_ID()); 
             // the_title(); 
             // the_content(); 
             // wp_reset_postdata(); 
             //endwhile;
             ?>
-            php else: ?>
-               <p><?php _e( 'Записи не найдены.' ); ?></p>
+           <? php else: ?>
+               <p><?php //_e( 'Записи не найдены.' ); ?></p>
                <?php endif; ?>
                
-               
-               <?php  echo" <br> *+++++++++++++++++++++++++++++++++++* <br>"; ?>
 
 
-
-
-
-
-
+       
 
       
          <div class="product-card">
@@ -135,7 +121,7 @@
          <div class="product-card__row product-foto">
             <img src="img/produkt-foto.png" alt="produkt foto">
          </div>
-         <div class="product-card__row product-title"><?php echo $arr_post_meta["product-title"][0];?></div>
+         <div class="product-card__row product-title"><?php echo  get_the_title();?></div>
          <div class="product-card__row product-status"><?php echo $arr_post_meta["product-status"][0];?></div>
          <div class="product-card__row product-price">
             <div class="product-price__block-price">
