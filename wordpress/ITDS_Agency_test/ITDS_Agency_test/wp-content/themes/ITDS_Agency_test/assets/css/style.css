@@ -18,11 +18,13 @@ a{
 /*шрифты начало*/
 	@font-face {
 		font-family: 'Bebas Neue';
-		src: url('BebasNeueBold.eot');
-		src: url('BebasNeueBold.eot?#iefix') format('embedded-opentype'),
-			url('BebasNeueBold.woff2') format('woff2'),
-			url('BebasNeueBold.woff') format('woff'),
-			url('BebasNeueBold.ttf') format('truetype');
+		src: url('../fonts/BebasNeueBold.eot');
+		
+		src: url('../fonts/BebasNeueBold.eot');
+		src: url('../fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/BebasNeueBold.woff2') format('woff2'),
+			url('../fonts/BebasNeueBold.woff') format('woff'),
+			url('../fonts/BebasNeueBold.ttf') format('truetype');
 		font-weight: bold;
 		font-style: normal;
 		font-display: swap;
@@ -30,11 +32,11 @@ a{
 
 	@font-face {
 		font-family: 'Bebas Neue';
-		src: url('BebasNeueRegular.eot');
-		src: url('BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
-			url('BebasNeueRegular.woff2') format('woff2'),
-			url('BebasNeueRegular.woff') format('woff'),
-			url('BebasNeueRegular.ttf') format('truetype');
+		src: url('../fonts/BebasNeueRegular.eot');
+		src: url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+			url('../fonts/BebasNeueRegular.woff') format('woff'),
+			url('../fonts/BebasNeueRegular.ttf') format('truetype');
 		font-weight: normal;
 		font-style: normal;
 		font-display: swap;
@@ -42,11 +44,11 @@ a{
 
 	@font-face {
 		font-family: 'Calibri-Bold';
-		src: url('Calibri-Bold.eot');
-		src: url('Calibri-Bold.eot?#iefix') format('embedded-opentype'),
-			url('Calibri-Bold.woff2') format('woff2'),
-			url('Calibri-Bold.woff') format('woff'),
-			url('Calibri-Bold.ttf') format('truetype');
+		src: url('../fonts/Calibri-Bold.eot');
+		src: url('../fonts/Calibri-Bold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Calibri-Bold.woff2') format('woff2'),
+			url('../fonts/Calibri-Bold.woff') format('woff'),
+			url('../fonts/Calibri-Bold.ttf') format('truetype');
 		font-weight: bold;
 		font-style: normal;
 		font-display: swap;
@@ -54,11 +56,11 @@ a{
 
 	@font-face {
 		font-family: 'Calibri-Light';
-		src: url('Calibri-Light.eot');
-		src: url('Calibri-Light.eot?#iefix') format('embedded-opentype'),
-			url('Calibri-Light.woff2') format('woff2'),
-			url('Calibri-Light.woff') format('woff'),
-			url('Calibri-Light.ttf') format('truetype');
+		src: url('../fonts/Calibri-Light.eot');
+		src: url('../fonts/Calibri-Light.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Calibri-Light.woff2') format('woff2'),
+			url('../fonts/Calibri-Light.woff') format('woff'),
+			url('../fonts/Calibri-Light.ttf') format('truetype');
 		font-weight: 300;
 		font-style: normal;
 		font-display: swap;
@@ -66,11 +68,11 @@ a{
 
 	@font-face {
 		font-family: 'Calibri';
-		src: url('Calibri.eot');
-		src: url('Calibri.eot?#iefix') format('embedded-opentype'),
-			url('Calibri.woff2') format('woff2'),
-			url('Calibri.woff') format('woff'),
-			url('Calibri.ttf') format('truetype');
+		src: url('../fonts/Calibri.eot');
+		src: url('../fonts/Calibri.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Calibri.woff2') format('woff2'),
+			url('../fonts/Calibri.woff') format('woff'),
+			url('../fonts/Calibri.ttf') format('truetype');
 		font-weight: normal;
 		font-style: normal;
 		font-display: swap;
@@ -1052,6 +1054,9 @@ main{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	margin-bottom: 70px;
+	min-height: 400px;
+	
 }
 
 
@@ -1735,3 +1740,17 @@ color: #0E4243;
 
 }
 
+
+
+
+.test-php-block{
+
+	position: absolute;
+	left: 0px;
+	top: 200px;
+	width: 1000px;
+	min-height: 100px;
+	background: rgb(224, 213, 248);
+	border: 1px solid #0515fd;
+	
+}
