@@ -17,4 +17,20 @@ add_theme_support( 'post-thumbnails' );
 add_theme_support( 'post-thumbnails', array( 'category' ) );
 
 
+function ITDS_reg_post_type(){
 
+	$args = array(
+		'label' => esc_html__('Карточки товаров'), 
+		'labels' => [],
+		// 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields',
+		//	'comments','revisions','page-attributes','post-formats'
+		'supports'=> [ 'title', 'editor','thumbnail', 'custom-fields' ], 
+		'public'	=> true, 
+		'publicly_queryable'  => true,
+		'show_ui'	=> true,
+		'show_in_menu'	=> true,
+	);
+	register_post_type('goods', $args);
+
+}
+add_action('init', 'ITDS_reg_post_type');

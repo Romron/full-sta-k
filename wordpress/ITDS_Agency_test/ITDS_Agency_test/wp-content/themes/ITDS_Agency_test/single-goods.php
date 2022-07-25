@@ -39,7 +39,7 @@
 				$post = get_post();
 				setup_postdata( $post );
 				// $arr_post_meta = get_post_meta(get_the_ID());
-				$arr_post_meta = get_post_meta(post_id:14);
+				// $arr_post_meta = get_post_meta(post_id:14);
 				print_r($arr_post_meta);
 				echo '<br>**************<br>';
 

@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<?php /* Template Name: category */?>
+<?php /* Template Name: page-category */?>
 
 
 

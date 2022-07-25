@@ -3,7 +3,6 @@
 <?php /* Template Name: category */?>
 
 
-
 	<main>
       <div class="breadcrumb-nav">
          <a href="">Главная</a>
@@ -235,3 +234,7 @@
 		</div>
 
 <?php get_footer() ?>
+
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
