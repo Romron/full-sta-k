@@ -1,3 +1,4 @@
+<<<<<<< HEAD:wordpress/ITDS_Agency_test/ITDS_Agency_test/wp-content/themes/ITDS_Agency_test/index.php
 <?php get_header() ?>
 	<main>
 		<div class="intro">
@@ -305,5 +306,6 @@
 
 
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
 
 <?php get_footer() ?>
