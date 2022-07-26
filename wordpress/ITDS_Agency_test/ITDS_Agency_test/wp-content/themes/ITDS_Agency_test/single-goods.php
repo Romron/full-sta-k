@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<?php /* Template Name: goods */?>
+<?php /* Template Name: Goods */?>
 
 
 
