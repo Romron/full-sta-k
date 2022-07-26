@@ -1,4 +1,3 @@
-<<<<<<< HEAD:wordpress/ITDS_Agency_test/ITDS_Agency_test/wp-content/themes/ITDS_Agency_test/index.php
 <?php get_header() ?>
 	<main>
 		<div class="intro">
