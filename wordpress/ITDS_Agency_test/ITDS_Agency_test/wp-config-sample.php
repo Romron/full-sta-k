@@ -20,13 +20,13 @@
 
 // ** Параметры базы данных: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
-define( 'DB_NAME', 'itds_agency_test' );
+define( 'DB_NAME', 'database_name_here' );
 
 /** Имя пользователя базы данных */
-define( 'DB_USER', 'admin' );
+define( 'DB_USER', 'username_here' );
 
 /** Пароль к базе данных */
-define( 'DB_PASSWORD', 'itds_agency_test--parol' );
+define( 'DB_PASSWORD', 'password_here' );
 
 /** Имя сервера базы данных */
 define( 'DB_HOST', 'localhost' );

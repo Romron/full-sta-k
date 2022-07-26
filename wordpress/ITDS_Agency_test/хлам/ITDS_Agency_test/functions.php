@@ -64,7 +64,7 @@ function ITDS_goods_metabox_html($post){
 				<input type="text" id="new-price" name="new-price" value="<?php echo esc_attr($new_price);?>"/>
 		</p>
 
-		<!-- <p>
+		<p>
 			<label for="rating"> <?php esc_html_e('Рейтинг','ITDS_Agency_test')?> </label>
 				<input type="text" id="rating" name="rating" value="<?php echo esc_attr($rating);?>"/>
 			<label for="status"> <?php esc_html_e('Статус','ITDS_Agency_test')?> </label>	
@@ -73,7 +73,7 @@ function ITDS_goods_metabox_html($post){
 				<input type="text" id="old-price" name="old-price" value="<?php echo esc_attr($old_price);?>"/>
 			<label for="new-pric"> <?php esc_html_e('Новая цена','ITDS_Agency_test')?> </label>
 				<input type="text" id="new-price" name="new-price" value="<?php echo esc_attr($new_price);?>"/>
-		</p>	 -->
+		</p>	
 
 	<?php
 }
