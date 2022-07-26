@@ -24,9 +24,11 @@ define( 'DB_NAME', 'itds_agency_test' );
 
 /** Имя пользователя базы данных */
 define( 'DB_USER', 'root' );
+//define( 'DB_USER', 'admin' );
 
 /** Пароль к базе данных */
 define( 'DB_PASSWORD', '' );
+//define( 'DB_PASSWORD', 'itds_agency_test--parol' );
 
 /** Имя сервера базы данных */
 define( 'DB_HOST', 'localhost' );
