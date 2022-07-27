@@ -38,32 +38,38 @@
 <div class="test-php-block">
 				<?php 
             
-				$post = get_post();
-				setup_postdata( $post );
-				// $arr_post_meta = get_post_meta(get_the_ID());
-				// $arr_post_meta = get_post_meta(post_id:41);
-				print_r($arr_post_meta);
-				echo '<br>**************<br>';
+				// $post = get_post();
+				// setup_postdata( $post );
+				// // $arr_post_meta = get_post_meta(get_the_ID());
+				// // $arr_post_meta = get_post_meta(post_id:41);
+				// print_r($arr_post_meta);
+				// echo '<br>**************<br>';
 
 
 
-				$args = array( 'post_type' => 'product-card', 
-									'posts_per_page' => -1 
-								);
-				$the_query = new WP_Query( $args );
-				if ( $the_query->have_posts() ) :
-					$count_produkt_cards = 1;
-					while ( $the_query->have_posts() ) :
-						$the_query->the_post(); 
-						$arr_post_meta = get_post_meta(get_the_ID(),false);
+			// 	$args = array( 'post_type' => 'product-card', 
+			// 						'posts_per_page' => -1 
+			// 					);
+			// 	$the_query = new WP_Query( $args );
+			// 	if ( $the_query->have_posts() ) :
+			// 		$count_produkt_cards = 1;
+			// 		while ( $the_query->have_posts() ) :
+			// 			$the_query->the_post(); 
+			// 			$arr_post_meta = get_post_meta(get_the_ID(),false);
 						
-						// print_r($arr_post_meta);      // for tests
+			// 			// print_r($arr_post_meta);      // for tests
 			  
 
-						wp_reset_postdata(); 
-					endwhile;
-				// else: echo 'Записи не найдены.';
-			endif;
+			// 			wp_reset_postdata(); 
+			// 		endwhile;
+			// 	// else: echo 'Записи не найдены.';
+			// endif;
+
+echo get_post_meta(get_the_ID(),'status',true);
+
+
+
+
 
 			  ?>
 </div>
