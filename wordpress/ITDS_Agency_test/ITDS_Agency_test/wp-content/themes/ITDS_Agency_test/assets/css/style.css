@@ -107,6 +107,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 35px;
 }
 
 .nav-top {
@@ -1170,7 +1171,7 @@ color: #0E4243;
 	width: 90px;
 }
 
-.goods-discription__status-status img{
+.goods-discription__status img{
 	width: 20px;
 	height: 20px;
 }
@@ -1197,11 +1198,24 @@ color: #0E4243;
 	justify-content: space-between;
 
 }
-.goods-discription__price {
-	width: 219px;
+
+.goods-discription__text>div{
 	display: flex;
-	justify-content: space-between;
+}
+
+.dotted-str{
+	flex: 1 0;
+	height: 1em;
+	margin: 0 0.7em;
+
+	border-bottom: 1px dotted #000;
+}
+
+.goods-discription__price {
+	width: auto;
+	display: flex;
 	align-items: center;
+	justify-content: left;
 	margin: 35px 0;
 }
 .goods-discription__old-price {
@@ -1220,6 +1234,7 @@ color: #0E4243;
 	font-size: 24px;
 	line-height: 20px;
 	color: #0E4243;
+	margin-left: 28px;
 }
 .goods-discription__buttons {
 	width: 100%;
@@ -1363,19 +1378,17 @@ color: #0E4243;
 	background: #FFFFFF;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 	border-radius: 5px;
-
 	font-family: 'Bebas Neue';
-	/* font-style: normal;
+	font-style: normal;
 	font-weight: 300;
 	font-size: 24px;
-	line-height: 29px; */
+	line-height: 29px;
 	color: #0E4243;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding-bottom: 28px;
-
+	cursor: pointer;
 }
 
 .title-tab-active{
@@ -1739,6 +1752,11 @@ color: #0E4243;
 	color: #FFFFFF;
 
 }
+
+
+
+
+
 
 
 

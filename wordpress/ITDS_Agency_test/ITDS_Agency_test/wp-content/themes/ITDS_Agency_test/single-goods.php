@@ -16,89 +16,54 @@
       	<div class="goods-block__slider-row">
 	         <div class="goods-foto-wiht-slider">
 	         	<div class="goods-foto-wiht-slider__foto">
-	         		<img src="img/produkt-foto.png" alt="produkt foto">
+						<?php if (has_post_thumbnail(get_the_ID())) the_post_thumbnail('goods-cover'); ?>
 	         	</div>	
 	         	<div class="goods-foto-wiht-slider__slider">
-	         		<div class="goods-slider-arrow-up"><img src="img/goods-slider-arrow-up.png" alt=""></div>
+	         		<div class="goods-slider-arrow-up">
+							<img src="img/goods-slider-arrow-up.png" alt="">
+						</div>
 	         		<div class="goods-foto-wiht-slider__slider-card">
-		         		<img src="img/produkt-foto.png" alt="produkt foto">
+		         		<?php if (has_post_thumbnail(get_the_ID())) the_post_thumbnail('goods-foto-for-slider'); ?>
 	         		</div>
 	         		<div class="goods-foto-wiht-slider__slider-card">
-		         		<img src="img/produkt-foto.png" alt="produkt foto">
+		         		<?php if (has_post_thumbnail(get_the_ID())) the_post_thumbnail('goods-foto-for-slider'); ?>
 	         		</div>
 	         		<div class="goods-foto-wiht-slider__slider-card">
-		         		<img src="img/produkt-foto.png" alt="produkt foto">
+		         		<?php if (has_post_thumbnail(get_the_ID())) the_post_thumbnail('goods-foto-for-slider'); ?>
 	         		</div>
 	         		<div class="goods-foto-wiht-slider__slider-card">
-		         		<img src="img/produkt-foto.png" alt="produkt foto">
+		         		<?php if (has_post_thumbnail(get_the_ID())) the_post_thumbnail('goods-foto-for-slider'); ?>
 	         		</div>
 	         		<div class="goods-slider-arrow-down"><img src="img/goods-slider-arrow-down.png" alt=""></div>
 	         	</div>
 	         </div>
-<div class="test-php-block">
-				<?php 
-            
-				// $post = get_post();
-				// setup_postdata( $post );
-				// // $arr_post_meta = get_post_meta(get_the_ID());
-				// // $arr_post_meta = get_post_meta(post_id:41);
-				// print_r($arr_post_meta);
-				// echo '<br>**************<br>';
 
-
-
-			// 	$args = array( 'post_type' => 'product-card', 
-			// 						'posts_per_page' => -1 
-			// 					);
-			// 	$the_query = new WP_Query( $args );
-			// 	if ( $the_query->have_posts() ) :
-			// 		$count_produkt_cards = 1;
-			// 		while ( $the_query->have_posts() ) :
-			// 			$the_query->the_post(); 
-			// 			$arr_post_meta = get_post_meta(get_the_ID(),false);
-						
-			// 			// print_r($arr_post_meta);      // for tests
-			  
-
-			// 			wp_reset_postdata(); 
-			// 		endwhile;
-			// 	// else: echo 'Записи не найдены.';
-			// endif;
-
-echo get_post_meta(get_the_ID(),'status',true);
-
-
-
-
-
-			  ?>
-</div>
 	         <div class="goods-discription">
 	         	<div class="goods-discription__title-row">
-		         	<div class="goods-discription__title">Статуэтка-корзинка</div>
+		         	<div class="goods-discription__title"><?php echo get_the_title($post); ?></div>
 		         	<div class="goods-discription__status">
-							<div class="goods-discription__status-status">В наличии</div>
+							<div class="goods-discription__status-status"><?php echo get_post_meta(get_the_ID(),'status',true);?></div>
 							<img src="img/icon-star.png" alt="star">
-							<div class="goods-discription__rating">4.6</div>
+							<div class="goods-discription__rating"><?php echo get_post_meta(get_the_ID(),'rating',true);?></div>
 		         	</div>
 	         	</div>
-	         	<div class="goods-discription__text">
-	         		<p>Артикул				447-333</p>
-	         		<p>Колекция				Серебро</p>
-	         		<p>Размер				23*11*19см</p>
-	         		<p>Упаковка				пенопласт+коричневый картон</p>
-	         		<p>Кол-во дизайнов	1</p>
-	         		<p>Материал				Полистоун</p>
-	         		<p>Категория			Статуэтки полирезиновые</p>
+						<div class="goods-discription__text">
+	         		<div>Артикул<div class="dotted-str"></div><?php echo get_post_meta(get_the_ID(),'article',true);?></div>
+	         		<div>Колекция<div class="dotted-str"></div><?php echo get_post_meta(get_the_ID(),'collection',true);?></div>
+	         		<div>Размер<div class="dotted-str"></div><?php echo get_post_meta(get_the_ID(),'size',true);?></div>
+	         		<div>Упаковка<div class="dotted-str"></div><?php echo get_post_meta(get_the_ID(),'package',true);?></div>
+	         		<div>Кол-во дизайнов<div class="dotted-str"></div><?php echo get_post_meta(get_the_ID(),'number-of-designs',true);?></div>
+	         		<div>Материал<div class="dotted-str"></div><?php echo get_post_meta(get_the_ID(),'material',true);?></div>
+	         		<div>Категория<div class="dotted-str"></div><?php echo get_post_meta(get_the_ID(),'category-goods',true);?></div>
 	         	</div>
 	         	<div class="goods-discription__price">
-	         		<div class="goods-discription__old-price">1 800 ₴</div>
-	         		<div class="goods-discription__new-price">100 800 ₴</div>
+	         		<div class="goods-discription__old-price"><?php echo get_post_meta(get_the_ID(),'old-price',true);?> ₴</div>
+	         		<div class="goods-discription__new-price"><?php echo get_post_meta(get_the_ID(),'new-price',true);?> ₴</div>
 	         	</div>
 	         	<div class="goods-discription__buttons">
 	         		<div class="amount">
 	         			<p>-</p>
-	         			<p>1</p>
+	         			<p><?php echo get_post_meta(get_the_ID(),'goods-amount',true);?></p>
 	         			<p>+</p>
 	         		</div>
 	         		<button id="goods-discription__bye">Купить</button>

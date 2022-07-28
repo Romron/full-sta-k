@@ -6,12 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	
-	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./fonts/stylesheet.css">
-	<link href="css/reset.css" rel="stylesheet" type="text/css">
-	<link href="css/style.css" rel="stylesheet" type="text/css"> -->
 	
 	<?php wp_head(); ?>
 	
@@ -44,7 +38,7 @@
 			</div>
 		</nav>
 		<header>
-			<div class="logo"><img src="img/logo.png" alt="logo"></div>
+			<div class="logo"><a href="<?php echo get_home_url(); ?>"><img src="img/logo.png" alt="logo"></a></div>
 			<div class="serch"></div>
 			<div class="telefon">
 				<div class="telefon__row">

@@ -31,6 +31,8 @@ function ITDS_reg_post_type(){
 add_action('init', 'ITDS_reg_post_type');
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'post-thumbnails', array( 'goods' ) );
+add_image_size('goods-cover', 405, 300, 1);
+add_image_size('goods-foto-for-slider', 68, 50, 1);
 
 
 
@@ -54,6 +56,7 @@ function ITDS_goods_metabox_html($post){
 	$number_of_designs = get_post_meta($post->ID,'number-of-designs',true);
 	$material = get_post_meta($post->ID,'material',true);
 	$category_goods = get_post_meta($post->ID,'category-goods',true);
+	$goods_amount = get_post_meta($post->ID,'goods-amount',true);
 
 
 
@@ -84,7 +87,9 @@ function ITDS_goods_metabox_html($post){
 			<label for="material"> <?php esc_html_e('Материал','ITDS_Agency_test');?> </label>	
 				<input type="text" id="material" name="material" value="<?php echo esc_attr($material);?>"/>
 			<label for="category-goods"> <?php esc_html_e('Категория','ITDS_Agency_test')?> </label>
-				<input type="text" id="category-goods" name="category-goods" value="<?php echo esc_attr($category_goods);?>"/>				
+				<input type="text" id="category-goods" name="category-goods" value="<?php echo esc_attr($category_goods);?>"/>					
+			<label for="goods-amount"> <?php esc_html_e('Количество товара','ITDS_Agency_test')?> </label>
+				<input type="text" id="goods-amount" name="goods-amount" value="<?php echo esc_attr($goods_amount);?>"/>				
 		</div>
 
 	<?php
@@ -178,6 +183,12 @@ function ITDS_goods_save_meta_box($post_id, $post){
 		update_post_meta($post_id,'category-goods', sanitize_text_field($_POST['category-goods']));
 	}else{
 		delete_post_meta($post_id, 'category-goods');
+	}	
+	
+	if (isset($_POST['goods-amount'])) {
+		update_post_meta($post_id,'goods-amount', sanitize_text_field($_POST['goods-amount']));
+	}else{
+		delete_post_meta($post_id, 'goods-amount');
 	}	
 
 	return $post_id;
