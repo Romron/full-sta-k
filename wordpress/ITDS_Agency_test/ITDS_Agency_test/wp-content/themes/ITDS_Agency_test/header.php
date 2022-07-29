@@ -39,13 +39,15 @@
 		</nav>
 		<header>
 			<div class="logo"><a href="<?php echo get_home_url(); ?>"><img src="img/logo.png" alt="logo"></a></div>
-			<div class="serch"></div>
-			<div class="telefon">
-				<div class="telefon__row">
-					<div class="telefon__icon"><img src="img/akar-icons_phone.png" alt="icon-tel"></div>
-					<div class="telefon__number">+380 (66) 238 44 66</div>
+
+				<? php get_search	_form(); ?>
+
+			<div class="phone">
+				<div class="phone__row">
+					<div class="phone__icon"><img src="img/akar-icons_phone.png" alt="icon-tel"></div>
+					<div class="phone__number">+380 (66) 238 44 66</div>
 				</div>
-				<div class="telefon__feedback">Обратная связь</div>
+				<div class="phone__feedback">Обратная связь</div>
 			</div>
 		</header>
 		<nav class="nav-menu">
