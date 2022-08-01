@@ -13,9 +13,8 @@ function ITDS_Agency_test()
 }
 add_action('wp_enqueue_scripts', 'ITDS_Agency_test');
 
-function ITDS_reg_post_type()
+function ITDS_reg_post_type_goods()
 {
-
 	$args = array(
 		'label' => esc_html__('Карточки товаров'),
 		'labels' => [],
@@ -29,12 +28,32 @@ function ITDS_reg_post_type()
 	);
 	register_post_type('goods', $args);
 }
-add_action('init', 'ITDS_reg_post_type');
+add_action('init', 'ITDS_reg_post_type_goods');
+
+function ITDS_reg_post_type_instagram_tape()
+{
+	$args = array(
+		'label' => esc_html__('Посты инстаграм'),
+		'labels' => [],
+		// 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields',
+		//	'comments','revisions','page-attributes','post-formats'
+		'supports' => ['title', 'editor', 'thumbnail'],
+		'public'	=> true,
+		'publicly_queryable'  => true,
+		'show_ui'	=> true,
+		'show_in_menu'	=> true,
+	);
+	register_post_type('instagram_tape', $args);
+}
+add_action('init', 'ITDS_reg_post_type_instagram_tape');
+
+
 add_theme_support('post-thumbnails');
 add_theme_support('post-thumbnails', array('goods'));
 add_image_size('goods-cover', 405, 300, 1);
 add_image_size('goods-for-card', 242, 161, 1);
 add_image_size('goods-foto-for-slider', 68, 50, 1);
+add_image_size('instagram-post', 255, 255, 1);
 
 
 

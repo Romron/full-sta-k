@@ -2,7 +2,6 @@
 
 <?php /* Template Name: Goods */ ?>
 
-<?php get_header() ?>
 
 
 

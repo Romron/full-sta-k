@@ -111,16 +111,9 @@
 </div>
 
 <div class="instagram">
-	<div class="instagram__row">
-		<div class="instagram__title">лента Instagram</div>
-	</div>
-	<div class="instagram__foto-block">
-		<div class="instagram__foto"><img src="img/foto-instagram-line-1.png" alt="foto instagram"></div>
-		<div class="instagram__foto"><img src="img/foto-instagram-line-2.png" alt="foto instagram"></div>
-		<div class="instagram__foto"><img src="img/foto-instagram-line-3.png" alt="foto instagram"></div>
-		<div class="instagram__foto"><img src="img/foto-instagram-line-4.png" alt="foto instagram"></div>
-	</div>
+	<?php get_template_part('parts/instagram-tape'); ?>
 </div>
+
 
 <div class="wrap-about">
 	<div class="about">
