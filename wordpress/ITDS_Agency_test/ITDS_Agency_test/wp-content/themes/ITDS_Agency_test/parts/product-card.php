@@ -2,7 +2,7 @@
    <div class="product-card__row product-rating">
       <div class="wrap-rat-1">
          <img src="img/icon-star.png" alt="star">
-         <div class="rating">4.6</div>
+         <div class="rating"><?php echo get_post_meta(get_the_ID(), 'rating', true); ?></div>
       </div>
       <div class="wrap-rat-2">
          <img src="img/icon-rat-hart.png" alt="">
@@ -10,14 +10,14 @@
       </div>
    </div>
    <div class="product-card__row product-foto">
-      <img src="img/produkt-foto.png" alt="produkt foto">
+      <?php if (has_post_thumbnail(get_the_ID())) the_post_thumbnail('goods-for-card'); ?>
    </div>
-   <div class="product-card__row product-title">Статуэтка-корзинка</div>
-   <div class="product-card__row product-status">В наличии</div>
+   <div class="product-card__row product-title"> <?php the_title() ?> </div>
+   <div class="product-card__row product-status"><?php echo get_post_meta(get_the_ID(), 'status', true); ?></div>
    <div class="product-card__row product-price">
       <div class="product-price__block-price">
-         <div class="old-price">1 800 ₴</div>
-         <div class="new-price">100 800 ₴</div>
+         <div class="old-price"><?php echo get_post_meta(get_the_ID(), 'old-price', true); ?> ₴</div>
+         <div class="new-price"><?php echo get_post_meta(get_the_ID(), 'new-price', true); ?> ₴</div>
       </div>
       <button id="bye">Купить</button>
    </div>
