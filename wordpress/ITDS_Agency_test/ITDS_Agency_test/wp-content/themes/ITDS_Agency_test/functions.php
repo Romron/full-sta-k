@@ -47,6 +47,18 @@ function ITDS_reg_post_type_instagram_tape()
 }
 add_action('init', 'ITDS_reg_post_type_instagram_tape');
 
+function ITDS_Agency_menus()
+{
+	register_nav_menus(array(
+		'heder_nav_menu-1' => esc_html__('Меню хедера 1'),
+		'heder_nav_menu-2' => esc_html__('Меню хедера 2'),
+		'footer_nav_menu-1' => esc_html__('Меню футера 1'),
+		'footer_nav_menu-2' => esc_html__('Меню футера категории')
+	));
+}
+add_action('after_setup_theme', 'ITDS_Agency_menus', 0);
+
+
 
 add_theme_support('post-thumbnails');
 add_theme_support('post-thumbnails', array('goods'));

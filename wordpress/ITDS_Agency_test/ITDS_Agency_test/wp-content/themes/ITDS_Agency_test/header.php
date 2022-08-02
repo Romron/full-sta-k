@@ -17,15 +17,29 @@
 		<div class="wrap-heder">
 			<nav class="nav-top">
 				<div class="wrap-menu">
-					<div class="menu">
+					<!-- <div class="menu">
 						<ul id="menu-1">
 							<li><a href="#">Сотрудничетсво</a></li>
 							<li><a href="#">Блог</a></li>
 							<li><a href="#">FAQ</a></li>
-							<li><a href="#">Доставка</a> и оплата</li>
+							<li><a href="#">Доставка и оплата</a></li>
 							<li><a href="#">Контакты</a></li>
 						</ul>
-					</div>
+					</div> -->
+
+
+					<?php wp_nav_menu(
+						array(
+							'theme_location' => 'heder_nav_menu-1',
+							'container' => 'div',
+							'container_class' => 'menu',
+							'menu_id' => 'menu-1',
+
+						)
+					); ?>
+
+
+
 					<div class="wrap-right-block">
 						<div class="wrap-right-block__text">
 							<div class="wrap-right-block__enter"><a href="#">Вход</a></div>
@@ -51,14 +65,13 @@
 				</div>
 			</header>
 			<nav class="nav-menu">
-				<div id="menu-2">
-					<a href="">Каталог</a>
-					<a href="">ІдеЇ подарункІв</a>
-					<a href="">СезоннІ товари</a>
-					<a href="">Новинки</a>
-					<a href="">АкцІЇ</a>
-					<a href="">ПодарунковІ сертифІкати</a>
-				</div>
+				<?php wp_nav_menu(
+					array(
+						'theme_location' => 'heder_nav_menu-2',
+						'container' => 'nav',
+						'container_id' => 'menu-2',
+					)
+				); ?>
 				<div class="wrap-icons-block">
 					<a href="#"><img src="img/icons-block-heart.png" alt="Избранное"></a>
 					<a href="#"><img src="img/icons-block-diagram.png" alt="Диаграма"></a>
