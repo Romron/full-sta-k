@@ -59,7 +59,6 @@ function ITDS_Agency_test_register_required_plugins()
 }
 add_action('tgmpa_register', 'ITDS_Agency_test_register_required_plugins');
 
-
 function ITDS_Agency_menus()
 {
 	register_nav_menus(array(
@@ -70,3 +69,22 @@ function ITDS_Agency_menus()
 	));
 }
 add_action('after_setup_theme', 'ITDS_Agency_menus', 0);
+
+function ITDS_Agency_pagination($query)
+{
+	$big = 999999999; // уникальное число для замены
+	$paged = '';	// для WP обязательно инициализировать переменную 
+	if (is_singular()) {		// для статических страниц 'paged' заменить на 'page'
+		$paged = get_query_var('page');
+	} else {
+		$paged = get_query_var('paged');
+	}
+	echo paginate_links(
+		array(
+			'base'    => str_replace($big, '%#%', get_pagenum_link($big)),
+			'format'  => '',
+			'current' => max(1, $paged),		// Нужно для того что бы WP_Query() выводил данные в соответствии с той страницей на которой сейчас находишся
+			'total'   => $query->max_num_pages,
+		)
+	);
+}

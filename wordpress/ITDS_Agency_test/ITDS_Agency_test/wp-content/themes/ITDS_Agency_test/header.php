@@ -17,16 +17,6 @@
 		<div class="wrap-heder">
 			<nav class="nav-top">
 				<div class="wrap-menu">
-					<!-- <div class="menu">
-						<ul id="menu-1">
-							<li><a href="#">Сотрудничетсво</a></li>
-							<li><a href="#">Блог</a></li>
-							<li><a href="#">FAQ</a></li>
-							<li><a href="#">Доставка и оплата</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
-					</div> -->
-
 
 					<?php wp_nav_menu(
 						array(
