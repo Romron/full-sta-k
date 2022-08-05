@@ -72,19 +72,20 @@ add_action('after_setup_theme', 'ITDS_Agency_menus', 0);
 
 function ITDS_Agency_pagination($query)
 {
-	$big = 999999999; // уникальное число для замены
-	$paged = '';	// для WP обязательно инициализировать переменную 
-	if (is_singular()) {		// для статических страниц 'paged' заменить на 'page'
-		$paged = get_query_var('page');
-	} else {
-		$paged = get_query_var('paged');
-	}
-	echo paginate_links(
-		array(
-			'base'    => str_replace($big, '%#%', get_pagenum_link($big)),
-			'format'  => '',
-			'current' => max(1, $paged),		// Нужно для того что бы WP_Query() выводил данные в соответствии с той страницей на которой сейчас находишся
-			'total'   => $query->max_num_pages,
+	$current = absint(
+		max(
+			1,
+			get_query_var('paged') ? get_query_var('paged') : get_query_var('page')
+		)
+	);
+	echo wp_kses_post(
+		paginate_links(
+			array(
+				'total'   => $query->max_num_pages,
+				'current' => $current,
+				'prev_text' => '<div class="arow-block__arow-left fon-white"><img src="img/arow-block__arow-left-green.png" alt=""></div>',
+				'next_text' => '<div class="arow-block__arow-right fon-white"><img src="img/arow-block__arow-right-green.png" alt=""></div>',
+			)
 		)
 	);
 }

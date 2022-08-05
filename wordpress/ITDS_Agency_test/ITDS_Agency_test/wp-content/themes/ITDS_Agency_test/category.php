@@ -46,7 +46,6 @@
       </div>
    </div>
    <div class="block-goods">
-
       <?php
       $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;   // для пагинации 
       $args = array(
@@ -60,33 +59,25 @@
          while ($goods_query->have_posts()) :
             $goods_query->the_post();
             $arr_post_meta = get_post_meta(get_the_ID(), false);
-
-      ?>
-            <?php get_template_part('parts/product-card'); ?>
-      <?php
+            get_template_part('parts/product-card');
             $count_produkt_cards++;
             if ($count_produkt_cards > 12) {
                break;
             }
-
          endwhile;
-      // else: echo 'Записи не найдены.';
-      endif;
+         wp_reset_postdata();
       ?>
-
    </div>
    <div class="pagination-block">
-      <div class="arow-block__arow-left fon-white"><img src="img/arow-block__arow-left-green.png" alt=""></div>
       <div class="pagination__pages">
-         <?php
-         ITDS_Agency_pagination($goods_query);
-         wp_reset_postdata();
-         ?>
+         <?php ITDS_Agency_pagination($goods_query); ?>
       </div>
-      <div class="arow-block__arow-right fon-white"><img src="img/arow-block__arow-right-green.png" alt=""></div>
+   <?php
+      // else: echo 'Записи не найдены.';
+      endif;
+   ?>
    </div>
 </main>
-
 
 <div class="wrap-novelties">
    <div class="novelties">

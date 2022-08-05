@@ -1813,7 +1813,7 @@ main {
 	float: right;
 	display: flex;
 
-	border: 1px solid #0515fd;
+	/* border: 1px solid #0515fd; */
 
 }
 
@@ -1826,11 +1826,34 @@ main {
 	align-items: center;
 	justify-content: space-between;
 
-	border: 1px solid #fd2a05;
+	/* border: 1px solid #fd2a05; */
 }
 
+.pagination__pages a {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+	color: #0E4243;
+}
 
-
+.pagination__pages span {
+	width: 45px;
+	height: 45px;
+	background: #0E4243;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 
 
@@ -1839,7 +1862,7 @@ main {
 	position: absolute;
 	left: 0px;
 	top: 200px;
-	width: 1000px;
+	width: 1500px;
 	min-height: 100px;
 	background: rgb(224, 213, 248);
 	border: 1px solid #0515fd;
