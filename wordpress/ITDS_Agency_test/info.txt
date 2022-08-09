@@ -11,6 +11,9 @@ wordpress
 		Название сайта  		itds_agency_test 
 		Имя пользователя		admin
 		Пароль 					itds_agency_test--parol
+		Имя базы данных		itds_agency_test
+		Имя пользователя BD	root
+		пароль BD отсутствует
 	БД рабочий комп
 
 
