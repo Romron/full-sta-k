@@ -1,7 +1,7 @@
 <?php
 
 require_once get_template_directory() . '/inc/class-tgm-plugin-activation.php';
-// require_once get_template_directory() . '/inc/redux-options.php';
+require_once get_template_directory() . '/inc/redux-options.php';
 
 show_admin_bar(false);	// убирает заголовок WP на страницах сайта
 add_theme_support('automatic-feed-links');		// добавляет ссылки на RSS фиды постов и комментариев в head часть HTML документа.
