@@ -1838,7 +1838,7 @@ main {
 	color: #0E4243;
 }
 
-.pagination__pages span {
+.current {
 	width: 45px;
 	height: 45px;
 	background: #0E4243;

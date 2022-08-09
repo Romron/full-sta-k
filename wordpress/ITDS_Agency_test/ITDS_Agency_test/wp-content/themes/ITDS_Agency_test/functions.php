@@ -83,6 +83,7 @@ function ITDS_Agency_pagination($query)
 			array(
 				'total'   => $query->max_num_pages,
 				'current' => $current,
+				'show_all' => false,
 				'prev_text' => '<div class="arow-block__arow-left fon-white"><img src="img/arow-block__arow-left-green.png" alt=""></div>',
 				'next_text' => '<div class="arow-block__arow-right fon-white"><img src="img/arow-block__arow-right-green.png" alt=""></div>',
 			)
