@@ -28,16 +28,15 @@
 						)
 					); ?>
 
-
-
 					<div class="wrap-right-block">
+						<?php global $ITDS_Agency_options; ?>
 						<div class="wrap-right-block__text">
 							<div class="wrap-right-block__enter"><a href="#">Вход</a></div>
 							<div class="sep"></div>
 							<div class="wrap-right-block__reg"><a href="#">Регистрация</a></div>
 						</div>
-						<div class="block-icon"><a href="#"><img src="img/icons_inst.png" alt=""></a></div>
-						<div class="block-icon"><a href="#"><img src="img/icons_fb.png" alt=""></a></div>
+						<div class="block-icon"><a href="<?php echo esc_url($ITDS_Agency_options['social_networks_Inst-link']); ?>"><img src="img/icons_inst.png" alt=""></a></div>
+						<div class="block-icon"><a href="<?php echo esc_url($ITDS_Agency_options['social_networks_fb-link']); ?>"><img src="img/icons_fb.png" alt=""></a></div>
 					</div>
 				</div>
 			</nav>
@@ -49,7 +48,7 @@
 				<div class="phone">
 					<div class="phone__row">
 						<div class="phone__icon"><img src="img/akar-icons_phone.png" alt="icon-tel"></div>
-						<div class="phone__number">+380 (66) 238 44 66</div>
+						<div class="phone__number"><?php esc_html_e($ITDS_Agency_options['contact_fone-number'], 'ITDS_Agency_test'); ?></div>
 					</div>
 					<div class="phone__feedback">Обратная связь</div>
 				</div>

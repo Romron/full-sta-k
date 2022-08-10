@@ -1,11 +1,10 @@
 <?php get_header('/parts/header.php'); ?>
 
-
 <main>
 	<div class="intro">
-
+		<?php global $ITDS_Agency_options; ?>
 		<div class="intro__foto">
-			<img src="img/intro-foto.png" alt="">
+			<img src="<?php echo esc_url($ITDS_Agency_options['intro_foto']['url']); ?>" alt="">
 			<div class="intro-main-block">
 				<div class="block__logo">
 					<img src="img/logo.png" alt="logo">
@@ -17,8 +16,8 @@
 		<div class="wrap-intro-block">
 			<div class="intro-block">
 				<div class="intro-block__text-wrap">
-					<div class="intro-block__title">ГАРАНТИЯ</div>
-					<div class="intro-block__text">Замена любого товара в течение 14 дней</div>
+					<div class="intro-block__title"><?php esc_html_e($ITDS_Agency_options['intro_block-1__title'], 'ITDS_Agency_test'); ?></div>
+					<div class="intro-block__text"><?php esc_html_e($ITDS_Agency_options['intro_block-1__text'], 'ITDS_Agency_test'); ?></div>
 				</div>
 				<div class="intro-block__img">
 					<a href="#"><img src="img/intro-icon-harant.png" alt="icon harant"></a>
@@ -26,8 +25,8 @@
 			</div>
 			<div class="intro-block">
 				<div class="intro-block__text-wrap">
-					<div class="intro-block__title">МЫ В VIBER</div>
-					<div class="intro-block__text">Задай свой вопрос по поводу товара в нашей группе</div>
+					<div class="intro-block__title"><?php esc_html_e($ITDS_Agency_options['intro_block-2__title'], 'ITDS_Agency_test'); ?></div>
+					<div class="intro-block__text"><?php esc_html_e($ITDS_Agency_options['intro_block-2__text'], 'ITDS_Agency_test'); ?></div>
 				</div>
 				<div class="intro-block__img">
 					<a href="#"><img src="img/intro-icon-viber.png" alt="icon veber"></a>
@@ -35,8 +34,8 @@
 			</div>
 			<div class="intro-block">
 				<div class="intro-block__text-wrap">
-					<div class="intro-block__title">СОХРАННОСТЬ ПОСЫЛКИ</div>
-					<div class="intro-block__text">Гарантируем сохранность посылки</div>
+					<div class="intro-block__title"><?php esc_html_e($ITDS_Agency_options['intro_block-3__title'], 'ITDS_Agency_test'); ?></div>
+					<div class="intro-block__text"><?php esc_html_e($ITDS_Agency_options['intro_block-3__text'], 'ITDS_Agency_test'); ?></div>
 				</div>
 				<div class="intro-block__img">
 					<a href="#"><img src="img/intro-icon-parcel.png" alt="icon parcel"></a>
@@ -44,8 +43,8 @@
 			</div>
 			<div class="intro-block">
 				<div class="intro-block__text-wrap">
-					<div class="intro-block__title">ДОСТАВКА</div>
-					<div class="intro-block__text">Отправляем посылку в день заказа</div>
+					<div class="intro-block__title"><?php esc_html_e($ITDS_Agency_options['intro_block-4__title'], 'ITDS_Agency_test'); ?></div>
+					<div class="intro-block__text"><?php esc_html_e($ITDS_Agency_options['intro_block-4__text'], 'ITDS_Agency_test'); ?></div>
 				</div>
 				<div class="intro-block__img">
 					<a href="#"><img src="img/intro-icon-fast-delivery.png" alt="icon fast delivery"></a>

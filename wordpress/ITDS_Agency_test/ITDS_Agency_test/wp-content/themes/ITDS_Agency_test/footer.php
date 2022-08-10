@@ -31,26 +31,34 @@
 			); ?>
 		</div>
 		<div class="footer-contacts">
+			<?php global $ITDS_Agency_options; ?>
 			<div class="footer-menu__title">Контакты</div>
 			<div class="footer-contacts__text">
-				<div class="footer-contacts__text-row">
-					<div class="block-icon">
-						<a href="#"> <img src="img/icon-telephone.png" alt=""></a>
-					</div>
-					<div class="footer-contacts__text-text">+380 (66) 238 44 66</div>
-				</div>
-				<div class="footer-contacts__text-row">
-					<div class="block-icon">
-						<a href="#"> <img src="img/icon-maile.png" alt=""></a>
-					</div>
-					<div class="footer-contacts__text-text">mooddecor@gmail.com</div>
-				</div>
-				<div class="footer-contacts__text-row">
-					<div class="block-icon">
-						<a href="#"> <img src="img/icon-map.png" alt=""></a>
-					</div>
-					<div class="footer-contacts__text-text">Локальные шоурумы</div>
-				</div>
+				<a href="#">
+					<span class="footer-contacts__text-row">
+						<span class="block-icon">
+							<img src="img/icon-telephone.png" alt="">
+						</span>
+						<span class="footer-contacts__text-text"><?php esc_html_e($ITDS_Agency_options['contact_fone-number'], 'ITDS_Agency_test'); ?></span>
+					</span>
+				</a>
+				<a href="#">
+					<span class="footer-contacts__text-row">
+						<span class="block-icon">
+							<img src="img/icon-maile.png" alt="">
+						</span>
+						<span class="footer-contacts__text-text"><?php esc_html_e($ITDS_Agency_options['contact_email'], 'ITDS_Agency_test'); ?></span>
+					</span>
+				</a>
+				<a href="<?php echo esc_url($ITDS_Agency_options['contact_map-link']); ?>">
+					<span class="footer-contacts__text-row">
+						<span class="block-icon">
+							<img src="img/icon-map.png" alt="">
+						</span>
+						<span class="footer-contacts__text-text">Локальные шоурумы</span>
+					</span>
+				</a>
+				</span>
 			</div>
 		</div>
 
