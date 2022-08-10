@@ -84,7 +84,7 @@ $args = array(
    'menu_type'                 => 'menu',
 
    // Show the sections below the admin menu item or not.
-   'allow_sub_menu'            => true,
+   'allow_sub_menu'            => false,
 
    // The text to appear in the admin menu.
    'menu_title'                => esc_html__('Расширенные настройки', 'your-textdomain-here'),
@@ -217,27 +217,6 @@ $args = array(
 );
 
 
-// ADMIN BAR LINKS -> Setup custom links in the admin bar menu as external items.
-// PLEASE CHANGE THEME BEFORE RELEASING YOUR PRODUCT!!
-// If these are left unchanged, they will not display in your panel!
-$args['admin_bar_links'][] = array(
-   'id'    => 'redux-docs',
-   'href'  => '//devs.redux.io/',
-   'title' => __('Documentation', 'your-textdomain-here'),
-);
-
-$args['admin_bar_links'][] = array(
-   'id'    => 'redux-support',
-   'href'  => '//github.com/ReduxFramework/redux-framework/issues',
-   'title' => __('Support', 'your-textdomain-here'),
-);
-
-$args['admin_bar_links'][] = array(
-   'id'    => 'redux-extensions',
-   'href'  => 'redux.io/extensions',
-   'title' => __('Extensions', 'your-textdomain-here'),
-);
-
 // SOCIAL ICONS -> Setup custom links in the footer for quick links in your panel footer icons.
 // PLEASE CHANGE THEME BEFORE RELEASING YOUR PRODUCT!!
 // If these are left unchanged, they will not display in your panel!
@@ -262,58 +241,146 @@ $args['share_icons'][] = array(
    'icon'  => 'el el-linkedin',
 );
 
-// Panel Intro text -> before the form.
-if (!isset($args['global_variable']) || false !== $args['global_variable']) {
-   if (!empty($args['global_variable'])) {
-      $v = $args['global_variable'];
-   } else {
-      $v = str_replace('-', '_', $args['opt_name']);
-   }
-
-   // translators:  Panel opt_name.
-   $args['intro_text'] = '<p>' . sprintf(esc_html__('Did you know that Redux sets a global variable for you? To access any of your saved options from within your code you can use your global variable: $%1$s', 'your-textdomain-here'), '<strong>' . $v . '</strong>') . '<p>';
-} else {
-   $args['intro_text'] = '<p>' . esc_html__('This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.', 'your-textdomain-here') . '</p>';
-}
-
-// Add content after the form.
-$args['footer_text'] = '<p>' . esc_html__('This text is displayed below the options panel. It isn\'t required, but more info is always better! The footer_text field accepts all HTML.', 'your-textdomain-here') . '</p>';
-
-Redux::set_args($opt_name, $args);
-
+Redux::set_args($opt_name, $args);     //! если эту строку удалить то возникает ошибка: " Извините, вам не разрешено просматривать эту страницу. " 
 /*
  * ---> END ARGUMENTS
  */
 
 /*
- * ---> START HELP TABS
- */
-$help_tabs = array(
-   array(
-      'id'      => 'redux-help-tab-1',
-      'title'   => esc_html__('Theme Information 1', 'your-textdomain-here'),
-      'content' => '<p>' . esc_html__('This is the tab content, HTML is allowed.', 'your-textdomain-here') . '</p>',
-   ),
-   array(
-      'id'      => 'redux-help-tab-2',
-      'title'   => esc_html__('Theme Information 2', 'your-textdomain-here'),
-      'content' => '<p>' . esc_html__('This is the tab content, HTML is allowed.', 'your-textdomain-here') . '</p>',
-   ),
-);
-Redux::set_help_tab($opt_name, $help_tabs);
-
-// Set the help sidebar.
-$content = '<p>' . esc_html__('This is the sidebar content, HTML is allowed.', 'your-textdomain-here') . '</p>';
-
-Redux::set_help_sidebar($opt_name, $content);
-
-/*
- * <--- END HELP TABS
- */
-
-/*
  * ---> START SECTIONS
  */
+// -> START Basic Fields
+
+Redux::set_section(
+   $opt_name,
+   array(
+      'title'            => esc_html__('Социальные сети', 'ITDS_Agency_test'),
+      'id'               => 'social_networks',
+      'desc'             => esc_html__('Адреса страниц в соц. сетях', 'ITDS_Agency_test'),
+      'customizer_width' => '400px',
+      'icon'             => 'el el-network',
+      'fields'           => array(
+         array(
+            'id'       => 'social_networks_fb-link',
+            'type'     => 'text',
+            'title'    => esc_html__('Ссылка на страницу в Fasebook', 'ITDS_Agency_test'),
+            'default'  => '',
+         ),
+         array(
+            'id'       => 'social_networks_Inst-link',
+            'type'     => 'text',
+            'title'    => esc_html__('Ссылка на страницу в Instagram', 'ITDS_Agency_test'),
+            'default'  => '',
+         ),
+      ),
+   )
+
+);
+
+Redux::set_section(
+   $opt_name,
+   array(
+      'title'            => esc_html__('Контакты', 'ITDS_Agency_test'),
+      'id'               => 'Contacts',
+      'desc'             => esc_html__('Адреса страниц в соц. сетях', 'ITDS_Agency_test'),
+      'customizer_width' => '400px',
+      'icon'             => 'el el-tasks',
+      'fields'           => array(
+         array(
+            'id'       => 'contact_fone-number',
+            'type'     => 'text',
+            'title'    => esc_html__('Контактный номер телефона', 'ITDS_Agency_test'),
+            'default'  => '',
+         ),
+         array(
+            'id'       => 'contact_viber-number',
+            'type'     => 'text',
+            'title'    => esc_html__('Контактный номер в viber', 'ITDS_Agency_test'),
+            'default'  => '',
+         ),
+         array(
+            'id'       => 'contact_email',
+            'type'     => 'text',
+            'title'    => esc_html__('Адрес электронной почты', 'ITDS_Agency_test'),
+            'default'  => '',
+         ),
+         array(
+            'id'       => 'contact_map-link',
+            'type'     => 'text',
+            'title'    => esc_html__('Ссылка на карту', 'ITDS_Agency_test'),
+            'default'  => '',
+         ),
+      ),
+   )
+
+);
+
+Redux::set_section(
+   $opt_name,
+   array(
+      'title'            => esc_html__('Интро', 'ITDS_Agency_test'),
+      'id'               => 'intro',
+      'desc'             => esc_html__('Адреса страниц в соц. сетях', 'ITDS_Agency_test'),
+      'customizer_width' => '400px',
+      'icon'             => 'el el-graph-alt',
+      'fields'           => array(
+         array(
+            'id'           => 'intro_foto',
+            'type'         => 'media',
+            'url'          => true,
+            'title'        => esc_html__('Изображение', 'ITDS_Agency_test'),
+            'compiler'     => 'true',
+            // 'desc'         => esc_html__('Basic media uploader with disabled URL input field.', 'ITDS_Agency_test'),
+            // 'subtitle'     => esc_html__('Upload any media using the WordPress native uploader', 'ITDS_Agency_test'),
+            'preview_size' => 'full',
+         ),
+         array(
+            'id'       => 'intro_block-1__title',
+            'type'     => 'text',
+            'title'    => esc_html__('Заголовок первого блока', 'ITDS_Agency_test'),
+            'default'  => '',
+         ),
+         array(
+            'id'       => 'intro_block-1__text',
+            'type'     => 'text',
+            'title'    => esc_html__('текст первого блока', 'ITDS_Agency_test'),
+            'default'  => '',
+         ),
+         array(
+            'id'       => 'intro_block-2__title',
+            'type'     => 'text',
+            'title'    => esc_html__('Заголовок второго блока', 'ITDS_Agency_test'),
+            'default'  => '',
+         ),
+         array(
+            'id'       => 'intro_block-2__text',
+            'type'     => 'text',
+            'title'    => esc_html__('текст втрого блока', 'ITDS_Agency_test'),
+            'default'  => '',
+         ),
+         array(
+            'id'       => 'intro_block-3__title',
+            'type'     => 'text',
+            'title'    => esc_html__('Заголовок третьего блока', 'ITDS_Agency_test'),
+            'default'  => '',
+         ),
+         array(
+            'id'       => 'intro_block-3__text',
+            'type'     => 'text',
+            'title'    => esc_html__('текст третьего блока', 'ITDS_Agency_test'),
+            'default'  => '',
+         ),
+      ),
+   )
+
+);
+
+
+
+
+//----------------------------------------------------------
+
+
 
 // -> START Basic Fields
 Redux::set_section(
