@@ -1,0 +1,9 @@
+.psd
+*.psd
+# VS Cod
+.vscode
+
+/*
+!/wp-content/
+!/img/
+!/info.txt
