@@ -42,3 +42,16 @@ echo get_post_meta(get_the_ID(),'status',true);
 
 
 
+
+.psd
+*.psd
+# VS Cod
+.vscode
+
+/*
+!/wp-content/
+!/img/
+!/info.txt
+
+
+
