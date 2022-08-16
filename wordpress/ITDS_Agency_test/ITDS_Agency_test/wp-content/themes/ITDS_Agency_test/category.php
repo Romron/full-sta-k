@@ -54,11 +54,12 @@
          'posts_per_page' => 1,  // for test
          'paged' => $paged,
       );
-      $goods_query = new WP_Query($args);
-      if ($goods_query->have_posts()) :
+
+      // $goods_query = new WP_Query($args);
+      if (have_posts()) :
          $count_produkt_cards = 1;
-         while ($goods_query->have_posts()) :
-            $goods_query->the_post();
+         while (have_posts()) :
+            the_post();
             $arr_post_meta = get_post_meta(get_the_ID(), false);
             get_template_part('parts/product-card');
             $count_produkt_cards++;

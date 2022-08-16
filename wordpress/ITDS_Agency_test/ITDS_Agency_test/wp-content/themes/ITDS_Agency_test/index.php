@@ -1,5 +1,22 @@
 <?php get_header('/parts/header.php'); ?>
 
+
+
+<div class="test-php-block">
+
+
+	<?php
+
+	the_title();
+	the_content();
+	?>
+
+
+
+</div>
+
+
+
 <main>
 	<div class="intro">
 		<?php global $ITDS_Agency_options; ?>
@@ -63,12 +80,16 @@
 		</div>
 		<div class="popular-goods__cards-block">
 
-			<?php $args = array(
-				'post_type' => 'goods',
-				'posts_per_page' => 4,
-			);
-			$goods = new WP_Query($args);
-			if ($goods->have_posts()) : while ($goods->have_posts()) : $goods->the_post(); ?>
+			<?php
+			// $args = array(
+			// 	'post_type' => 'goods',
+			// 	'posts_per_page' => 4,
+			// );
+			// $goods = new WP_Query($args);
+			// if ($goods->have_posts()) : while ($goods->have_posts()) : $goods->the_post(); 
+			?>
+			<?php
+			if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<?php get_template_part('parts/product-card'); ?>
 				<?php endwhile;
 			else : ?>
