@@ -2,7 +2,5 @@
 *.psd
 # VS Cod
 .vscode
-/data_base_files/*
-!/data_base_files/itds_agency_test/
 
 
