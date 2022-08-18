@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ITDS_Agency_test_2 functions and definitions
  *
@@ -7,9 +8,9 @@
  * @package ITDS_Agency_test_2
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
+if (!defined('_S_VERSION')) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define('_S_VERSION', '1.0.0');
 }
 
 /**
@@ -19,37 +20,38 @@ if ( ! defined( '_S_VERSION' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function itds_agency_test_2_setup() {
+function itds_agency_test_2_setup()
+{
 	/*
-		* Make theme available for translation.
-		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on ITDS_Agency_test_2, use a find and replace
-		* to change 'itds_agency_test_2' to the name of your theme in all the template files.
+		*Сделать тему доступной для перевода.
+		*Переводы могут храниться в каталоге /languages/.
+		*Если вы создаете тему на основе ITDS_Agency_test_2, используйте поиск и замену
+		*изменить 'itds_agency_test_2' на название вашей темы во всех файлах шаблона.
 		*/
-	load_theme_textdomain( 'itds_agency_test_2', get_template_directory() . '/languages' );
+	load_theme_textdomain('itds_agency_test_2', get_template_directory() . '/languages');
 
 	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+	add_theme_support('automatic-feed-links');
 
 	/*
-		* Let WordPress manage the document title.
-		* By adding theme support, we declare that this theme does not use a
-		* hard-coded <title> tag in the document head, and expect WordPress to
-		* provide it for us.
+		*Позвольте WordPress управлять заголовком документа.
+		*Добавляя поддержку темы, мы заявляем, что эта тема не использует
+		*жестко запрограммированный тег <title> в заголовке документа и ожидайте, что WordPress
+		*предоставить его для нас.
 		*/
-	add_theme_support( 'title-tag' );
+	add_theme_support('title-tag');
 
 	/*
 		* Enable support for Post Thumbnails on posts and pages.
 		*
 		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		*/
-	add_theme_support( 'post-thumbnails' );
+	add_theme_support('post-thumbnails');
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'itds_agency_test_2' ),
+			'menu-1' => esc_html__('Primary', 'itds_agency_test_2'),
 		)
 	);
 
@@ -82,8 +84,8 @@ function itds_agency_test_2_setup() {
 		)
 	);
 
-	// Add theme support for selective refresh for widgets.
-	add_theme_support( 'customize-selective-refresh-widgets' );
+	// Добавлена ​​поддержка тем для выборочного обновления виджетов..
+	add_theme_support('customize-selective-refresh-widgets');
 
 	/**
 	 * Add support for core custom logo.
@@ -100,7 +102,7 @@ function itds_agency_test_2_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'itds_agency_test_2_setup' );
+add_action('after_setup_theme', 'itds_agency_test_2_setup');
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -109,22 +111,24 @@ add_action( 'after_setup_theme', 'itds_agency_test_2_setup' );
  *
  * @global int $content_width
  */
-function itds_agency_test_2_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'itds_agency_test_2_content_width', 640 );
+function itds_agency_test_2_content_width()
+{
+	$GLOBALS['content_width'] = apply_filters('itds_agency_test_2_content_width', 640);
 }
-add_action( 'after_setup_theme', 'itds_agency_test_2_content_width', 0 );
+add_action('after_setup_theme', 'itds_agency_test_2_content_width', 0);
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function itds_agency_test_2_widgets_init() {
+function itds_agency_test_2_widgets_init()
+{
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'itds_agency_test_2' ),
+			'name'          => esc_html__('Sidebar', 'itds_agency_test_2'),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'itds_agency_test_2' ),
+			'description'   => esc_html__('Add widgets here.', 'itds_agency_test_2'),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -132,22 +136,23 @@ function itds_agency_test_2_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'itds_agency_test_2_widgets_init' );
+add_action('widgets_init', 'itds_agency_test_2_widgets_init');
 
 /**
  * Enqueue scripts and styles.
  */
-function itds_agency_test_2_scripts() {
-	wp_enqueue_style( 'itds_agency_test_2-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'itds_agency_test_2-style', 'rtl', 'replace' );
+function itds_agency_test_2_scripts()
+{
+	wp_enqueue_style('itds_agency_test_2-style', get_stylesheet_uri(), array(), _S_VERSION);
+	wp_style_add_data('itds_agency_test_2-style', 'rtl', 'replace');
 
-	wp_enqueue_script( 'itds_agency_test_2-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script('itds_agency_test_2-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
+	if (is_singular() && comments_open() && get_option('thread_comments')) {
+		wp_enqueue_script('comment-reply');
 	}
 }
-add_action( 'wp_enqueue_scripts', 'itds_agency_test_2_scripts' );
+add_action('wp_enqueue_scripts', 'itds_agency_test_2_scripts');
 
 /**
  * Implement the Custom Header feature.
@@ -169,16 +174,10 @@ require get_template_directory() . '/inc/template-functions.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
-/**
- * Load Jetpack compatibility file.
- */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
-}
 
 /**
  * Load WooCommerce compatibility file.
  */
-if ( class_exists( 'WooCommerce' ) ) {
+if (class_exists('WooCommerce')) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
