@@ -1,0 +1,50 @@
+2022-08-18T09:34:16+00:00 CRITICAL Uncaught Error: Failed opening required 'F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test/wp-content/themes/itds_agency_test_2/inc/custom-header.php' (include_path='C:\xampp\php\PEAR') in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\functions.php:73
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-settings.php(566): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-config.php(95): require_once('F:\\web\\full_sta...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-load.php(50): require_once('F:\\web\\full_sta...')
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(13): require_once('F:\\web\\full_sta...')
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#5 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\functions.php on line 73
+
+2022-08-18T09:36:05+00:00 CRITICAL Uncaught Error: Failed opening required 'F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test/wp-content/themes/itds_agency_test_2/inc/custom-header.php' (include_path='C:\xampp\php\PEAR') in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\functions.php:37
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-settings.php(566): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-config.php(95): require_once('F:\\web\\full_sta...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-load.php(50): require_once('F:\\web\\full_sta...')
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(13): require_once('F:\\web\\full_sta...')
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#5 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\functions.php on line 37
+
+2022-08-18T09:36:40+00:00 CRITICAL Uncaught Error: Failed opening required 'F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test/wp-content/themes/itds_agency_test_2/inc/custom-header.php' (include_path='C:\xampp\php\PEAR') in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\functions.php:36
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-settings.php(566): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-config.php(95): require_once('F:\\web\\full_sta...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-load.php(50): require_once('F:\\web\\full_sta...')
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(13): require_once('F:\\web\\full_sta...')
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#5 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\functions.php on line 36
+
+2022-08-18T09:37:44+00:00 CRITICAL Uncaught Error: Failed opening required 'F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test/wp-content/themes/itds_agency_test_2/inc/template-tags.php' (include_path='C:\xampp\php\PEAR') in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\functions.php:41
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-settings.php(566): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-config.php(95): require_once('F:\\web\\full_sta...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-load.php(50): require_once('F:\\web\\full_sta...')
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(13): require_once('F:\\web\\full_sta...')
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#5 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\functions.php on line 41
+
+2022-08-18T09:38:30+00:00 CRITICAL Uncaught Error: Failed opening required 'F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test/wp-content/themes/itds_agency_test_2/inc/custom-header.php' (include_path='C:\xampp\php\PEAR') in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\functions.php:36
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-settings.php(566): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-config.php(95): require_once('F:\\web\\full_sta...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-load.php(50): require_once('F:\\web\\full_sta...')
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(13): require_once('F:\\web\\full_sta...')
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#5 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\functions.php on line 36
+
