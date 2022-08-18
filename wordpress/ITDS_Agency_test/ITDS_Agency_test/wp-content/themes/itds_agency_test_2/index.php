@@ -1,5 +1,19 @@
 <?php get_header('/parts/header.php'); ?>
 
+<div class="test-php-block">
+	<?php
+	wc_get_template('single-product');
+
+	?>
+</div>
+
+
+
+
+
+
+
+
 
 <main>
 	<div class="intro">

@@ -1866,6 +1866,8 @@ main {
 	min-height: 100px;
 	background: rgb(224, 213, 248);
 	border: 1px solid #0515fd;
+	margin: 20px;
+	z-index: 999;
 
 }
 
