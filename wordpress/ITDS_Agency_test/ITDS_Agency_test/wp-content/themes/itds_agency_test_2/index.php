@@ -1,18 +1,5 @@
 <?php get_header('/parts/header.php'); ?>
 
-<div class="test-php-block">
-	<?php
-	wc_get_template('single-product');
-
-	?>
-</div>
-
-
-
-
-
-
-
 
 
 <main>
@@ -79,7 +66,7 @@
 		<div class="popular-goods__cards-block">
 			<?php
 			if (have_posts()) : while (have_posts()) : the_post(); ?>
-					<?php get_template_part('parts/product-card'); ?>
+					<?php get_template_part('template-parts/product-card'); ?>
 				<?php endwhile;
 			else : ?>
 				постов нет
@@ -102,17 +89,43 @@
 		</div>
 		<div class="novelties__cards-block">
 
-			<?php $args = array(
-				'post_type' => 'goods',
-				'posts_per_page' => 4,
-			);
-			$goods = new WP_Query($args);
-			if ($goods->have_posts()) : while ($goods->have_posts()) : $goods->the_post(); ?>
-					<?php get_template_part('parts/product-card'); ?>
-				<?php endwhile;
-			else : ?>
-				постов нет
-			<?php endif; ?>
+			<div class="test-php-block">
+				<?php
+
+				$args = array(
+					'posts_per_page' => 4,
+				);
+
+				$product_query = wc_get_products($args);
+				// $product_query = new WC_Product_Query($args);
+
+				https: //ru.stackoverflow.com/questions/878134/%D0%9D%D0%B5-%D0%BC%D0%BE%D0%B3%D1%83-%D1%80%D0%B0%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%D1%81%D1%8F-%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2-woocommercewordpress
+
+
+				if (!empty($product_query)) {
+					foreach ($product_query as $product) {
+						// $product->have_posts();
+
+						// $products__ = $product_query->get_product_type();
+						$qq = wc_get_product($post->ID);
+						echo "<pre>";
+						print_r($qq);
+						echo "</pre>";
+
+
+						// get_template_part('product-card');
+					};
+				} else {
+					echo 'постов нет';
+				};
+				?>
+
+
+
+
+
+
+			</div>
 
 
 		</div>

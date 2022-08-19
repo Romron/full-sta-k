@@ -134,16 +134,16 @@ if (!function_exists('itds_agency_test_2_woocommerce_wrapper_after')) {
 }
 add_action('woocommerce_after_main_content', 'itds_agency_test_2_woocommerce_wrapper_after');
 
+// if ( function_exists( 'itds_agency_test_2_woocommerce_header_cart' ) ) {				???????????????????
+// 	itds_agency_test_2_woocommerce_header_cart();
+// }
+
+
 /**
  * Sample implementation of the WooCommerce Mini Cart.
  *
  * You can add the WooCommerce Mini Cart to header.php like so ...
  *
-	<?php
-		if ( function_exists( 'itds_agency_test_2_woocommerce_header_cart' ) ) {
-			itds_agency_test_2_woocommerce_header_cart();
-		}
-	?>
  */
 
 if (!function_exists('itds_agency_test_2_woocommerce_cart_link_fragment')) {

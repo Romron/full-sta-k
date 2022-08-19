@@ -1,0 +1,325 @@
+2022-08-19T08:31:35+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product\price.php:25
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1640): wc_get_template('single-product/...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php(7): woocommerce_template_single_price()
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full_sta...')
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#5 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#6 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product\price.php on line 25
+
+2022-08-19T08:42:44+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product\price.php:25
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1640): wc_get_template('single-product/...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php(7): woocommerce_template_single_price()
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full_sta...')
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#5 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#6 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product\price.php on line 25
+
+2022-08-19T08:45:14+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:27
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1676): wc_get_template('single-product/...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): woocommerce_show_product_sale_flash('')
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\content-single-product.php(43): do_action('woocommerce_bef...')
+#6 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require('F:\\web\\full_sta...')
+#7 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('F:\\web\\full_sta...', false)
+#8 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#9 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full_sta...')
+#10 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php(5): wc_get_template('single-product....')
+#11 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full_sta...')
+#12 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#13 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#14 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php on line 27
+
+2022-08-19T08:47:08+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:27
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1676): wc_get_template('single-product/...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): woocommerce_show_product_sale_flash('')
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\content-single-product.php(43): do_action('woocommerce_bef...')
+#6 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require('F:\\web\\full_sta...')
+#7 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('F:\\web\\full_sta...', false)
+#8 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#9 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full_sta...')
+#10 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php(5): wc_get_template('woocommerce\\sin...')
+#11 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full_sta...')
+#12 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#13 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#14 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php on line 27
+
+2022-08-19T08:48:55+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:27
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1676): wc_get_template('single-product/...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): woocommerce_show_product_sale_flash('')
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\content-single-product.php(43): do_action('woocommerce_bef...')
+#6 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full_sta...')
+#7 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php(6): wc_get_template('content-single-...')
+#8 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full_sta...')
+#9 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#10 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#11 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php on line 27
+
+2022-08-19T08:53:46+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php:8
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#3 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php on line 8
+
+2022-08-19T08:58:05+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php:8
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#3 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php on line 8
+
+2022-08-19T10:29:24+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:22
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full_sta...', false, Array)
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php(69): get_template_part('template-parts/...')
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full_sta...')
+#5 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#6 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#7 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 22
+
+2022-08-19T10:30:33+00:00 CRITICAL Uncaught Exception: Invalid product. in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\data-stores\class-wc-product-data-store-cpt.php:167
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\class-wc-data-store.php(159): WC_Product_Data_Store_CPT->read(Object(WC_Product))
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(138): WC_Data_Store->read(Object(WC_Product))
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php(21): WC_Product->__construct(1)
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require('F:\\web\\full_sta...')
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full_sta...', false, Array)
+#5 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#6 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php(69): get_template_part('template-parts/...')
+#7 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full_sta...')
+#8 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#9 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#10 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\data-stores\class-wc-product-data-store-cpt.php on line 167
+
+2022-08-19T10:30:51+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:22
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full_sta...', false, Array)
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php(69): get_template_part('template-parts/...')
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full_sta...')
+#5 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#6 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#7 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 22
+
+2022-08-19T10:31:20+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:22
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full_sta...', false, Array)
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php(69): get_template_part('template-parts/...')
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full_sta...')
+#5 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#6 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#7 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 22
+
+2022-08-19T10:36:32+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:24
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full_sta...', false, Array)
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php(69): get_template_part('template-parts/...')
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full_sta...')
+#5 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#6 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#7 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 24
+
+2022-08-19T11:00:56+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:27
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1676): wc_get_template('single-product/...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): woocommerce_show_product_sale_flash('')
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\content-single-product.php(43): do_action('woocommerce_bef...')
+#6 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require('F:\\web\\full_sta...')
+#7 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('F:\\web\\full_sta...', false)
+#8 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#9 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full_sta...')
+#10 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php(43): wc_get_template('single-product....')
+#11 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require('F:\\web\\full_sta...')
+#12 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full_sta...', false, Array)
+#13 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#14 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php(69): get_template_part('template-parts/...')
+#15 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full_sta...')
+#16 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#17 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#18 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php on line 27
+
+2022-08-19T11:02:01+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:27
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1676): wc_get_template('single-product/...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): woocommerce_show_product_sale_flash('')
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\content-single-product.php(43): do_action('woocommerce_bef...')
+#6 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require('F:\\web\\full_sta...')
+#7 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('F:\\web\\full_sta...', false)
+#8 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#9 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full_sta...')
+#10 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php(43): wc_get_template('single-product....')
+#11 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require('F:\\web\\full_sta...')
+#12 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full_sta...', false, Array)
+#13 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#14 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php(69): get_template_part('template-parts/...')
+#15 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full_sta...')
+#16 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#17 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#18 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php on line 27
+
+2022-08-19T11:03:17+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:27
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1676): wc_get_template('single-product/...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): woocommerce_show_product_sale_flash('')
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\content-single-product.php(43): do_action('woocommerce_bef...')
+#6 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require('F:\\web\\full_sta...')
+#7 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('F:\\web\\full_sta...', false)
+#8 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#9 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full_sta...')
+#10 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php(43): wc_get_template('single-product....')
+#11 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require('F:\\web\\full_sta...')
+#12 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full_sta...', false, Array)
+#13 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#14 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php(69): get_template_part('template-parts/...')
+#15 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full_sta...')
+#16 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#17 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#18 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php on line 27
+
+2022-08-19T11:17:51+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:27
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1676): wc_get_template('single-product/...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): woocommerce_show_product_sale_flash('')
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#5 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\content-single-product.php(43): do_action('woocommerce_bef...')
+#6 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require('F:\\web\\full_sta...')
+#7 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('F:\\web\\full_sta...', false)
+#8 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#9 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full_sta...')
+#10 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php(43): wc_get_template('single-product....')
+#11 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require('F:\\web\\full_sta...')
+#12 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full_sta...', false, Array)
+#13 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#14 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php(69): get_template_part('template-parts/...')
+#15 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full_sta...')
+#16 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#17 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#18 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php on line 27
+
+2022-08-19T11:20:38+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\wp-db.php on line 2169
+
+2022-08-19T11:48:50+00:00 CRITICAL Uncaught Error: Call to a member function get_products() on array in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:34
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full_sta...', false, Array)
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php(69): get_template_part('template-parts/...')
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full_sta...')
+#5 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#6 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#7 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 34
+
+2022-08-19T12:15:05+00:00 CRITICAL Uncaught Error: Call to a member function the_permalink() on null in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:17
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full_sta...', false, Array)
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php(69): get_template_part('template-parts/...')
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full_sta...')
+#5 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#6 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#7 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 17
+
+2022-08-19T12:15:26+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on null in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:17
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full_sta...', false, Array)
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php(69): get_template_part('template-parts/...')
+#4 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full_sta...')
+#5 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#6 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#7 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 17
+
+2022-08-19T12:32:18+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::have_posts() in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php:99
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#3 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php on line 99
+
+2022-08-19T12:34:35+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::have_posts() in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php:102
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#3 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php on line 102
+
+2022-08-19T13:12:20+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::have_posts() in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php:103
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#3 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php on line 103
+
+2022-08-19T13:12:40+00:00 CRITICAL Uncaught Error: Call to a member function get_products() on null in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php:105
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#3 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php on line 105
+
+2022-08-19T13:13:39+00:00 CRITICAL Uncaught Error: Call to a member function get_products() on array in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php:105
+Stack trace:
+#0 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include()
+#1 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full_sta...')
+#2 F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full_sta...')
+#3 {main}
+  thrown in F:\web\full_stack\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\index.php on line 105
+
