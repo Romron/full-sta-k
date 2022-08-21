@@ -136,8 +136,3 @@
 
 
 <?php get_footer() ?>
-
-
-
-
-full-sta-k/wordpress/ITDS_Agency_test/ITDS_Agency_test
