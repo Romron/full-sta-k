@@ -1,11 +1,12 @@
 <?php
+
 /**
  * WooCommerce product base class.
  *
  * @package WooCommerce\Abstracts
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit;
 }
 
@@ -26,7 +27,8 @@ require_once WC_ABSPATH . 'includes/legacy/abstract-wc-legacy-product.php';
  * @version 3.0.0
  * @package WooCommerce\Abstracts
  */
-class WC_Product extends WC_Abstract_Legacy_Product {
+class WC_Product extends WC_Abstract_Legacy_Product
+{
 
 	/**
 	 * This is the name of this object type.
@@ -104,7 +106,7 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 		'download_expiry'    => -1,
 		'rating_counts'      => array(),
 		'average_rating'     => 0,
-		'review_count'       => 0,
+		'Review_count'       => 0,
 	);
 
 	/**
@@ -121,21 +123,22 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @param int|WC_Product|object $product Product to init.
 	 */
-	public function __construct( $product = 0 ) {
-		parent::__construct( $product );
-		if ( is_numeric( $product ) && $product > 0 ) {
-			$this->set_id( $product );
-		} elseif ( $product instanceof self ) {
-			$this->set_id( absint( $product->get_id() ) );
-		} elseif ( ! empty( $product->ID ) ) {
-			$this->set_id( absint( $product->ID ) );
+	public function __construct($product = 0)
+	{
+		parent::__construct($product);
+		if (is_numeric($product) && $product > 0) {
+			$this->set_id($product);
+		} elseif ($product instanceof self) {
+			$this->set_id(absint($product->get_id()));
+		} elseif (!empty($product->ID)) {
+			$this->set_id(absint($product->ID));
 		} else {
-			$this->set_object_read( true );
+			$this->set_object_read(true);
 		}
 
-		$this->data_store = WC_Data_Store::load( 'product-' . $this->get_type() );
-		if ( $this->get_id() > 0 ) {
-			$this->data_store->read( $this );
+		$this->data_store = WC_Data_Store::load('product-' . $this->get_type());
+		if ($this->get_id() > 0) {
+			$this->data_store->read($this);
 		}
 	}
 
@@ -147,8 +150,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since  3.0.0
 	 * @return string
 	 */
-	public function get_type() {
-		return isset( $this->product_type ) ? $this->product_type : 'simple';
+	public function get_type()
+	{
+		return isset($this->product_type) ? $this->product_type : 'simple';
 	}
 
 	/**
@@ -158,8 +162,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return string
 	 */
-	public function get_name( $context = 'view' ) {
-		return $this->get_prop( 'name', $context );
+	public function get_name($context = 'view')
+	{
+		return $this->get_prop('name', $context);
 	}
 
 	/**
@@ -169,8 +174,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return string
 	 */
-	public function get_slug( $context = 'view' ) {
-		return $this->get_prop( 'slug', $context );
+	public function get_slug($context = 'view')
+	{
+		return $this->get_prop('slug', $context);
 	}
 
 	/**
@@ -180,8 +186,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return WC_DateTime|NULL object if the date is set or null if there is no date.
 	 */
-	public function get_date_created( $context = 'view' ) {
-		return $this->get_prop( 'date_created', $context );
+	public function get_date_created($context = 'view')
+	{
+		return $this->get_prop('date_created', $context);
 	}
 
 	/**
@@ -191,8 +198,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return WC_DateTime|NULL object if the date is set or null if there is no date.
 	 */
-	public function get_date_modified( $context = 'view' ) {
-		return $this->get_prop( 'date_modified', $context );
+	public function get_date_modified($context = 'view')
+	{
+		return $this->get_prop('date_modified', $context);
 	}
 
 	/**
@@ -202,8 +210,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return string
 	 */
-	public function get_status( $context = 'view' ) {
-		return $this->get_prop( 'status', $context );
+	public function get_status($context = 'view')
+	{
+		return $this->get_prop('status', $context);
 	}
 
 	/**
@@ -213,8 +222,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return boolean
 	 */
-	public function get_featured( $context = 'view' ) {
-		return $this->get_prop( 'featured', $context );
+	public function get_featured($context = 'view')
+	{
+		return $this->get_prop('featured', $context);
 	}
 
 	/**
@@ -224,8 +234,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return string
 	 */
-	public function get_catalog_visibility( $context = 'view' ) {
-		return $this->get_prop( 'catalog_visibility', $context );
+	public function get_catalog_visibility($context = 'view')
+	{
+		return $this->get_prop('catalog_visibility', $context);
 	}
 
 	/**
@@ -235,8 +246,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return string
 	 */
-	public function get_description( $context = 'view' ) {
-		return $this->get_prop( 'description', $context );
+	public function get_description($context = 'view')
+	{
+		return $this->get_prop('description', $context);
 	}
 
 	/**
@@ -246,8 +258,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return string
 	 */
-	public function get_short_description( $context = 'view' ) {
-		return $this->get_prop( 'short_description', $context );
+	public function get_short_description($context = 'view')
+	{
+		return $this->get_prop('short_description', $context);
 	}
 
 	/**
@@ -256,8 +269,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return string
 	 */
-	public function get_sku( $context = 'view' ) {
-		return $this->get_prop( 'sku', $context );
+	public function get_sku($context = 'view')
+	{
+		return $this->get_prop('sku', $context);
 	}
 
 	/**
@@ -266,8 +280,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return string price
 	 */
-	public function get_price( $context = 'view' ) {
-		return $this->get_prop( 'price', $context );
+	public function get_price($context = 'view')
+	{
+		return $this->get_prop('price', $context);
 	}
 
 	/**
@@ -276,8 +291,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return string price
 	 */
-	public function get_regular_price( $context = 'view' ) {
-		return $this->get_prop( 'regular_price', $context );
+	public function get_regular_price($context = 'view')
+	{
+		return $this->get_prop('regular_price', $context);
 	}
 
 	/**
@@ -286,8 +302,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return string price
 	 */
-	public function get_sale_price( $context = 'view' ) {
-		return $this->get_prop( 'sale_price', $context );
+	public function get_sale_price($context = 'view')
+	{
+		return $this->get_prop('sale_price', $context);
 	}
 
 	/**
@@ -297,8 +314,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return WC_DateTime|NULL object if the date is set or null if there is no date.
 	 */
-	public function get_date_on_sale_from( $context = 'view' ) {
-		return $this->get_prop( 'date_on_sale_from', $context );
+	public function get_date_on_sale_from($context = 'view')
+	{
+		return $this->get_prop('date_on_sale_from', $context);
 	}
 
 	/**
@@ -308,8 +326,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return WC_DateTime|NULL object if the date is set or null if there is no date.
 	 */
-	public function get_date_on_sale_to( $context = 'view' ) {
-		return $this->get_prop( 'date_on_sale_to', $context );
+	public function get_date_on_sale_to($context = 'view')
+	{
+		return $this->get_prop('date_on_sale_to', $context);
 	}
 
 	/**
@@ -319,8 +338,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return int
 	 */
-	public function get_total_sales( $context = 'view' ) {
-		return $this->get_prop( 'total_sales', $context );
+	public function get_total_sales($context = 'view')
+	{
+		return $this->get_prop('total_sales', $context);
 	}
 
 	/**
@@ -329,8 +349,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return string
 	 */
-	public function get_tax_status( $context = 'view' ) {
-		return $this->get_prop( 'tax_status', $context );
+	public function get_tax_status($context = 'view')
+	{
+		return $this->get_prop('tax_status', $context);
 	}
 
 	/**
@@ -339,8 +360,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return string
 	 */
-	public function get_tax_class( $context = 'view' ) {
-		return $this->get_prop( 'tax_class', $context );
+	public function get_tax_class($context = 'view')
+	{
+		return $this->get_prop('tax_class', $context);
 	}
 
 	/**
@@ -350,8 +372,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return boolean
 	 */
-	public function get_manage_stock( $context = 'view' ) {
-		return $this->get_prop( 'manage_stock', $context );
+	public function get_manage_stock($context = 'view')
+	{
+		return $this->get_prop('manage_stock', $context);
 	}
 
 	/**
@@ -360,8 +383,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return int|null
 	 */
-	public function get_stock_quantity( $context = 'view' ) {
-		return $this->get_prop( 'stock_quantity', $context );
+	public function get_stock_quantity($context = 'view')
+	{
+		return $this->get_prop('stock_quantity', $context);
 	}
 
 	/**
@@ -371,8 +395,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since  3.0.0
 	 * @return string
 	 */
-	public function get_stock_status( $context = 'view' ) {
-		return $this->get_prop( 'stock_status', $context );
+	public function get_stock_status($context = 'view')
+	{
+		return $this->get_prop('stock_status', $context);
 	}
 
 	/**
@@ -382,8 +407,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since  3.0.0
 	 * @return string yes no or notify
 	 */
-	public function get_backorders( $context = 'view' ) {
-		return $this->get_prop( 'backorders', $context );
+	public function get_backorders($context = 'view')
+	{
+		return $this->get_prop('backorders', $context);
 	}
 
 	/**
@@ -393,8 +419,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since  3.5.0
 	 * @return int|string Returns empty string if value not set
 	 */
-	public function get_low_stock_amount( $context = 'view' ) {
-		return $this->get_prop( 'low_stock_amount', $context );
+	public function get_low_stock_amount($context = 'view')
+	{
+		return $this->get_prop('low_stock_amount', $context);
 	}
 
 	/**
@@ -404,8 +431,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since  3.0.0
 	 * @return boolean
 	 */
-	public function get_sold_individually( $context = 'view' ) {
-		return $this->get_prop( 'sold_individually', $context );
+	public function get_sold_individually($context = 'view')
+	{
+		return $this->get_prop('sold_individually', $context);
 	}
 
 	/**
@@ -414,8 +442,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return string
 	 */
-	public function get_weight( $context = 'view' ) {
-		return $this->get_prop( 'weight', $context );
+	public function get_weight($context = 'view')
+	{
+		return $this->get_prop('weight', $context);
 	}
 
 	/**
@@ -424,8 +453,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return string
 	 */
-	public function get_length( $context = 'view' ) {
-		return $this->get_prop( 'length', $context );
+	public function get_length($context = 'view')
+	{
+		return $this->get_prop('length', $context);
 	}
 
 	/**
@@ -434,8 +464,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return string
 	 */
-	public function get_width( $context = 'view' ) {
-		return $this->get_prop( 'width', $context );
+	public function get_width($context = 'view')
+	{
+		return $this->get_prop('width', $context);
 	}
 
 	/**
@@ -444,8 +475,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return string
 	 */
-	public function get_height( $context = 'view' ) {
-		return $this->get_prop( 'height', $context );
+	public function get_height($context = 'view')
+	{
+		return $this->get_prop('height', $context);
 	}
 
 	/**
@@ -454,10 +486,11 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  bool $formatted True by default for legacy support - will be false/not set in future versions to return the array only. Use wc_format_dimensions for formatted versions instead.
 	 * @return string|array
 	 */
-	public function get_dimensions( $formatted = true ) {
-		if ( $formatted ) {
-			wc_deprecated_argument( 'WC_Product::get_dimensions', '3.0', 'By default, get_dimensions has an argument set to true so that HTML is returned. This is to support the legacy version of the method. To get HTML dimensions, instead use wc_format_dimensions() function. Pass false to this method to return an array of dimensions. This will be the new default behavior in future versions.' );
-			return apply_filters( 'woocommerce_product_dimensions', wc_format_dimensions( $this->get_dimensions( false ) ), $this );
+	public function get_dimensions($formatted = true)
+	{
+		if ($formatted) {
+			wc_deprecated_argument('WC_Product::get_dimensions', '3.0', 'By default, get_dimensions has an argument set to true so that HTML is returned. This is to support the legacy version of the method. To get HTML dimensions, instead use wc_format_dimensions() function. Pass false to this method to return an array of dimensions. This will be the new default behavior in future versions.');
+			return apply_filters('woocommerce_product_dimensions', wc_format_dimensions($this->get_dimensions(false)), $this);
 		}
 		return array(
 			'length' => $this->get_length(),
@@ -473,8 +506,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return array
 	 */
-	public function get_upsell_ids( $context = 'view' ) {
-		return $this->get_prop( 'upsell_ids', $context );
+	public function get_upsell_ids($context = 'view')
+	{
+		return $this->get_prop('upsell_ids', $context);
 	}
 
 	/**
@@ -484,8 +518,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return array
 	 */
-	public function get_cross_sell_ids( $context = 'view' ) {
-		return $this->get_prop( 'cross_sell_ids', $context );
+	public function get_cross_sell_ids($context = 'view')
+	{
+		return $this->get_prop('cross_sell_ids', $context);
 	}
 
 	/**
@@ -495,8 +530,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return int
 	 */
-	public function get_parent_id( $context = 'view' ) {
-		return $this->get_prop( 'parent_id', $context );
+	public function get_parent_id($context = 'view')
+	{
+		return $this->get_prop('parent_id', $context);
 	}
 
 	/**
@@ -506,8 +542,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return bool
 	 */
-	public function get_reviews_allowed( $context = 'view' ) {
-		return $this->get_prop( 'reviews_allowed', $context );
+	public function get_reviews_allowed($context = 'view')
+	{
+		return $this->get_prop('reviews_allowed', $context);
 	}
 
 	/**
@@ -517,8 +554,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return string
 	 */
-	public function get_purchase_note( $context = 'view' ) {
-		return $this->get_prop( 'purchase_note', $context );
+	public function get_purchase_note($context = 'view')
+	{
+		return $this->get_prop('purchase_note', $context);
 	}
 
 	/**
@@ -527,8 +565,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return array
 	 */
-	public function get_attributes( $context = 'view' ) {
-		return $this->get_prop( 'attributes', $context );
+	public function get_attributes($context = 'view')
+	{
+		return $this->get_prop('attributes', $context);
 	}
 
 	/**
@@ -538,8 +577,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return array
 	 */
-	public function get_default_attributes( $context = 'view' ) {
-		return $this->get_prop( 'default_attributes', $context );
+	public function get_default_attributes($context = 'view')
+	{
+		return $this->get_prop('default_attributes', $context);
 	}
 
 	/**
@@ -549,8 +589,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return int
 	 */
-	public function get_menu_order( $context = 'view' ) {
-		return $this->get_prop( 'menu_order', $context );
+	public function get_menu_order($context = 'view')
+	{
+		return $this->get_prop('menu_order', $context);
 	}
 
 	/**
@@ -560,8 +601,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return int
 	 */
-	public function get_post_password( $context = 'view' ) {
-		return $this->get_prop( 'post_password', $context );
+	public function get_post_password($context = 'view')
+	{
+		return $this->get_prop('post_password', $context);
 	}
 
 	/**
@@ -571,8 +613,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return array
 	 */
-	public function get_category_ids( $context = 'view' ) {
-		return $this->get_prop( 'category_ids', $context );
+	public function get_category_ids($context = 'view')
+	{
+		return $this->get_prop('category_ids', $context);
 	}
 
 	/**
@@ -582,8 +625,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return array
 	 */
-	public function get_tag_ids( $context = 'view' ) {
-		return $this->get_prop( 'tag_ids', $context );
+	public function get_tag_ids($context = 'view')
+	{
+		return $this->get_prop('tag_ids', $context);
 	}
 
 	/**
@@ -593,8 +637,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return bool
 	 */
-	public function get_virtual( $context = 'view' ) {
-		return $this->get_prop( 'virtual', $context );
+	public function get_virtual($context = 'view')
+	{
+		return $this->get_prop('virtual', $context);
 	}
 
 	/**
@@ -603,8 +648,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return array
 	 */
-	public function get_gallery_image_ids( $context = 'view' ) {
-		return $this->get_prop( 'gallery_image_ids', $context );
+	public function get_gallery_image_ids($context = 'view')
+	{
+		return $this->get_prop('gallery_image_ids', $context);
 	}
 
 	/**
@@ -614,8 +660,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return int
 	 */
-	public function get_shipping_class_id( $context = 'view' ) {
-		return $this->get_prop( 'shipping_class_id', $context );
+	public function get_shipping_class_id($context = 'view')
+	{
+		return $this->get_prop('shipping_class_id', $context);
 	}
 
 	/**
@@ -625,8 +672,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return array
 	 */
-	public function get_downloads( $context = 'view' ) {
-		return $this->get_prop( 'downloads', $context );
+	public function get_downloads($context = 'view')
+	{
+		return $this->get_prop('downloads', $context);
 	}
 
 	/**
@@ -636,8 +684,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return int
 	 */
-	public function get_download_expiry( $context = 'view' ) {
-		return $this->get_prop( 'download_expiry', $context );
+	public function get_download_expiry($context = 'view')
+	{
+		return $this->get_prop('download_expiry', $context);
 	}
 
 	/**
@@ -647,8 +696,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return bool
 	 */
-	public function get_downloadable( $context = 'view' ) {
-		return $this->get_prop( 'downloadable', $context );
+	public function get_downloadable($context = 'view')
+	{
+		return $this->get_prop('downloadable', $context);
 	}
 
 	/**
@@ -658,8 +708,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return int
 	 */
-	public function get_download_limit( $context = 'view' ) {
-		return $this->get_prop( 'download_limit', $context );
+	public function get_download_limit($context = 'view')
+	{
+		return $this->get_prop('download_limit', $context);
 	}
 
 	/**
@@ -669,8 +720,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return string
 	 */
-	public function get_image_id( $context = 'view' ) {
-		return $this->get_prop( 'image_id', $context );
+	public function get_image_id($context = 'view')
+	{
+		return $this->get_prop('image_id', $context);
 	}
 
 	/**
@@ -679,8 +731,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return array of counts
 	 */
-	public function get_rating_counts( $context = 'view' ) {
-		return $this->get_prop( 'rating_counts', $context );
+	public function get_rating_counts($context = 'view')
+	{
+		return $this->get_prop('rating_counts', $context);
 	}
 
 	/**
@@ -689,8 +742,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return float
 	 */
-	public function get_average_rating( $context = 'view' ) {
-		return $this->get_prop( 'average_rating', $context );
+	public function get_average_rating($context = 'view')
+	{
+		return $this->get_prop('average_rating', $context);
 	}
 
 	/**
@@ -699,8 +753,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return int
 	 */
-	public function get_review_count( $context = 'view' ) {
-		return $this->get_prop( 'review_count', $context );
+	public function get_review_count($context = 'view')
+	{
+		return $this->get_prop('review_count', $context);
 	}
 
 	/*
@@ -719,8 +774,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param string $name Product name.
 	 */
-	public function set_name( $name ) {
-		$this->set_prop( 'name', $name );
+	public function set_name($name)
+	{
+		$this->set_prop('name', $name);
 	}
 
 	/**
@@ -729,8 +785,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param string $slug Product slug.
 	 */
-	public function set_slug( $slug ) {
-		$this->set_prop( 'slug', $slug );
+	public function set_slug($slug)
+	{
+		$this->set_prop('slug', $slug);
 	}
 
 	/**
@@ -739,8 +796,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param string|integer|null $date UTC timestamp, or ISO 8601 DateTime. If the DateTime string has no timezone or offset, WordPress site timezone will be assumed. Null if their is no date.
 	 */
-	public function set_date_created( $date = null ) {
-		$this->set_date_prop( 'date_created', $date );
+	public function set_date_created($date = null)
+	{
+		$this->set_date_prop('date_created', $date);
 	}
 
 	/**
@@ -749,8 +807,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param string|integer|null $date UTC timestamp, or ISO 8601 DateTime. If the DateTime string has no timezone or offset, WordPress site timezone will be assumed. Null if their is no date.
 	 */
-	public function set_date_modified( $date = null ) {
-		$this->set_date_prop( 'date_modified', $date );
+	public function set_date_modified($date = null)
+	{
+		$this->set_date_prop('date_modified', $date);
 	}
 
 	/**
@@ -759,8 +818,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param string $status Product status.
 	 */
-	public function set_status( $status ) {
-		$this->set_prop( 'status', $status );
+	public function set_status($status)
+	{
+		$this->set_prop('status', $status);
 	}
 
 	/**
@@ -769,8 +829,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param bool|string $featured Whether the product is featured or not.
 	 */
-	public function set_featured( $featured ) {
-		$this->set_prop( 'featured', wc_string_to_bool( $featured ) );
+	public function set_featured($featured)
+	{
+		$this->set_prop('featured', wc_string_to_bool($featured));
 	}
 
 	/**
@@ -780,12 +841,13 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @throws WC_Data_Exception Throws exception when invalid data is found.
 	 * @param  string $visibility Options: 'hidden', 'visible', 'search' and 'catalog'.
 	 */
-	public function set_catalog_visibility( $visibility ) {
-		$options = array_keys( wc_get_product_visibility_options() );
-		if ( ! in_array( $visibility, $options, true ) ) {
-			$this->error( 'product_invalid_catalog_visibility', __( 'Invalid catalog visibility option.', 'woocommerce' ) );
+	public function set_catalog_visibility($visibility)
+	{
+		$options = array_keys(wc_get_product_visibility_options());
+		if (!in_array($visibility, $options, true)) {
+			$this->error('product_invalid_catalog_visibility', __('Invalid catalog visibility option.', 'woocommerce'));
 		}
-		$this->set_prop( 'catalog_visibility', $visibility );
+		$this->set_prop('catalog_visibility', $visibility);
 	}
 
 	/**
@@ -794,8 +856,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param string $description Product description.
 	 */
-	public function set_description( $description ) {
-		$this->set_prop( 'description', $description );
+	public function set_description($description)
+	{
+		$this->set_prop('description', $description);
 	}
 
 	/**
@@ -804,8 +867,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param string $short_description Product short description.
 	 */
-	public function set_short_description( $short_description ) {
-		$this->set_prop( 'short_description', $short_description );
+	public function set_short_description($short_description)
+	{
+		$this->set_prop('short_description', $short_description);
 	}
 
 	/**
@@ -815,14 +879,15 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @throws WC_Data_Exception Throws exception when invalid data is found.
 	 * @param  string $sku Product SKU.
 	 */
-	public function set_sku( $sku ) {
+	public function set_sku($sku)
+	{
 		$sku = (string) $sku;
-		if ( $this->get_object_read() && ! empty( $sku ) && ! wc_product_has_unique_sku( $this->get_id(), $sku ) ) {
-			$sku_found = wc_get_product_id_by_sku( $sku );
+		if ($this->get_object_read() && !empty($sku) && !wc_product_has_unique_sku($this->get_id(), $sku)) {
+			$sku_found = wc_get_product_id_by_sku($sku);
 
-			$this->error( 'product_invalid_sku', __( 'Invalid or duplicated SKU.', 'woocommerce' ), 400, array( 'resource_id' => $sku_found ) );
+			$this->error('product_invalid_sku', __('Invalid or duplicated SKU.', 'woocommerce'), 400, array('resource_id' => $sku_found));
 		}
-		$this->set_prop( 'sku', $sku );
+		$this->set_prop('sku', $sku);
 	}
 
 	/**
@@ -830,8 +895,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @param string $price Price.
 	 */
-	public function set_price( $price ) {
-		$this->set_prop( 'price', wc_format_decimal( $price ) );
+	public function set_price($price)
+	{
+		$this->set_prop('price', wc_format_decimal($price));
 	}
 
 	/**
@@ -840,8 +906,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param string $price Regular price.
 	 */
-	public function set_regular_price( $price ) {
-		$this->set_prop( 'regular_price', wc_format_decimal( $price ) );
+	public function set_regular_price($price)
+	{
+		$this->set_prop('regular_price', wc_format_decimal($price));
 	}
 
 	/**
@@ -850,8 +917,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param string $price sale price.
 	 */
-	public function set_sale_price( $price ) {
-		$this->set_prop( 'sale_price', wc_format_decimal( $price ) );
+	public function set_sale_price($price)
+	{
+		$this->set_prop('sale_price', wc_format_decimal($price));
 	}
 
 	/**
@@ -860,8 +928,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param string|integer|null $date UTC timestamp, or ISO 8601 DateTime. If the DateTime string has no timezone or offset, WordPress site timezone will be assumed. Null if their is no date.
 	 */
-	public function set_date_on_sale_from( $date = null ) {
-		$this->set_date_prop( 'date_on_sale_from', $date );
+	public function set_date_on_sale_from($date = null)
+	{
+		$this->set_date_prop('date_on_sale_from', $date);
 	}
 
 	/**
@@ -870,8 +939,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param string|integer|null $date UTC timestamp, or ISO 8601 DateTime. If the DateTime string has no timezone or offset, WordPress site timezone will be assumed. Null if their is no date.
 	 */
-	public function set_date_on_sale_to( $date = null ) {
-		$this->set_date_prop( 'date_on_sale_to', $date );
+	public function set_date_on_sale_to($date = null)
+	{
+		$this->set_date_prop('date_on_sale_to', $date);
 	}
 
 	/**
@@ -880,8 +950,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param int $total Total of sales.
 	 */
-	public function set_total_sales( $total ) {
-		$this->set_prop( 'total_sales', absint( $total ) );
+	public function set_total_sales($total)
+	{
+		$this->set_prop('total_sales', absint($total));
 	}
 
 	/**
@@ -891,7 +962,8 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @throws WC_Data_Exception Throws exception when invalid data is found.
 	 * @param  string $status Tax status.
 	 */
-	public function set_tax_status( $status ) {
+	public function set_tax_status($status)
+	{
 		$options = array(
 			'taxable',
 			'shipping',
@@ -899,15 +971,15 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 		);
 
 		// Set default if empty.
-		if ( empty( $status ) ) {
+		if (empty($status)) {
 			$status = 'taxable';
 		}
 
-		if ( ! in_array( $status, $options, true ) ) {
-			$this->error( 'product_invalid_tax_status', __( 'Invalid product tax status.', 'woocommerce' ) );
+		if (!in_array($status, $options, true)) {
+			$this->error('product_invalid_tax_status', __('Invalid product tax status.', 'woocommerce'));
 		}
 
-		$this->set_prop( 'tax_status', $status );
+		$this->set_prop('tax_status', $status);
 	}
 
 	/**
@@ -916,16 +988,17 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param string $class Tax class.
 	 */
-	public function set_tax_class( $class ) {
-		$class         = sanitize_title( $class );
+	public function set_tax_class($class)
+	{
+		$class         = sanitize_title($class);
 		$class         = 'standard' === $class ? '' : $class;
 		$valid_classes = $this->get_valid_tax_classes();
 
-		if ( ! in_array( $class, $valid_classes, true ) ) {
+		if (!in_array($class, $valid_classes, true)) {
 			$class = '';
 		}
 
-		$this->set_prop( 'tax_class', $class );
+		$this->set_prop('tax_class', $class);
 	}
 
 	/**
@@ -933,7 +1006,8 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return array valid tax classes
 	 */
-	protected function get_valid_tax_classes() {
+	protected function get_valid_tax_classes()
+	{
 		return WC_Tax::get_tax_class_slugs();
 	}
 
@@ -943,8 +1017,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param bool $manage_stock Whether or not manage stock is enabled.
 	 */
-	public function set_manage_stock( $manage_stock ) {
-		$this->set_prop( 'manage_stock', wc_string_to_bool( $manage_stock ) );
+	public function set_manage_stock($manage_stock)
+	{
+		$this->set_prop('manage_stock', wc_string_to_bool($manage_stock));
 	}
 
 	/**
@@ -953,8 +1028,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param float|null $quantity Stock quantity.
 	 */
-	public function set_stock_quantity( $quantity ) {
-		$this->set_prop( 'stock_quantity', '' !== $quantity ? wc_stock_amount( $quantity ) : null );
+	public function set_stock_quantity($quantity)
+	{
+		$this->set_prop('stock_quantity', '' !== $quantity ? wc_stock_amount($quantity) : null);
 	}
 
 	/**
@@ -962,13 +1038,14 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @param string $status New status.
 	 */
-	public function set_stock_status( $status = 'instock' ) {
+	public function set_stock_status($status = 'instock')
+	{
 		$valid_statuses = wc_get_product_stock_status_options();
 
-		if ( isset( $valid_statuses[ $status ] ) ) {
-			$this->set_prop( 'stock_status', $status );
+		if (isset($valid_statuses[$status])) {
+			$this->set_prop('stock_status', $status);
 		} else {
-			$this->set_prop( 'stock_status', 'instock' );
+			$this->set_prop('stock_status', 'instock');
 		}
 	}
 
@@ -978,8 +1055,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param string $backorders Options: 'yes', 'no' or 'notify'.
 	 */
-	public function set_backorders( $backorders ) {
-		$this->set_prop( 'backorders', $backorders );
+	public function set_backorders($backorders)
+	{
+		$this->set_prop('backorders', $backorders);
 	}
 
 	/**
@@ -988,8 +1066,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param int|string $amount Empty string if value not set.
 	 * @since 3.5.0
 	 */
-	public function set_low_stock_amount( $amount ) {
-		$this->set_prop( 'low_stock_amount', '' === $amount ? '' : absint( $amount ) );
+	public function set_low_stock_amount($amount)
+	{
+		$this->set_prop('low_stock_amount', '' === $amount ? '' : absint($amount));
 	}
 
 	/**
@@ -998,8 +1077,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param bool $sold_individually Whether or not product is sold individually.
 	 */
-	public function set_sold_individually( $sold_individually ) {
-		$this->set_prop( 'sold_individually', wc_string_to_bool( $sold_individually ) );
+	public function set_sold_individually($sold_individually)
+	{
+		$this->set_prop('sold_individually', wc_string_to_bool($sold_individually));
 	}
 
 	/**
@@ -1008,8 +1088,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param float|string $weight Total weight.
 	 */
-	public function set_weight( $weight ) {
-		$this->set_prop( 'weight', '' === $weight ? '' : wc_format_decimal( $weight ) );
+	public function set_weight($weight)
+	{
+		$this->set_prop('weight', '' === $weight ? '' : wc_format_decimal($weight));
 	}
 
 	/**
@@ -1018,8 +1099,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param float|string $length Total length.
 	 */
-	public function set_length( $length ) {
-		$this->set_prop( 'length', '' === $length ? '' : wc_format_decimal( $length ) );
+	public function set_length($length)
+	{
+		$this->set_prop('length', '' === $length ? '' : wc_format_decimal($length));
 	}
 
 	/**
@@ -1028,8 +1110,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param float|string $width Total width.
 	 */
-	public function set_width( $width ) {
-		$this->set_prop( 'width', '' === $width ? '' : wc_format_decimal( $width ) );
+	public function set_width($width)
+	{
+		$this->set_prop('width', '' === $width ? '' : wc_format_decimal($width));
 	}
 
 	/**
@@ -1038,8 +1121,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param float|string $height Total height.
 	 */
-	public function set_height( $height ) {
-		$this->set_prop( 'height', '' === $height ? '' : wc_format_decimal( $height ) );
+	public function set_height($height)
+	{
+		$this->set_prop('height', '' === $height ? '' : wc_format_decimal($height));
 	}
 
 	/**
@@ -1048,8 +1132,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param array $upsell_ids IDs from the up-sell products.
 	 */
-	public function set_upsell_ids( $upsell_ids ) {
-		$this->set_prop( 'upsell_ids', array_filter( (array) $upsell_ids ) );
+	public function set_upsell_ids($upsell_ids)
+	{
+		$this->set_prop('upsell_ids', array_filter((array) $upsell_ids));
 	}
 
 	/**
@@ -1058,8 +1143,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param array $cross_sell_ids IDs from the cross-sell products.
 	 */
-	public function set_cross_sell_ids( $cross_sell_ids ) {
-		$this->set_prop( 'cross_sell_ids', array_filter( (array) $cross_sell_ids ) );
+	public function set_cross_sell_ids($cross_sell_ids)
+	{
+		$this->set_prop('cross_sell_ids', array_filter((array) $cross_sell_ids));
 	}
 
 	/**
@@ -1068,8 +1154,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param int $parent_id Product parent ID.
 	 */
-	public function set_parent_id( $parent_id ) {
-		$this->set_prop( 'parent_id', absint( $parent_id ) );
+	public function set_parent_id($parent_id)
+	{
+		$this->set_prop('parent_id', absint($parent_id));
 	}
 
 	/**
@@ -1078,8 +1165,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param bool $reviews_allowed Reviews allowed or not.
 	 */
-	public function set_reviews_allowed( $reviews_allowed ) {
-		$this->set_prop( 'reviews_allowed', wc_string_to_bool( $reviews_allowed ) );
+	public function set_reviews_allowed($reviews_allowed)
+	{
+		$this->set_prop('reviews_allowed', wc_string_to_bool($reviews_allowed));
 	}
 
 	/**
@@ -1088,8 +1176,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param string $purchase_note Purchase note.
 	 */
-	public function set_purchase_note( $purchase_note ) {
-		$this->set_prop( 'purchase_note', $purchase_note );
+	public function set_purchase_note($purchase_note)
+	{
+		$this->set_prop('purchase_note', $purchase_note);
 	}
 
 	/**
@@ -1107,16 +1196,17 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param array $raw_attributes Array of WC_Product_Attribute objects.
 	 */
-	public function set_attributes( $raw_attributes ) {
-		$attributes = array_fill_keys( array_keys( $this->get_attributes( 'edit' ) ), null );
-		foreach ( $raw_attributes as $attribute ) {
-			if ( is_a( $attribute, 'WC_Product_Attribute' ) ) {
-				$attributes[ sanitize_title( $attribute->get_name() ) ] = $attribute;
+	public function set_attributes($raw_attributes)
+	{
+		$attributes = array_fill_keys(array_keys($this->get_attributes('edit')), null);
+		foreach ($raw_attributes as $attribute) {
+			if (is_a($attribute, 'WC_Product_Attribute')) {
+				$attributes[sanitize_title($attribute->get_name())] = $attribute;
 			}
 		}
 
-		uasort( $attributes, 'wc_product_attribute_uasort_comparison' );
-		$this->set_prop( 'attributes', $attributes );
+		uasort($attributes, 'wc_product_attribute_uasort_comparison');
+		$this->set_prop('attributes', $attributes);
 	}
 
 	/**
@@ -1125,8 +1215,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param array $default_attributes List of default attributes.
 	 */
-	public function set_default_attributes( $default_attributes ) {
-		$this->set_prop( 'default_attributes', array_map( 'strval', array_filter( (array) $default_attributes, 'wc_array_filter_default_attributes' ) ) );
+	public function set_default_attributes($default_attributes)
+	{
+		$this->set_prop('default_attributes', array_map('strval', array_filter((array) $default_attributes, 'wc_array_filter_default_attributes')));
 	}
 
 	/**
@@ -1135,8 +1226,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param int $menu_order Menu order.
 	 */
-	public function set_menu_order( $menu_order ) {
-		$this->set_prop( 'menu_order', intval( $menu_order ) );
+	public function set_menu_order($menu_order)
+	{
+		$this->set_prop('menu_order', intval($menu_order));
 	}
 
 	/**
@@ -1145,8 +1237,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.6.0
 	 * @param int $post_password Post password.
 	 */
-	public function set_post_password( $post_password ) {
-		$this->set_prop( 'post_password', $post_password );
+	public function set_post_password($post_password)
+	{
+		$this->set_prop('post_password', $post_password);
 	}
 
 	/**
@@ -1155,8 +1248,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param array $term_ids List of terms IDs.
 	 */
-	public function set_category_ids( $term_ids ) {
-		$this->set_prop( 'category_ids', array_unique( array_map( 'intval', $term_ids ) ) );
+	public function set_category_ids($term_ids)
+	{
+		$this->set_prop('category_ids', array_unique(array_map('intval', $term_ids)));
 	}
 
 	/**
@@ -1165,8 +1259,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param array $term_ids List of terms IDs.
 	 */
-	public function set_tag_ids( $term_ids ) {
-		$this->set_prop( 'tag_ids', array_unique( array_map( 'intval', $term_ids ) ) );
+	public function set_tag_ids($term_ids)
+	{
+		$this->set_prop('tag_ids', array_unique(array_map('intval', $term_ids)));
 	}
 
 	/**
@@ -1175,8 +1270,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param bool|string $virtual Whether product is virtual or not.
 	 */
-	public function set_virtual( $virtual ) {
-		$this->set_prop( 'virtual', wc_string_to_bool( $virtual ) );
+	public function set_virtual($virtual)
+	{
+		$this->set_prop('virtual', wc_string_to_bool($virtual));
 	}
 
 	/**
@@ -1185,8 +1281,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param int $id Product shipping class id.
 	 */
-	public function set_shipping_class_id( $id ) {
-		$this->set_prop( 'shipping_class_id', absint( $id ) );
+	public function set_shipping_class_id($id)
+	{
+		$this->set_prop('shipping_class_id', absint($id));
 	}
 
 	/**
@@ -1195,8 +1292,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param bool|string $downloadable Whether product is downloadable or not.
 	 */
-	public function set_downloadable( $downloadable ) {
-		$this->set_prop( 'downloadable', wc_string_to_bool( $downloadable ) );
+	public function set_downloadable($downloadable)
+	{
+		$this->set_prop('downloadable', wc_string_to_bool($downloadable));
 	}
 
 	/**
@@ -1208,42 +1306,43 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @since 3.0.0
 	 */
-	public function set_downloads( $downloads_array ) {
+	public function set_downloads($downloads_array)
+	{
 		// When the object is first hydrated, only the previously persisted downloads will be passed in.
-		$existing_downloads = $this->get_object_read() ? (array) $this->get_prop( 'downloads' ) : $downloads_array;
+		$existing_downloads = $this->get_object_read() ? (array) $this->get_prop('downloads') : $downloads_array;
 		$downloads          = array();
 		$errors             = array();
 
-		$downloads_array    = $this->build_downloads_map( $downloads_array );
-		$existing_downloads = $this->build_downloads_map( $existing_downloads );
+		$downloads_array    = $this->build_downloads_map($downloads_array);
+		$existing_downloads = $this->build_downloads_map($existing_downloads);
 
-		foreach ( $downloads_array as $download ) {
+		foreach ($downloads_array as $download) {
 			$download_id = $download->get_id();
-			$is_new      = ! isset( $existing_downloads[ $download_id ] );
-			$has_changed = ! $is_new && $existing_downloads[ $download_id ]->get_file() !== $downloads_array[ $download_id ]->get_file();
+			$is_new      = !isset($existing_downloads[$download_id]);
+			$has_changed = !$is_new && $existing_downloads[$download_id]->get_file() !== $downloads_array[$download_id]->get_file();
 
 			try {
-				$download->check_is_valid( $this->get_object_read() );
-				$downloads[ $download_id ] = $download;
-			} catch ( Exception $e ) {
+				$download->check_is_valid($this->get_object_read());
+				$downloads[$download_id] = $download;
+			} catch (Exception $e) {
 				// We only add error messages for newly added downloads (let's not overwhelm the user if there are
 				// multiple existing files which are problematic).
-				if ( $is_new || $has_changed ) {
+				if ($is_new || $has_changed) {
 					$errors[] = $e->getMessage();
 				}
 
 				// If the problem is with an existing download, disable it.
-				if ( ! $is_new ) {
-					$download->set_enabled( false );
-					$downloads[ $download_id ] = $download;
+				if (!$is_new) {
+					$download->set_enabled(false);
+					$downloads[$download_id] = $download;
 				}
 			}
 		}
 
-		$this->set_prop( 'downloads', $downloads );
+		$this->set_prop('downloads', $downloads);
 
-		if ( $errors && $this->get_object_read() ) {
-			$this->error( 'product_invalid_download', $errors[0] );
+		if ($errors && $this->get_object_read()) {
+			$this->error('product_invalid_download', $errors[0]);
 		}
 	}
 
@@ -1255,18 +1354,19 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return WC_Product_Download[]
 	 */
-	private function build_downloads_map( array $downloads ): array {
+	private function build_downloads_map(array $downloads): array
+	{
 		$downloads_map = array();
 
-		foreach ( $downloads as $download_data ) {
+		foreach ($downloads as $download_data) {
 			// If the item is already a WC_Product_Download we can add it to the map and move on.
-			if ( is_a( $download_data, 'WC_Product_Download' ) ) {
-				$downloads_map[ $download_data->get_id() ] = $download_data;
+			if (is_a($download_data, 'WC_Product_Download')) {
+				$downloads_map[$download_data->get_id()] = $download_data;
 				continue;
 			}
 
 			// If the item is not an array, there is nothing else we can do (bad data).
-			if ( ! is_array( $download_data ) ) {
+			if (!is_array($download_data)) {
 				continue;
 			}
 
@@ -1274,16 +1374,16 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 			$download_object = new WC_Product_Download();
 
 			// If we don't have a previous hash, generate UUID for download.
-			if ( empty( $download_data['download_id'] ) ) {
+			if (empty($download_data['download_id'])) {
 				$download_data['download_id'] = wp_generate_uuid4();
 			}
 
-			$download_object->set_id( $download_data['download_id'] );
-			$download_object->set_name( $download_data['name'] );
-			$download_object->set_file( $download_data['file'] );
-			$download_object->set_enabled( isset( $download_data['enabled'] ) ? $download_data['enabled'] : true );
+			$download_object->set_id($download_data['download_id']);
+			$download_object->set_name($download_data['name']);
+			$download_object->set_file($download_data['file']);
+			$download_object->set_enabled(isset($download_data['enabled']) ? $download_data['enabled'] : true);
 
-			$downloads_map[ $download_object->get_id() ] = $download_object;
+			$downloads_map[$download_object->get_id()] = $download_object;
 		}
 
 		return $downloads_map;
@@ -1295,8 +1395,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param int|string $download_limit Product download limit.
 	 */
-	public function set_download_limit( $download_limit ) {
-		$this->set_prop( 'download_limit', -1 === (int) $download_limit || '' === $download_limit ? -1 : absint( $download_limit ) );
+	public function set_download_limit($download_limit)
+	{
+		$this->set_prop('download_limit', -1 === (int) $download_limit || '' === $download_limit ? -1 : absint($download_limit));
 	}
 
 	/**
@@ -1305,8 +1406,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param int|string $download_expiry Product download expiry.
 	 */
-	public function set_download_expiry( $download_expiry ) {
-		$this->set_prop( 'download_expiry', -1 === (int) $download_expiry || '' === $download_expiry ? -1 : absint( $download_expiry ) );
+	public function set_download_expiry($download_expiry)
+	{
+		$this->set_prop('download_expiry', -1 === (int) $download_expiry || '' === $download_expiry ? -1 : absint($download_expiry));
 	}
 
 	/**
@@ -1315,10 +1417,11 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param array $image_ids List of image ids.
 	 */
-	public function set_gallery_image_ids( $image_ids ) {
-		$image_ids = wp_parse_id_list( $image_ids );
+	public function set_gallery_image_ids($image_ids)
+	{
+		$image_ids = wp_parse_id_list($image_ids);
 
-		$this->set_prop( 'gallery_image_ids', $image_ids );
+		$this->set_prop('gallery_image_ids', $image_ids);
 	}
 
 	/**
@@ -1327,8 +1430,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since 3.0.0
 	 * @param int|string $image_id Product image id.
 	 */
-	public function set_image_id( $image_id = '' ) {
-		$this->set_prop( 'image_id', $image_id );
+	public function set_image_id($image_id = '')
+	{
+		$this->set_prop('image_id', $image_id);
 	}
 
 	/**
@@ -1336,8 +1440,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @param array $counts Product rating counts.
 	 */
-	public function set_rating_counts( $counts ) {
-		$this->set_prop( 'rating_counts', array_filter( array_map( 'absint', (array) $counts ) ) );
+	public function set_rating_counts($counts)
+	{
+		$this->set_prop('rating_counts', array_filter(array_map('absint', (array) $counts)));
 	}
 
 	/**
@@ -1345,8 +1450,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @param float $average Product average rating.
 	 */
-	public function set_average_rating( $average ) {
-		$this->set_prop( 'average_rating', wc_format_decimal( $average ) );
+	public function set_average_rating($average)
+	{
+		$this->set_prop('average_rating', wc_format_decimal($average));
 	}
 
 	/**
@@ -1354,8 +1460,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @param int $count Product review count.
 	 */
-	public function set_review_count( $count ) {
-		$this->set_prop( 'review_count', absint( $count ) );
+	public function set_review_count($count)
+	{
+		$this->set_prop('review_count', absint($count));
 	}
 
 	/*
@@ -1369,27 +1476,28 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @since 3.0.0
 	 */
-	public function validate_props() {
+	public function validate_props()
+	{
 		// Before updating, ensure stock props are all aligned. Qty, backorders and low stock amount are not needed if not stock managed.
-		if ( ! $this->get_manage_stock() ) {
-			$this->set_stock_quantity( '' );
-			$this->set_backorders( 'no' );
-			$this->set_low_stock_amount( '' );
+		if (!$this->get_manage_stock()) {
+			$this->set_stock_quantity('');
+			$this->set_backorders('no');
+			$this->set_low_stock_amount('');
 			return;
 		}
 
-		$stock_is_above_notification_threshold = ( $this->get_stock_quantity() > get_option( 'woocommerce_notify_no_stock_amount', 0 ) );
-		$backorders_are_allowed                = ( 'no' !== $this->get_backorders() );
+		$stock_is_above_notification_threshold = ($this->get_stock_quantity() > get_option('woocommerce_notify_no_stock_amount', 0));
+		$backorders_are_allowed                = ('no' !== $this->get_backorders());
 
-		if ( $stock_is_above_notification_threshold ) {
+		if ($stock_is_above_notification_threshold) {
 			$new_stock_status = 'instock';
-		} elseif ( $backorders_are_allowed ) {
+		} elseif ($backorders_are_allowed) {
 			$new_stock_status = 'onbackorder';
 		} else {
 			$new_stock_status = 'outofstock';
 		}
 
-		$this->set_stock_status( $new_stock_status );
+		$this->set_stock_status($new_stock_status);
 	}
 
 	/**
@@ -1398,10 +1506,11 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since  3.0.0
 	 * @return int
 	 */
-	public function save() {
+	public function save()
+	{
 		$this->validate_props();
 
-		if ( ! $this->data_store ) {
+		if (!$this->data_store) {
 			return $this->get_id();
 		}
 
@@ -1411,23 +1520,23 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 		 * @param WC_Data          $this The object being saved.
 		 * @param WC_Data_Store_WP $data_store THe data store persisting the data.
 		 */
-		do_action( 'woocommerce_before_' . $this->object_type . '_object_save', $this, $this->data_store );
+		do_action('woocommerce_before_' . $this->object_type . '_object_save', $this, $this->data_store);
 
 		$state = $this->before_data_store_save_or_update();
 
-		if ( $this->get_id() ) {
+		if ($this->get_id()) {
 			$changeset = $this->get_changes();
-			$this->data_store->update( $this );
+			$this->data_store->update($this);
 		} else {
 			$changeset = null;
-			$this->data_store->create( $this );
+			$this->data_store->create($this);
 		}
 
-		$this->after_data_store_save_or_update( $state );
+		$this->after_data_store_save_or_update($state);
 
 		// Update attributes lookup table if the product is new OR it's not but there are actually any changes.
-		if ( is_null( $changeset ) || ! empty( $changeset ) ) {
-			wc_get_container()->get( ProductAttributesLookupDataStore::class )->on_product_changed( $this, $changeset );
+		if (is_null($changeset) || !empty($changeset)) {
+			wc_get_container()->get(ProductAttributesLookupDataStore::class)->on_product_changed($this, $changeset);
 		}
 
 		/**
@@ -1436,7 +1545,7 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 		 * @param WC_Data          $this The object being saved.
 		 * @param WC_Data_Store_WP $data_store THe data store persisting the data.
 		 */
-		do_action( 'woocommerce_after_' . $this->object_type . '_object_save', $this, $this->data_store );
+		do_action('woocommerce_after_' . $this->object_type . '_object_save', $this, $this->data_store);
 
 		return $this->get_id();
 	}
@@ -1447,7 +1556,8 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return mixed A state value that will be passed to after_data_store_save_or_update.
 	 */
-	protected function before_data_store_save_or_update() {
+	protected function before_data_store_save_or_update()
+	{
 	}
 
 	/**
@@ -1456,7 +1566,8 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @param mixed $state The state object that was returned by before_data_store_save_or_update.
 	 */
-	protected function after_data_store_save_or_update( $state ) {
+	protected function after_data_store_save_or_update($state)
+	{
 		$this->maybe_defer_product_sync();
 	}
 
@@ -1466,13 +1577,14 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  bool $force_delete Should the product be deleted permanently.
 	 * @return bool result
 	 */
-	public function delete( $force_delete = false ) {
+	public function delete($force_delete = false)
+	{
 		$product_id = $this->get_id();
-		$deleted    = parent::delete( $force_delete );
+		$deleted    = parent::delete($force_delete);
 
-		if ( $deleted ) {
+		if ($deleted) {
 			$this->maybe_defer_product_sync();
-			wc_get_container()->get( ProductAttributesLookupDataStore::class )->on_product_deleted( $product_id );
+			wc_get_container()->get(ProductAttributesLookupDataStore::class)->on_product_deleted($product_id);
 		}
 
 		return $deleted;
@@ -1481,10 +1593,11 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	/**
 	 * If this is a child product, queue its parent for syncing at the end of the request.
 	 */
-	protected function maybe_defer_product_sync() {
+	protected function maybe_defer_product_sync()
+	{
 		$parent_id = $this->get_parent_id();
-		if ( $parent_id ) {
-			wc_deferred_product_sync( $parent_id );
+		if ($parent_id) {
+			wc_deferred_product_sync($parent_id);
 		}
 	}
 
@@ -1503,8 +1616,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @return bool True if the product supports the feature, false otherwise.
 	 * @since  2.5.0
 	 */
-	public function supports( $feature ) {
-		return apply_filters( 'woocommerce_product_supports', in_array( $feature, $this->supports, true ), $feature, $this );
+	public function supports($feature)
+	{
+		return apply_filters('woocommerce_product_supports', in_array($feature, $this->supports, true), $feature, $this);
 	}
 
 	/**
@@ -1512,7 +1626,8 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return bool
 	 */
-	public function exists() {
+	public function exists()
+	{
 		return false !== $this->get_status();
 	}
 
@@ -1524,8 +1639,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string|array $type Array or string of types.
 	 * @return bool
 	 */
-	public function is_type( $type ) {
-		return ( $this->get_type() === $type || ( is_array( $type ) && in_array( $this->get_type(), $type, true ) ) );
+	public function is_type($type)
+	{
+		return ($this->get_type() === $type || (is_array($type) && in_array($this->get_type(), $type, true)));
 	}
 
 	/**
@@ -1533,8 +1649,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return bool
 	 */
-	public function is_downloadable() {
-		return apply_filters( 'woocommerce_is_downloadable', true === $this->get_downloadable(), $this );
+	public function is_downloadable()
+	{
+		return apply_filters('woocommerce_is_downloadable', true === $this->get_downloadable(), $this);
 	}
 
 	/**
@@ -1542,8 +1659,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return bool
 	 */
-	public function is_virtual() {
-		return apply_filters( 'woocommerce_is_virtual', true === $this->get_virtual(), $this );
+	public function is_virtual()
+	{
+		return apply_filters('woocommerce_is_virtual', true === $this->get_virtual(), $this);
 	}
 
 	/**
@@ -1551,7 +1669,8 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return bool
 	 */
-	public function is_featured() {
+	public function is_featured()
+	{
 		return true === $this->get_featured();
 	}
 
@@ -1560,8 +1679,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return bool
 	 */
-	public function is_sold_individually() {
-		return apply_filters( 'woocommerce_is_sold_individually', true === $this->get_sold_individually(), $this );
+	public function is_sold_individually()
+	{
+		return apply_filters('woocommerce_is_sold_individually', true === $this->get_sold_individually(), $this);
 	}
 
 	/**
@@ -1569,9 +1689,10 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return bool
 	 */
-	public function is_visible() {
+	public function is_visible()
+	{
 		$visible = $this->is_visible_core();
-		return apply_filters( 'woocommerce_product_is_visible', $visible, $this->get_id() );
+		return apply_filters('woocommerce_product_is_visible', $visible, $this->get_id());
 	}
 
 	/**
@@ -1579,24 +1700,25 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return bool
 	 */
-	protected function is_visible_core() {
-		$visible = 'visible' === $this->get_catalog_visibility() || ( is_search() && 'search' === $this->get_catalog_visibility() ) || ( ! is_search() && 'catalog' === $this->get_catalog_visibility() );
+	protected function is_visible_core()
+	{
+		$visible = 'visible' === $this->get_catalog_visibility() || (is_search() && 'search' === $this->get_catalog_visibility()) || (!is_search() && 'catalog' === $this->get_catalog_visibility());
 
-		if ( 'trash' === $this->get_status() ) {
+		if ('trash' === $this->get_status()) {
 			$visible = false;
-		} elseif ( 'publish' !== $this->get_status() && ! current_user_can( 'edit_post', $this->get_id() ) ) {
+		} elseif ('publish' !== $this->get_status() && !current_user_can('edit_post', $this->get_id())) {
 			$visible = false;
 		}
 
-		if ( $this->get_parent_id() ) {
-			$parent_product = wc_get_product( $this->get_parent_id() );
+		if ($this->get_parent_id()) {
+			$parent_product = wc_get_product($this->get_parent_id());
 
-			if ( $parent_product && 'publish' !== $parent_product->get_status() ) {
+			if ($parent_product && 'publish' !== $parent_product->get_status()) {
 				$visible = false;
 			}
 		}
 
-		if ( 'yes' === get_option( 'woocommerce_hide_out_of_stock_items' ) && ! $this->is_in_stock() ) {
+		if ('yes' === get_option('woocommerce_hide_out_of_stock_items') && !$this->is_in_stock()) {
 			$visible = false;
 		}
 
@@ -1608,8 +1730,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return bool
 	 */
-	public function is_purchasable() {
-		return apply_filters( 'woocommerce_is_purchasable', $this->exists() && ( 'publish' === $this->get_status() || current_user_can( 'edit_post', $this->get_id() ) ) && '' !== $this->get_price(), $this );
+	public function is_purchasable()
+	{
+		return apply_filters('woocommerce_is_purchasable', $this->exists() && ('publish' === $this->get_status() || current_user_can('edit_post', $this->get_id())) && '' !== $this->get_price(), $this);
 	}
 
 	/**
@@ -1618,21 +1741,22 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $context What the value is for. Valid values are view and edit.
 	 * @return bool
 	 */
-	public function is_on_sale( $context = 'view' ) {
-		if ( '' !== (string) $this->get_sale_price( $context ) && $this->get_regular_price( $context ) > $this->get_sale_price( $context ) ) {
+	public function is_on_sale($context = 'view')
+	{
+		if ('' !== (string) $this->get_sale_price($context) && $this->get_regular_price($context) > $this->get_sale_price($context)) {
 			$on_sale = true;
 
-			if ( $this->get_date_on_sale_from( $context ) && $this->get_date_on_sale_from( $context )->getTimestamp() > time() ) {
+			if ($this->get_date_on_sale_from($context) && $this->get_date_on_sale_from($context)->getTimestamp() > time()) {
 				$on_sale = false;
 			}
 
-			if ( $this->get_date_on_sale_to( $context ) && $this->get_date_on_sale_to( $context )->getTimestamp() < time() ) {
+			if ($this->get_date_on_sale_to($context) && $this->get_date_on_sale_to($context)->getTimestamp() < time()) {
 				$on_sale = false;
 			}
 		} else {
 			$on_sale = false;
 		}
-		return 'view' === $context ? apply_filters( 'woocommerce_product_is_on_sale', $on_sale, $this ) : $on_sale;
+		return 'view' === $context ? apply_filters('woocommerce_product_is_on_sale', $on_sale, $this) : $on_sale;
 	}
 
 	/**
@@ -1640,8 +1764,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return bool
 	 */
-	public function has_dimensions() {
-		return ( $this->get_length() || $this->get_height() || $this->get_width() ) && ! $this->get_virtual();
+	public function has_dimensions()
+	{
+		return ($this->get_length() || $this->get_height() || $this->get_width()) && !$this->get_virtual();
 	}
 
 	/**
@@ -1649,8 +1774,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return bool
 	 */
-	public function has_weight() {
-		return $this->get_weight() && ! $this->get_virtual();
+	public function has_weight()
+	{
+		return $this->get_weight() && !$this->get_virtual();
 	}
 
 	/**
@@ -1659,8 +1785,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return bool
 	 */
-	public function is_in_stock() {
-		return apply_filters( 'woocommerce_product_is_in_stock', 'outofstock' !== $this->get_stock_status(), $this );
+	public function is_in_stock()
+	{
+		return apply_filters('woocommerce_product_is_in_stock', 'outofstock' !== $this->get_stock_status(), $this);
 	}
 
 	/**
@@ -1668,8 +1795,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return bool
 	 */
-	public function needs_shipping() {
-		return apply_filters( 'woocommerce_product_needs_shipping', ! $this->is_virtual(), $this );
+	public function needs_shipping()
+	{
+		return apply_filters('woocommerce_product_needs_shipping', !$this->is_virtual(), $this);
 	}
 
 	/**
@@ -1677,8 +1805,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return bool
 	 */
-	public function is_taxable() {
-		return apply_filters( 'woocommerce_product_is_taxable', $this->get_tax_status() === 'taxable' && wc_tax_enabled(), $this );
+	public function is_taxable()
+	{
+		return apply_filters('woocommerce_product_is_taxable', $this->get_tax_status() === 'taxable' && wc_tax_enabled(), $this);
 	}
 
 	/**
@@ -1686,8 +1815,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return bool
 	 */
-	public function is_shipping_taxable() {
-		return $this->needs_shipping() && ( $this->get_tax_status() === 'taxable' || $this->get_tax_status() === 'shipping' );
+	public function is_shipping_taxable()
+	{
+		return $this->needs_shipping() && ($this->get_tax_status() === 'taxable' || $this->get_tax_status() === 'shipping');
 	}
 
 	/**
@@ -1695,8 +1825,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return bool
 	 */
-	public function managing_stock() {
-		if ( 'yes' === get_option( 'woocommerce_manage_stock' ) ) {
+	public function managing_stock()
+	{
+		if ('yes' === get_option('woocommerce_manage_stock')) {
 			return $this->get_manage_stock();
 		}
 		return false;
@@ -1707,8 +1838,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return bool
 	 */
-	public function backorders_allowed() {
-		return apply_filters( 'woocommerce_product_backorders_allowed', ( 'yes' === $this->get_backorders() || 'notify' === $this->get_backorders() ), $this->get_id(), $this );
+	public function backorders_allowed()
+	{
+		return apply_filters('woocommerce_product_backorders_allowed', ('yes' === $this->get_backorders() || 'notify' === $this->get_backorders()), $this->get_id(), $this);
 	}
 
 	/**
@@ -1716,8 +1848,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return bool
 	 */
-	public function backorders_require_notification() {
-		return apply_filters( 'woocommerce_product_backorders_require_notification', ( $this->managing_stock() && 'notify' === $this->get_backorders() ), $this );
+	public function backorders_require_notification()
+	{
+		return apply_filters('woocommerce_product_backorders_require_notification', ($this->managing_stock() && 'notify' === $this->get_backorders()), $this);
 	}
 
 	/**
@@ -1726,12 +1859,13 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  int $qty_in_cart (default: 0).
 	 * @return bool
 	 */
-	public function is_on_backorder( $qty_in_cart = 0 ) {
-		if ( 'onbackorder' === $this->get_stock_status() ) {
+	public function is_on_backorder($qty_in_cart = 0)
+	{
+		if ('onbackorder' === $this->get_stock_status()) {
 			return true;
 		}
 
-		return $this->managing_stock() && $this->backorders_allowed() && ( $this->get_stock_quantity() - $qty_in_cart ) < 0;
+		return $this->managing_stock() && $this->backorders_allowed() && ($this->get_stock_quantity() - $qty_in_cart) < 0;
 	}
 
 	/**
@@ -1740,8 +1874,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  mixed $quantity Quantity of a product added to an order.
 	 * @return bool
 	 */
-	public function has_enough_stock( $quantity ) {
-		return ! $this->managing_stock() || $this->backorders_allowed() || $this->get_stock_quantity() >= $quantity;
+	public function has_enough_stock($quantity)
+	{
+		return !$this->managing_stock() || $this->backorders_allowed() || $this->get_stock_quantity() >= $quantity;
 	}
 
 	/**
@@ -1749,9 +1884,10 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return boolean
 	 */
-	public function has_attributes() {
-		foreach ( $this->get_attributes() as $attribute ) {
-			if ( $attribute->get_visible() ) {
+	public function has_attributes()
+	{
+		foreach ($this->get_attributes() as $attribute) {
+			if ($attribute->get_visible()) {
 				return true;
 			}
 		}
@@ -1763,8 +1899,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return bool
 	 */
-	public function has_child() {
-		return 0 < count( $this->get_children() );
+	public function has_child()
+	{
+		return 0 < count($this->get_children());
 	}
 
 	/**
@@ -1773,7 +1910,8 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since  3.0.0
 	 * @return bool
 	 */
-	public function child_has_dimensions() {
+	public function child_has_dimensions()
+	{
 		return false;
 	}
 
@@ -1783,7 +1921,8 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since  3.0.0
 	 * @return boolean
 	 */
-	public function child_has_weight() {
+	public function child_has_weight()
+	{
 		return false;
 	}
 
@@ -1795,8 +1934,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $download_id file identifier.
 	 * @return bool Whether downloadable product has a file attached.
 	 */
-	public function has_file( $download_id = '' ) {
-		return $this->is_downloadable() && $this->get_file( $download_id );
+	public function has_file($download_id = '')
+	{
+		return $this->is_downloadable() && $this->get_file($download_id);
 	}
 
 	/**
@@ -1806,8 +1946,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since  3.0.0
 	 * @return boolean
 	 */
-	public function has_options() {
-		return apply_filters( 'woocommerce_product_has_options', false, $this );
+	public function has_options()
+	{
+		return apply_filters('woocommerce_product_has_options', false, $this);
 	}
 
 	/*
@@ -1821,8 +1962,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return string
 	 */
-	public function get_title() {
-		return apply_filters( 'woocommerce_product_title', $this->get_name(), $this );
+	public function get_title()
+	{
+		return apply_filters('woocommerce_product_title', $this->get_name(), $this);
 	}
 
 	/**
@@ -1830,8 +1972,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return string
 	 */
-	public function get_permalink() {
-		return get_permalink( $this->get_id() );
+	public function get_permalink()
+	{
+		return get_permalink($this->get_id());
 	}
 
 	/**
@@ -1839,7 +1982,8 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return array of IDs
 	 */
-	public function get_children() {
+	public function get_children()
+	{
 		return array();
 	}
 
@@ -1849,7 +1993,8 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since  3.0.0
 	 * @return int
 	 */
-	public function get_stock_managed_by_id() {
+	public function get_stock_managed_by_id()
+	{
 		return $this->get_id();
 	}
 
@@ -1860,16 +2005,17 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return string
 	 */
-	public function get_price_html( $deprecated = '' ) {
-		if ( '' === $this->get_price() ) {
-			$price = apply_filters( 'woocommerce_empty_price_html', '', $this );
-		} elseif ( $this->is_on_sale() ) {
-			$price = wc_format_sale_price( wc_get_price_to_display( $this, array( 'price' => $this->get_regular_price() ) ), wc_get_price_to_display( $this ) ) . $this->get_price_suffix();
+	public function get_price_html($deprecated = '')
+	{
+		if ('' === $this->get_price()) {
+			$price = apply_filters('woocommerce_empty_price_html', '', $this);
+		} elseif ($this->is_on_sale()) {
+			$price = wc_format_sale_price(wc_get_price_to_display($this, array('price' => $this->get_regular_price())), wc_get_price_to_display($this)) . $this->get_price_suffix();
 		} else {
-			$price = wc_price( wc_get_price_to_display( $this ) ) . $this->get_price_suffix();
+			$price = wc_price(wc_get_price_to_display($this)) . $this->get_price_suffix();
 		}
 
-		return apply_filters( 'woocommerce_get_price_html', $price, $this );
+		return apply_filters('woocommerce_get_price_html', $price, $this);
 	}
 
 	/**
@@ -1877,13 +2023,14 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return string Formatted product name
 	 */
-	public function get_formatted_name() {
-		if ( $this->get_sku() ) {
+	public function get_formatted_name()
+	{
+		if ($this->get_sku()) {
 			$identifier = $this->get_sku();
 		} else {
 			$identifier = '#' . $this->get_id();
 		}
-		return sprintf( '%2$s (%1$s)', $identifier, $this->get_name() );
+		return sprintf('%2$s (%1$s)', $identifier, $this->get_name());
 	}
 
 	/**
@@ -1892,7 +2039,8 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since  3.0.0
 	 * @return int
 	 */
-	public function get_min_purchase_quantity() {
+	public function get_min_purchase_quantity()
+	{
 		return 1;
 	}
 
@@ -1902,8 +2050,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since  3.0.0
 	 * @return int Quantity or -1 if unlimited.
 	 */
-	public function get_max_purchase_quantity() {
-		return $this->is_sold_individually() ? 1 : ( $this->backorders_allowed() || ! $this->managing_stock() ? -1 : $this->get_stock_quantity() );
+	public function get_max_purchase_quantity()
+	{
+		return $this->is_sold_individually() ? 1 : ($this->backorders_allowed() || !$this->managing_stock() ? -1 : $this->get_stock_quantity());
 	}
 
 	/**
@@ -1911,8 +2060,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return string
 	 */
-	public function add_to_cart_url() {
-		return apply_filters( 'woocommerce_product_add_to_cart_url', $this->get_permalink(), $this );
+	public function add_to_cart_url()
+	{
+		return apply_filters('woocommerce_product_add_to_cart_url', $this->get_permalink(), $this);
 	}
 
 	/**
@@ -1920,8 +2070,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return string
 	 */
-	public function single_add_to_cart_text() {
-		return apply_filters( 'woocommerce_product_single_add_to_cart_text', __( 'Add to cart', 'woocommerce' ), $this );
+	public function single_add_to_cart_text()
+	{
+		return apply_filters('woocommerce_product_single_add_to_cart_text', __('Add to cart', 'woocommerce'), $this);
 	}
 
 	/**
@@ -1929,8 +2080,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return string
 	 */
-	public function add_to_cart_text() {
-		return apply_filters( 'woocommerce_product_add_to_cart_text', __( 'Read more', 'woocommerce' ), $this );
+	public function add_to_cart_text()
+	{
+		return apply_filters('woocommerce_product_add_to_cart_text', __('Read more', 'woocommerce'), $this);
 	}
 
 	/**
@@ -1939,9 +2091,10 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @since  3.3.0
 	 * @return string
 	 */
-	public function add_to_cart_description() {
+	public function add_to_cart_description()
+	{
 		/* translators: %s: Product title */
-		return apply_filters( 'woocommerce_product_add_to_cart_description', sprintf( __( 'Read more about &ldquo;%s&rdquo;', 'woocommerce' ), $this->get_name() ), $this );
+		return apply_filters('woocommerce_product_add_to_cart_description', sprintf(__('Read more about &ldquo;%s&rdquo;', 'woocommerce'), $this->get_name()), $this);
 	}
 
 	/**
@@ -1952,22 +2105,23 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  bool   $placeholder True to return $placeholder if no image is found, or false to return an empty string.
 	 * @return string
 	 */
-	public function get_image( $size = 'woocommerce_thumbnail', $attr = array(), $placeholder = true ) {
+	public function get_image($size = 'woocommerce_thumbnail', $attr = array(), $placeholder = true)
+	{
 		$image = '';
-		if ( $this->get_image_id() ) {
-			$image = wp_get_attachment_image( $this->get_image_id(), $size, false, $attr );
-		} elseif ( $this->get_parent_id() ) {
-			$parent_product = wc_get_product( $this->get_parent_id() );
-			if ( $parent_product ) {
-				$image = $parent_product->get_image( $size, $attr, $placeholder );
+		if ($this->get_image_id()) {
+			$image = wp_get_attachment_image($this->get_image_id(), $size, false, $attr);
+		} elseif ($this->get_parent_id()) {
+			$parent_product = wc_get_product($this->get_parent_id());
+			if ($parent_product) {
+				$image = $parent_product->get_image($size, $attr, $placeholder);
 			}
 		}
 
-		if ( ! $image && $placeholder ) {
-			$image = wc_placeholder_img( $size, $attr );
+		if (!$image && $placeholder) {
+			$image = wc_placeholder_img($size, $attr);
 		}
 
-		return apply_filters( 'woocommerce_product_get_image', $image, $this, $size, $attr, $placeholder, $image );
+		return apply_filters('woocommerce_product_get_image', $image, $this, $size, $attr, $placeholder, $image);
 	}
 
 	/**
@@ -1975,12 +2129,13 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return string
 	 */
-	public function get_shipping_class() {
+	public function get_shipping_class()
+	{
 		$class_id = $this->get_shipping_class_id();
-		if ( $class_id ) {
-			$term = get_term_by( 'id', $class_id, 'product_shipping_class' );
+		if ($class_id) {
+			$term = get_term_by('id', $class_id, 'product_shipping_class');
 
-			if ( $term && ! is_wp_error( $term ) ) {
+			if ($term && !is_wp_error($term)) {
 				return $term->slug;
 			}
 		}
@@ -1993,18 +2148,19 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $attribute to get.
 	 * @return string
 	 */
-	public function get_attribute( $attribute ) {
+	public function get_attribute($attribute)
+	{
 		$attributes = $this->get_attributes();
-		$attribute  = sanitize_title( $attribute );
+		$attribute  = sanitize_title($attribute);
 
-		if ( isset( $attributes[ $attribute ] ) ) {
-			$attribute_object = $attributes[ $attribute ];
-		} elseif ( isset( $attributes[ 'pa_' . $attribute ] ) ) {
-			$attribute_object = $attributes[ 'pa_' . $attribute ];
+		if (isset($attributes[$attribute])) {
+			$attribute_object = $attributes[$attribute];
+		} elseif (isset($attributes['pa_' . $attribute])) {
+			$attribute_object = $attributes['pa_' . $attribute];
 		} else {
 			return '';
 		}
-		return $attribute_object->is_taxonomy() ? implode( ', ', wc_get_product_terms( $this->get_id(), $attribute_object->get_name(), array( 'fields' => 'names' ) ) ) : wc_implode_text_attributes( $attribute_object->get_options() );
+		return $attribute_object->is_taxonomy() ? implode(', ', wc_get_product_terms($this->get_id(), $attribute_object->get_name(), array('fields' => 'names'))) : wc_implode_text_attributes($attribute_object->get_options());
 	}
 
 	/**
@@ -2013,13 +2169,14 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  int $value Optional. Rating value to get the count for. By default returns the count of all rating values.
 	 * @return int
 	 */
-	public function get_rating_count( $value = null ) {
+	public function get_rating_count($value = null)
+	{
 		$counts = $this->get_rating_counts();
 
-		if ( is_null( $value ) ) {
-			return array_sum( $counts );
-		} elseif ( isset( $counts[ $value ] ) ) {
-			return absint( $counts[ $value ] );
+		if (is_null($value)) {
+			return array_sum($counts);
+		} elseif (isset($counts[$value])) {
+			return absint($counts[$value]);
 		} else {
 			return 0;
 		}
@@ -2031,18 +2188,19 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $download_id file identifier.
 	 * @return array|false if not found
 	 */
-	public function get_file( $download_id = '' ) {
+	public function get_file($download_id = '')
+	{
 		$files = $this->get_downloads();
 
-		if ( '' === $download_id ) {
-			$file = count( $files ) ? current( $files ) : false;
-		} elseif ( isset( $files[ $download_id ] ) ) {
-			$file = $files[ $download_id ];
+		if ('' === $download_id) {
+			$file = count($files) ? current($files) : false;
+		} elseif (isset($files[$download_id])) {
+			$file = $files[$download_id];
 		} else {
 			$file = false;
 		}
 
-		return apply_filters( 'woocommerce_product_file', $file, $this, $download_id );
+		return apply_filters('woocommerce_product_file', $file, $this, $download_id);
 	}
 
 	/**
@@ -2051,12 +2209,13 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $download_id file identifier.
 	 * @return string
 	 */
-	public function get_file_download_path( $download_id ) {
+	public function get_file_download_path($download_id)
+	{
 		$files     = $this->get_downloads();
-		$file_path = isset( $files[ $download_id ] ) ? $files[ $download_id ]->get_file() : '';
+		$file_path = isset($files[$download_id]) ? $files[$download_id]->get_file() : '';
 
 		// allow overriding based on the particular file being requested.
-		return apply_filters( 'woocommerce_product_file_download_path', $file_path, $this, $download_id );
+		return apply_filters('woocommerce_product_file_download_path', $file_path, $this, $download_id);
 	}
 
 	/**
@@ -2066,21 +2225,22 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  integer $qty   passed on to get_price_including_tax() or get_price_excluding_tax().
 	 * @return string
 	 */
-	public function get_price_suffix( $price = '', $qty = 1 ) {
+	public function get_price_suffix($price = '', $qty = 1)
+	{
 		$html = '';
 
-		$suffix = get_option( 'woocommerce_price_display_suffix' );
-		if ( $suffix && wc_tax_enabled() && 'taxable' === $this->get_tax_status() ) {
-			if ( '' === $price ) {
+		$suffix = get_option('woocommerce_price_display_suffix');
+		if ($suffix && wc_tax_enabled() && 'taxable' === $this->get_tax_status()) {
+			if ('' === $price) {
 				$price = $this->get_price();
 			}
 			$replacements = array(
-				'{price_including_tax}' => wc_price( wc_get_price_including_tax( $this, array( 'qty' => $qty, 'price' => $price ) ) ), // @phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.ArrayItemNoNewLine, WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound
-				'{price_excluding_tax}' => wc_price( wc_get_price_excluding_tax( $this, array( 'qty' => $qty, 'price' => $price ) ) ), // @phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound
+				'{price_including_tax}' => wc_price(wc_get_price_including_tax($this, array('qty' => $qty, 'price' => $price))), // @phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.ArrayItemNoNewLine, WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound
+				'{price_excluding_tax}' => wc_price(wc_get_price_excluding_tax($this, array('qty' => $qty, 'price' => $price))), // @phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound
 			);
-			$html         = str_replace( array_keys( $replacements ), array_values( $replacements ), ' <small class="woocommerce-price-suffix">' . wp_kses_post( $suffix ) . '</small>' );
+			$html         = str_replace(array_keys($replacements), array_values($replacements), ' <small class="woocommerce-price-suffix">' . wp_kses_post($suffix) . '</small>');
 		}
-		return apply_filters( 'woocommerce_get_price_suffix', $html, $this, $price, $qty );
+		return apply_filters('woocommerce_get_price_suffix', $html, $this, $price, $qty);
 	}
 
 	/**
@@ -2088,7 +2248,8 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return string[]
 	 */
-	public function get_availability() {
+	public function get_availability()
+	{
 		return apply_filters(
 			'woocommerce_get_availability',
 			array(
@@ -2104,19 +2265,20 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return string
 	 */
-	protected function get_availability_text() {
-		if ( ! $this->is_in_stock() ) {
-			$availability = __( 'Out of stock', 'woocommerce' );
-		} elseif ( $this->managing_stock() && $this->is_on_backorder( 1 ) ) {
-			$availability = $this->backorders_require_notification() ? __( 'Available on backorder', 'woocommerce' ) : '';
-		} elseif ( ! $this->managing_stock() && $this->is_on_backorder( 1 ) ) {
-			$availability = __( 'Available on backorder', 'woocommerce' );
-		} elseif ( $this->managing_stock() ) {
-			$availability = wc_format_stock_for_display( $this );
+	protected function get_availability_text()
+	{
+		if (!$this->is_in_stock()) {
+			$availability = __('Out of stock', 'woocommerce');
+		} elseif ($this->managing_stock() && $this->is_on_backorder(1)) {
+			$availability = $this->backorders_require_notification() ? __('Available on backorder', 'woocommerce') : '';
+		} elseif (!$this->managing_stock() && $this->is_on_backorder(1)) {
+			$availability = __('Available on backorder', 'woocommerce');
+		} elseif ($this->managing_stock()) {
+			$availability = wc_format_stock_for_display($this);
 		} else {
 			$availability = '';
 		}
-		return apply_filters( 'woocommerce_get_availability_text', $availability, $this );
+		return apply_filters('woocommerce_get_availability_text', $availability, $this);
 	}
 
 	/**
@@ -2124,14 +2286,15 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 *
 	 * @return string
 	 */
-	protected function get_availability_class() {
-		if ( ! $this->is_in_stock() ) {
+	protected function get_availability_class()
+	{
+		if (!$this->is_in_stock()) {
 			$class = 'out-of-stock';
-		} elseif ( ( $this->managing_stock() && $this->is_on_backorder( 1 ) ) || ( ! $this->managing_stock() && $this->is_on_backorder( 1 ) ) ) {
+		} elseif (($this->managing_stock() && $this->is_on_backorder(1)) || (!$this->managing_stock() && $this->is_on_backorder(1))) {
 			$class = 'available-on-backorder';
 		} else {
 			$class = 'in-stock';
 		}
-		return apply_filters( 'woocommerce_get_availability_class', $class, $this );
+		return apply_filters('woocommerce_get_availability_class', $class, $this);
 	}
 }
