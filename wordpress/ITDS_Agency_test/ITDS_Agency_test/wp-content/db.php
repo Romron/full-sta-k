@@ -1,1 +1,0 @@
-F:/web/full_stack/wordpress/ITDS_Agency_test/ITDS_Agency_test/wp-content/plugins/query-monitor/wp-content/db.php
