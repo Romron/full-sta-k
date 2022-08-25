@@ -21,7 +21,6 @@
 		<div class="wrap-heder">
 			<nav class="nav-top">
 				<div class="wrap-menu">
-
 					<?php wp_nav_menu(
 						array(
 							'theme_location' => 'heder_nav_menu-1',
@@ -31,7 +30,6 @@
 
 						)
 					); ?>
-
 					<div class="wrap-right-block">
 						<?php global $ITDS_Agency_options; ?>
 						<div class="wrap-right-block__text">
@@ -45,10 +43,8 @@
 				</div>
 			</nav>
 			<header>
-				<div class="logo"><a href="<?php echo get_home_url(); ?>"><img src="img/logo.png" alt="logo"></a></div>
-
+				<div class="logo"><a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_header_image(); ?>" alt="logo"></a></div>
 				<?php get_search_form(); ?>
-
 				<div class="phone">
 					<div class="phone__row">
 						<div class="phone__icon"><img src="img/akar-icons_phone.png" alt="icon-tel"></div>

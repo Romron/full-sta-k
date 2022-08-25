@@ -9,7 +9,7 @@
 <div class="wrap-footer">
 	<footer>
 		<div class="footer-logo">
-			<div class="block__logo"><img src="img/logo.png" alt="logo"></div>
+			<div class="block__logo"><img src="<?php echo get_header_image(); ?>" alt="logo"></div>
 			<div class="footer-log__text">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor mattis egestas arcu vitae
 			</div>

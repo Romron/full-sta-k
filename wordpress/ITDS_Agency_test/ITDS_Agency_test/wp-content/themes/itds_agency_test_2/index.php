@@ -1,4 +1,4 @@
-<?php get_header('/parts/header.php'); ?>
+<?php get_header(); ?>
 
 
 
@@ -119,7 +119,7 @@
 </div>
 
 <div class="instagram">
-	<?php get_template_part('parts/instagram-tape'); ?>
+	<?php get_template_part('template-parts/instagram-tape'); ?>
 </div>
 
 
