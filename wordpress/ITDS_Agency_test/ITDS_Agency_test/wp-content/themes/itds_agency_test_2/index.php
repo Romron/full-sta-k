@@ -151,7 +151,7 @@
 <?php get_footer() ?>
 
 
-git config --global credential.helper store
+<!-- git config --global credential.helper store
 
 F:\web\full-sta-k\.git\git.store
 
@@ -160,3 +160,8 @@ username=Romron
 password=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
 
 git config --global credential.helper store --file F:\web\full-sta-k\.git\git.store
+
+Username: Roman
+Password: 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
+
+git config --global Password: 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 -->
