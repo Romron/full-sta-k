@@ -65,10 +65,9 @@
 		</div>
 		<div class="popular-goods__cards-block">
 			<?php
-			$args_popular_goods = array(
+			$args_popular_goods = array(		// указать параметры выборки
 				'posts_per_page' => 4,
 			);
-
 			$product_query_popular_goods = wc_get_products($args_popular_goods);
 			if (!empty($product_query_popular_goods)) {
 				foreach ($product_query_popular_goods as $product) {
@@ -81,10 +80,7 @@
 				echo 'постов нет';
 			};
 			wp_reset_postdata();
-
 			?>
-
-
 		</div>
 	</div>
 
@@ -100,17 +96,11 @@
 			</div>
 		</div>
 		<div class="novelties__cards-block">
-
 			<?php
-
-			$args_novelties = array(
+			$args_novelties = array(		// указать параметры выборки 
 				'posts_per_page' => 4,
 			);
-
 			$product_query_novelties = wc_get_products($args_novelties);
-
-
-
 			if (!empty($product_query_novelties)) {
 				foreach ($product_query_novelties as $product) {
 

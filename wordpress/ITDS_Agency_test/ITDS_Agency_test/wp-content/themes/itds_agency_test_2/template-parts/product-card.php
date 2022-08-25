@@ -24,7 +24,6 @@ $product = $args['product'];
       </div>
    </div>
 
-
    <div class="product-card__row product-foto">
       <?php echo $product->get_image('woocommerce_thumbnail'); ?>
    </div>
@@ -47,22 +46,5 @@ $product = $args['product'];
                   $product,
                   $args
                ) ?>" class="btn-bye">Купить</a>
-      <?php echo esc_html_e($product->get_id()); ?>
-      <?php
-
-      // echo apply_filters(
-      //    'woocommerce_loop_add_to_cart_link', // WPCS: XSS ok.
-      //    sprintf(
-      //       '<a href="%s" data-quantity="%s" class="%s" %s>%s</a>',
-      //       esc_url($product->add_to_cart_url()),
-      //       esc_attr(isset($args['quantity']) ? $args['quantity'] : 1),
-      //       esc_attr(isset($args['class']) ? $args['class'] : 'button'),
-      //       isset($args['attributes']) ? wc_implode_html_attributes($args['attributes']) : '',
-      //       esc_html('Купить')
-      //    ),
-      // );
-
-
-      ?>
    </div>
 </div>
