@@ -62,9 +62,9 @@
 					)
 				); ?>
 				<div class="wrap-icons-block">
-					<a href="#"><img src="img/icons-block-heart.png" alt="Избранное"></a>
-					<a href="#"><img src="img/icons-block-diagram.png" alt="Диаграма"></a>
-					<a href="#"><img src="img/icons-block-basket.png" alt="Корзина"></a>
+					<a href="#"><img src="<?php echo get_template_directory_uri() . '\assets\img\icons-block-heart.png' ?>" alt="Избранное"></a>
+					<a href="#"><img src="<?php echo get_template_directory_uri() . '\assets\img\icons-block-diagram.png' ?>" alt="Диаграма"></a>
+					<a href="#"><img src=" <?php echo get_template_directory_uri() . '\assets\img\icons-block-basket.png' ?>" alt="Корзина"></a>
 				</div>
 				<div class="basket">корзина</div>
 			</nav>

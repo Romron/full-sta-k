@@ -68,3 +68,5 @@ Stack trace:
 #13 {main}
   thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product\product-thumbnails.php on line 27
 
+2022-08-26T10:27:52+00:00 CRITICAL syntax error, unexpected token "function" in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php on line 27
+
