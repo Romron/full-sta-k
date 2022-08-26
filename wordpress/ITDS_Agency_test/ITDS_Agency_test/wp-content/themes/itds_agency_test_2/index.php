@@ -71,9 +71,6 @@
 			$product_query_popular_goods = wc_get_products($args_popular_goods);
 			if (!empty($product_query_popular_goods)) {
 				foreach ($product_query_popular_goods as $product) {
-
-					$products_type = $product->get_type();
-
 					get_template_part('/template-parts/product-card', null, array('product' => $product));
 				};
 			} else {

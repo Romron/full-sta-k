@@ -37,8 +37,8 @@
 							<div class="sep"></div>
 							<div class="wrap-right-block__reg"><a href="#">Регистрация</a></div>
 						</div>
-						<div class="block-icon"><a href="<?php echo esc_url($ITDS_Agency_options['social_networks_Inst-link']); ?>"><img src="img/icons_inst.png" alt=""></a></div>
-						<div class="block-icon"><a href="<?php echo esc_url($ITDS_Agency_options['social_networks_fb-link']); ?>"><img src="img/icons_fb.png" alt=""></a></div>
+						<div class="block-icon"><a href="<?php echo esc_url($ITDS_Agency_options['social_networks_Inst-link']); ?>"><img src="<?php echo get_template_directory_uri() . '\assets\img\icons_inst.png' ?>" alt=""></a></div>
+						<div class="block-icon"><a href="<?php echo esc_url($ITDS_Agency_options['social_networks_fb-link']); ?>"><img src="<?php echo get_template_directory_uri() . '\assets\img\icons_fb.png' ?>" alt=""></a></div>
 					</div>
 				</div>
 			</nav>

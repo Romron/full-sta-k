@@ -1064,6 +1064,13 @@ main {
 .cat-slider__card-goods {
 	width: 150px;
 	height: 212px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.cat-slider__card-goods a {
+	color: #FFFFFF;
 }
 
 .cat-slider__card-goods-foto {
@@ -1072,6 +1079,10 @@ main {
 	left: 432px;
 	top: 459px;
 	filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15));
+	border-radius: 5px;
+}
+
+.cat-slider__card-goods-foto img {
 	border-radius: 5px;
 }
 

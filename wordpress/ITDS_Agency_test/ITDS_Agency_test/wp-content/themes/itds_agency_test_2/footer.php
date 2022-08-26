@@ -14,8 +14,8 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor mattis egestas arcu vitae
 			</div>
 			<div class="footer__block-icon">
-				<div class="block-icon"><a href="#"><img src="img/icons_inst.png" alt=""></a></div>
-				<div class="block-icon"><a href="#"><img src="img/icons_fb.png" alt=""></a></div>
+				<div class="block-icon"><a href="#"><img src="<?php echo get_template_directory_uri() . '\assets\img\icons_inst.png' ?>" alt=""></a></div>
+				<div class="block-icon"><a href="#"><img src="<?php echo get_template_directory_uri() . '\assets\img\icons_fb.png' ?>" alt=""></a></div>
 			</div>
 		</div>
 		<div class="footer-menu">
@@ -45,7 +45,7 @@
 				<a href="#">
 					<span class="footer-contacts__text-row">
 						<span class="block-icon">
-							<img src="img/icon-telephone.png" alt="">
+							<img src="<?php echo get_template_directory_uri() . '\assets\img\icon-telephone.png' ?>" alt="">
 						</span>
 						<span class="footer-contacts__text-text"><?php esc_html_e($ITDS_Agency_options['contact_fone-number'], 'ITDS_Agency_test'); ?></span>
 					</span>
@@ -53,7 +53,7 @@
 				<a href="#">
 					<span class="footer-contacts__text-row">
 						<span class="block-icon">
-							<img src="img/icon-maile.png" alt="">
+							<img src="<?php echo get_template_directory_uri() . '\assets\img\icon-maile.png' ?>" alt="">
 						</span>
 						<span class="footer-contacts__text-text"><?php esc_html_e($ITDS_Agency_options['contact_email'], 'ITDS_Agency_test'); ?></span>
 					</span>
@@ -61,7 +61,7 @@
 				<a href="<?php echo esc_url($ITDS_Agency_options['contact_map-link']); ?>">
 					<span class="footer-contacts__text-row">
 						<span class="block-icon">
-							<img src="img/icon-map.png" alt="">
+							<img src="<?php echo get_template_directory_uri() . '\assets\img\icon-map.png' ?>" alt="">
 						</span>
 						<span class="footer-contacts__text-text">Локальные шоурумы</span>
 					</span>
