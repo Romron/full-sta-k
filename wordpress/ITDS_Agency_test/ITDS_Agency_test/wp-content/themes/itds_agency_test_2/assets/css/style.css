@@ -821,6 +821,8 @@ footer a {
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 	border-radius: 5px;
 
+	border: 1px solid #fd3f05;
+
 }
 
 .product-card__row {
@@ -1157,6 +1159,10 @@ main {
 	justify-content: space-between;
 	margin-bottom: 70px;
 	min-height: 400px;
+
+
+	border: 1px solid #0515fd;
+
 }
 
 .goods-block {

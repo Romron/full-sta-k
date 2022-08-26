@@ -44,10 +44,11 @@ defined('ABSPATH') || exit;
 			</div>
 		</div>
 
-
-	<?php
+		<!-- <div class="block-goods"> -->
+		<?php
 
 		woocommerce_product_loop_start();
+
 
 		if (wc_get_loop_prop('total')) {
 			while (have_posts()) {
@@ -58,12 +59,15 @@ defined('ABSPATH') || exit;
 				 */
 				do_action('woocommerce_shop_loop');
 
-				wc_get_template_part('content', 'product');
+				// wc_get_template_part('content', 'product');
+				get_template_part('/template-parts/product-card', null, array('product' => $product));
 			}
 		}
 
 		woocommerce_product_loop_end();
-
+		?>
+		<!-- </div>  -->
+	<?php
 		/**
 		 * Hook: woocommerce_after_shop_loop.
 		 *
