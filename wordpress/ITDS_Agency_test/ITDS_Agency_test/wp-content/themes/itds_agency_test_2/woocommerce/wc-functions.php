@@ -52,7 +52,7 @@ add_filter('woocommerce_pagination_args', 'itds_agency_test_2_woocommerce_pagina
 function itds_agency_test_2_woocommerce_pagination_args_filter($array)
 {
    $array = array(
-      'prev_text' => is_rtl() ? '&#10095;' : '&#10094;',
+      'prev_text' => is_rtl() ? '&#10095;' : '&#10094;',    // вставить код нужных стрелок
       'next_text' => is_rtl() ? '&#10094;' : '&#10095;',
       // 'type'      => 'list',
    );
