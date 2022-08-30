@@ -13,14 +13,14 @@ $product = $args['product'];
          </div>
 
       <?php else : ?>
-         <div class="wrap-rat-1" style="background-color:#fab2b2;">
-            <img src="img/icon-star.png" alt="star">
+         <div class="wrap-rat-1" style="background-color:#fcd9d9;">
+            <img src="<?php echo get_template_directory_uri() . '\assets\img\icon-star.png' ?>" alt="star">
             <div class="rating"><?php echo get_post_meta(get_the_ID(), 'rating', true); ?></div>
          </div>
       <?php endif; ?>
       <div class="wrap-rat-2">
-         <img src="img/icon-rat-hart.png" alt="">
-         <img src="img/icon-rat-diagram.png" alt="">
+         <img src="<?php echo get_template_directory_uri() . '\assets\img\icon-rat-hart.png' ?>" alt="">
+         <img src="<?php echo get_template_directory_uri() . '\assets\img\icon-rat-diagram.png' ?>" alt="">
       </div>
    </div>
 

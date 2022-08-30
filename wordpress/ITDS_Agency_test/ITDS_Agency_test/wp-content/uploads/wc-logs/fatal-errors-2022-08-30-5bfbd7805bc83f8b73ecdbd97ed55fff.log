@@ -1,0 +1,64 @@
+2022-08-30T10:04:29+00:00 CRITICAL Uncaught Error: Call to a member function get_average_rating() on null in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:9
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php(53): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): my_woocommerce_shop_loop('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\archive-product.php(60): do_action('woocommerce_sho...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#11 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 9
+
+2022-08-30T10:05:02+00:00 CRITICAL Uncaught Error: Call to a member function get_average_rating() on string in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:9
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php(53): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): my_woocommerce_shop_loop('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\archive-product.php(60): do_action('woocommerce_sho...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#11 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 9
+
+2022-08-30T11:06:19+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "itds_agency_test_2_woocommerce_pagination_args_filter" not found or invalid function name in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(191): WP_Hook->apply_filters(Array, Array)
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\loop\pagination.php(46): apply_filters('woocommerce_pag...', Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full-sta...')
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1535): wc_get_template('loop/pagination...', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): woocommerce_pagination('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\archive-product.php(76): do_action('woocommerce_aft...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#11 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php on line 307
+
+2022-08-30T11:07:01+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "itds_agency_test_2_woocommerce_pagination_args_filter" not found or invalid function name in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(191): WP_Hook->apply_filters(Array, Array)
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\loop\pagination.php(46): apply_filters('woocommerce_pag...', Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full-sta...')
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1535): wc_get_template('loop/pagination...', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): woocommerce_pagination('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\archive-product.php(76): do_action('woocommerce_aft...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#11 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php on line 307
+
