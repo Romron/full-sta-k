@@ -991,7 +991,7 @@ main {
 }
 
 .breadcrumb-nav {
-	width: 185px;
+	min-width: 185px;
 	height: 20px;
 	font-family: 'Montserrat';
 	font-style: normal;
