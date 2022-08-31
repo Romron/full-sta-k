@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Redux Framework checkbox config.
  * For full documentation, please visit: http://devs.redux.io/
@@ -6,31 +7,31 @@
  * @package Redux Framework
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'            => esc_html__( 'Checkbox', 'your-textdomain-here' ),
+		'title'            => esc_html__('Checkbox', 'ITDS_Agency_test_2'),
 		'id'               => 'basic-checkbox',
 		'subsection'       => true,
 		'customizer_width' => '450px',
-		'desc'             => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/core-fields/checkbox.html" target="_blank">https://devs.redux.io/core-fields/checkbox.html</a>',
+		'desc'             => esc_html__('For full documentation on this field, visit: ', 'ITDS_Agency_test_2') . '<a href="https://devs.redux.io/core-fields/checkbox.html" target="_blank">https://devs.redux.io/core-fields/checkbox.html</a>',
 		'fields'           => array(
 			array(
 				'id'       => 'opt-checkbox',
 				'type'     => 'checkbox',
-				'title'    => esc_html__( 'Checkbox Option', 'your-textdomain-here' ),
-				'subtitle' => esc_html__( 'No validation can be done on this field type', 'your-textdomain-here' ),
-				'desc'     => esc_html__( 'This is the description field, again good for additional info.', 'your-textdomain-here' ),
+				'title'    => esc_html__('Checkbox Option', 'ITDS_Agency_test_2'),
+				'subtitle' => esc_html__('No validation can be done on this field type', 'ITDS_Agency_test_2'),
+				'desc'     => esc_html__('This is the description field, again good for additional info.', 'ITDS_Agency_test_2'),
 				'default'  => '1', // 1 = on | 0 = off.
 			),
 			array(
 				'id'       => 'opt-multi-check',
 				'type'     => 'checkbox',
-				'title'    => esc_html__( 'Multi Checkbox Option', 'your-textdomain-here' ),
-				'subtitle' => esc_html__( 'No validation can be done on this field type', 'your-textdomain-here' ),
-				'desc'     => esc_html__( 'This is the description field, again good for additional info.', 'your-textdomain-here' ),
+				'title'    => esc_html__('Multi Checkbox Option', 'ITDS_Agency_test_2'),
+				'subtitle' => esc_html__('No validation can be done on this field type', 'ITDS_Agency_test_2'),
+				'desc'     => esc_html__('This is the description field, again good for additional info.', 'ITDS_Agency_test_2'),
 
 				// Must provide key => value pairs for multi checkbox options.
 				'options'  => array(
@@ -47,17 +48,17 @@ Redux::set_section(
 			array(
 				'id'       => 'opt-checkbox-data',
 				'type'     => 'checkbox',
-				'title'    => esc_html__( 'Multi Checkbox Option (with menu data)', 'your-textdomain-here' ),
-				'subtitle' => esc_html__( 'No validation can be done on this field type', 'your-textdomain-here' ),
-				'desc'     => esc_html__( 'This is the description field, again good for additional info.', 'your-textdomain-here' ),
+				'title'    => esc_html__('Multi Checkbox Option (with menu data)', 'ITDS_Agency_test_2'),
+				'subtitle' => esc_html__('No validation can be done on this field type', 'ITDS_Agency_test_2'),
+				'desc'     => esc_html__('This is the description field, again good for additional info.', 'ITDS_Agency_test_2'),
 				'data'     => 'menu',
 			),
 			array(
 				'id'       => 'opt-checkbox-sidebar',
 				'type'     => 'checkbox',
-				'title'    => esc_html__( 'Multi Checkbox Option (with sidebar data)', 'your-textdomain-here' ),
-				'subtitle' => esc_html__( 'No validation can be done on this field type', 'your-textdomain-here' ),
-				'desc'     => esc_html__( 'This is the description field, again good for additional info.', 'your-textdomain-here' ),
+				'title'    => esc_html__('Multi Checkbox Option (with sidebar data)', 'ITDS_Agency_test_2'),
+				'subtitle' => esc_html__('No validation can be done on this field type', 'ITDS_Agency_test_2'),
+				'desc'     => esc_html__('This is the description field, again good for additional info.', 'ITDS_Agency_test_2'),
 				'data'     => 'sidebars',
 			),
 		),

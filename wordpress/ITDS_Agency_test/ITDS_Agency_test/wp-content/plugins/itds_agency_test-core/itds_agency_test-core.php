@@ -8,7 +8,7 @@ Version: 1.0
 Author: Roman
 Author URI: #
 License: GPLv2 or later
-Text Domain: itds_agency_test-core
+Text Domain: itds_agency_test_2-core
 */
 
 require plugin_dir_path(__FILE__) . '/inc/custom_posts_type.php';

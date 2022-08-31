@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ReduxFramework Sample Config File
  * For full documentation, please visit: http://devs.redux.io/
@@ -6,9 +7,9 @@
  * @package Redux Framework
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
-if ( ! class_exists( 'Redux' ) ) {
+if (!class_exists('Redux')) {
 	return;
 }
 
@@ -18,7 +19,7 @@ $opt_name = 'redux_demo';  // YOU MUST CHANGE THIS.  DO NOT USE 'redux_demo' IN 
 // Uncomment to disable demo mode.
 /* Redux::disable_demo(); */  // phpcs:ignore Squiz.PHP.CommentedOutCode
 
-$dir = dirname( __FILE__ ) . DIRECTORY_SEPARATOR;
+$dir = dirname(__FILE__) . DIRECTORY_SEPARATOR;
 
 /*
  * --> Used within different fields. Simply examples. Search for ACTUAL DECLARATION for field examples
@@ -29,16 +30,16 @@ $sample_patterns_path = Redux_Core::$dir . '../sample/patterns/';
 $sample_patterns_url  = Redux_Core::$url . '../sample/patterns/';
 $sample_patterns      = array();
 
-if ( is_dir( $sample_patterns_path ) ) {
-	$sample_patterns_dir = opendir( $sample_patterns_path );
+if (is_dir($sample_patterns_path)) {
+	$sample_patterns_dir = opendir($sample_patterns_path);
 
-	if ( $sample_patterns_dir ) {
+	if ($sample_patterns_dir) {
 
 		// phpcs:ignore WordPress.CodeAnalysis.AssignmentInCondition
-		while ( false !== ( $sample_patterns_file = readdir( $sample_patterns_dir ) ) ) {
-			if ( stristr( $sample_patterns_file, '.png' ) !== false || stristr( $sample_patterns_file, '.jpg' ) !== false ) {
-				$name              = explode( '.', $sample_patterns_file );
-				$name              = str_replace( '.' . end( $name ), '', $sample_patterns_file );
+		while (false !== ($sample_patterns_file = readdir($sample_patterns_dir))) {
+			if (stristr($sample_patterns_file, '.png') !== false || stristr($sample_patterns_file, '.jpg') !== false) {
+				$name              = explode('.', $sample_patterns_file);
+				$name              = str_replace('.' . end($name), '', $sample_patterns_file);
 				$sample_patterns[] = array(
 					'alt' => $name,
 					'img' => $sample_patterns_url . $sample_patterns_file,
@@ -74,10 +75,10 @@ $args = array(
 	'opt_name'                  => $opt_name,
 
 	// Name that appears at the top of your panel.
-	'display_name'              => $theme->get( 'Name' ),
+	'display_name'              => $theme->get('Name'),
 
 	// Version that appears at the top of your panel.
-	'display_version'           => $theme->get( 'Version' ),
+	'display_version'           => $theme->get('Version'),
 
 	// Specify if the admin menu should appear or not. Options: menu or submenu (Under appearance only).
 	'menu_type'                 => 'menu',
@@ -86,10 +87,10 @@ $args = array(
 	'allow_sub_menu'            => true,
 
 	// The text to appear in the admin menu.
-	'menu_title'                => esc_html__( 'Sample Options', 'your-textdomain-here' ),
+	'menu_title'                => esc_html__('Sample Options', 'ITDS_Agency_test_2'),
 
 	// The text to appear on the page title.
-	'page_title'                => esc_html__( 'Sample Options', 'your-textdomain-here' ),
+	'page_title'                => esc_html__('Sample Options', 'ITDS_Agency_test_2'),
 
 	// Disable to create your own Google fonts loader.
 	'disable_google_fonts_link' => false,
@@ -222,19 +223,19 @@ $args = array(
 $args['admin_bar_links'][] = array(
 	'id'    => 'redux-docs',
 	'href'  => '//devs.redux.io/',
-	'title' => __( 'Documentation', 'your-textdomain-here' ),
+	'title' => __('Documentation', 'ITDS_Agency_test_2'),
 );
 
 $args['admin_bar_links'][] = array(
 	'id'    => 'redux-support',
 	'href'  => '//github.com/ReduxFramework/redux-framework/issues',
-	'title' => __( 'Support', 'your-textdomain-here' ),
+	'title' => __('Support', 'ITDS_Agency_test_2'),
 );
 
 $args['admin_bar_links'][] = array(
 	'id'    => 'redux-extensions',
 	'href'  => 'redux.io/extensions',
-	'title' => __( 'Extensions', 'your-textdomain-here' ),
+	'title' => __('Extensions', 'ITDS_Agency_test_2'),
 );
 
 // SOCIAL ICONS -> Setup custom links in the footer for quick links in your panel footer icons.
@@ -262,23 +263,23 @@ $args['share_icons'][] = array(
 );
 
 // Panel Intro text -> before the form.
-if ( ! isset( $args['global_variable'] ) || false !== $args['global_variable'] ) {
-	if ( ! empty( $args['global_variable'] ) ) {
+if (!isset($args['global_variable']) || false !== $args['global_variable']) {
+	if (!empty($args['global_variable'])) {
 		$v = $args['global_variable'];
 	} else {
-		$v = str_replace( '-', '_', $args['opt_name'] );
+		$v = str_replace('-', '_', $args['opt_name']);
 	}
 
 	// translators:  Panel opt_name.
-	$args['intro_text'] = '<p>' . sprintf( esc_html__( 'Did you know that Redux sets a global variable for you? To access any of your saved options from within your code you can use your global variable: $%1$s', 'your-textdomain-here' ), '<strong>' . $v . '</strong>' ) . '<p>';
+	$args['intro_text'] = '<p>' . sprintf(esc_html__('Did you know that Redux sets a global variable for you? To access any of your saved options from within your code you can use your global variable: $%1$s', 'ITDS_Agency_test_2'), '<strong>' . $v . '</strong>') . '<p>';
 } else {
-	$args['intro_text'] = '<p>' . esc_html__( 'This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.', 'your-textdomain-here' ) . '</p>';
+	$args['intro_text'] = '<p>' . esc_html__('This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.', 'ITDS_Agency_test_2') . '</p>';
 }
 
 // Add content after the form.
-$args['footer_text'] = '<p>' . esc_html__( 'This text is displayed below the options panel. It isn\'t required, but more info is always better! The footer_text field accepts all HTML.', 'your-textdomain-here' ) . '</p>';
+$args['footer_text'] = '<p>' . esc_html__('This text is displayed below the options panel. It isn\'t required, but more info is always better! The footer_text field accepts all HTML.', 'ITDS_Agency_test_2') . '</p>';
 
-Redux::set_args( $opt_name, $args );
+Redux::set_args($opt_name, $args);
 
 /*
  * ---> END ARGUMENTS
@@ -290,21 +291,21 @@ Redux::set_args( $opt_name, $args );
 $help_tabs = array(
 	array(
 		'id'      => 'redux-help-tab-1',
-		'title'   => esc_html__( 'Theme Information 1', 'your-textdomain-here' ),
-		'content' => '<p>' . esc_html__( 'This is the tab content, HTML is allowed.', 'your-textdomain-here' ) . '</p>',
+		'title'   => esc_html__('Theme Information 1', 'ITDS_Agency_test_2'),
+		'content' => '<p>' . esc_html__('This is the tab content, HTML is allowed.', 'ITDS_Agency_test_2') . '</p>',
 	),
 	array(
 		'id'      => 'redux-help-tab-2',
-		'title'   => esc_html__( 'Theme Information 2', 'your-textdomain-here' ),
-		'content' => '<p>' . esc_html__( 'This is the tab content, HTML is allowed.', 'your-textdomain-here' ) . '</p>',
+		'title'   => esc_html__('Theme Information 2', 'ITDS_Agency_test_2'),
+		'content' => '<p>' . esc_html__('This is the tab content, HTML is allowed.', 'ITDS_Agency_test_2') . '</p>',
 	),
 );
-Redux::set_help_tab( $opt_name, $help_tabs );
+Redux::set_help_tab($opt_name, $help_tabs);
 
 // Set the help sidebar.
-$content = '<p>' . esc_html__( 'This is the sidebar content, HTML is allowed.', 'your-textdomain-here' ) . '</p>';
+$content = '<p>' . esc_html__('This is the sidebar content, HTML is allowed.', 'ITDS_Agency_test_2') . '</p>';
 
-Redux::set_help_sidebar( $opt_name, $content );
+Redux::set_help_sidebar($opt_name, $content);
 
 /*
  * <--- END HELP TABS
@@ -318,9 +319,9 @@ Redux::set_help_sidebar( $opt_name, $content );
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'            => esc_html__( 'Basic Fields', 'your-textdomain-here' ),
+		'title'            => esc_html__('Basic Fields', 'ITDS_Agency_test_2'),
 		'id'               => 'basic',
-		'desc'             => esc_html__( 'These are really basic fields!', 'your-textdomain-here' ),
+		'desc'             => esc_html__('These are really basic fields!', 'ITDS_Agency_test_2'),
 		'customizer_width' => '400px',
 		'icon'             => 'el el-home',
 	)
@@ -338,7 +339,7 @@ require_once Redux_Core::$dir . '../sample/sections/basic-fields/textarea.php';
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'            => esc_html__( 'Editors', 'your-textdomain-here' ),
+		'title'            => esc_html__('Editors', 'ITDS_Agency_test_2'),
 		'id'               => 'editor',
 		'customizer_width' => '500px',
 		'icon'             => 'el el-edit',
@@ -352,7 +353,7 @@ require_once Redux_Core::$dir . '../sample/sections/editors/ace-editor.php';
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Color Selection', 'your-textdomain-here' ),
+		'title' => esc_html__('Color Selection', 'ITDS_Agency_test_2'),
 		'id'    => 'color',
 		'icon'  => 'el el-brush',
 	)
@@ -369,7 +370,7 @@ require_once Redux_Core::$dir . '../sample/sections/color-selection/color-palett
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Design Fields', 'your-textdomain-here' ),
+		'title' => esc_html__('Design Fields', 'ITDS_Agency_test_2'),
 		'id'    => 'design',
 		'icon'  => 'el el-wrench',
 	)
@@ -385,7 +386,7 @@ require_once Redux_Core::$dir . '../sample/sections/design-fields/spacing.php';
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Media Uploads', 'your-textdomain-here' ),
+		'title' => esc_html__('Media Uploads', 'ITDS_Agency_test_2'),
 		'id'    => 'media',
 		'icon'  => 'el el-picture',
 	)
@@ -400,7 +401,7 @@ require_once Redux_Core::$dir . '../sample/sections/media-uploads/slides.php';
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Presentation Fields', 'your-textdomain-here' ),
+		'title' => esc_html__('Presentation Fields', 'ITDS_Agency_test_2'),
 		'id'    => 'presentation',
 		'icon'  => 'el el-screen',
 	)
@@ -422,7 +423,7 @@ Redux::set_section(
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Switch / Button Set', 'your-textdomain-here' ),
+		'title' => esc_html__('Switch / Button Set', 'ITDS_Agency_test_2'),
 		'id'    => 'switch_buttonset',
 		'icon'  => 'el el-cogs',
 	)
@@ -435,7 +436,7 @@ require_once Redux_Core::$dir . '../sample/sections/switch-button/switch.php';
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Select Fields', 'your-textdomain-here' ),
+		'title' => esc_html__('Select Fields', 'ITDS_Agency_test_2'),
 		'id'    => 'select',
 		'icon'  => 'el el-list-alt',
 	)
@@ -449,7 +450,7 @@ require_once Redux_Core::$dir . '../sample/sections/select-fields/select-image.p
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Slider / Spinner', 'your-textdomain-here' ),
+		'title' => esc_html__('Slider / Spinner', 'ITDS_Agency_test_2'),
 		'id'    => 'slider_spinner',
 		'icon'  => 'el el-adjust-alt',
 	)
@@ -465,7 +466,7 @@ require_once Redux_Core::$dir . '../sample/sections/typography/typography.php';
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Additional Types', 'your-textdomain-here' ),
+		'title' => esc_html__('Additional Types', 'ITDS_Agency_test_2'),
 		'id'    => 'additional',
 		'icon'  => 'el el-magic',
 	)
@@ -479,7 +480,7 @@ require_once Redux_Core::$dir . '../sample/sections/additional-types/raw.php';
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Advanced Features', 'your-textdomain-here' ),
+		'title' => esc_html__('Advanced Features', 'ITDS_Agency_test_2'),
 		'icon'  => 'el el-thumbs-up',
 	)
 );
@@ -501,7 +502,7 @@ require_once Redux_Core::$dir . '../sample/sections/advanced-features/wpml-integ
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Disabling', 'your-textdomain-here' ),
+		'title' => esc_html__('Disabling', 'ITDS_Agency_test_2'),
 		'icon'  => 'el el-lock',
 	)
 );
@@ -517,15 +518,15 @@ require_once Redux_Core::$dir . '../sample/sections/shortcodes/shortcodes.php';
 require_once Redux_Core::$dir . '../sample/sections/social-profiles/social-profiles.php';
 
 // -> START Pro Fields.
-if ( class_exists( 'Redux_Pro' ) ) {
+if (class_exists('Redux_Pro')) {
 	Redux::set_section(
 		$opt_name,
 		array(
-			'title' => esc_html__( 'Redux Pro Fields', 'your-textdomain-here' ),
+			'title' => esc_html__('Redux Pro Fields', 'ITDS_Agency_test_2'),
 			'id'    => 'redux-pro-fields',
 			'icon'  => 'el el-redux',
 			'class' => 'pro_highlight',
-			'desc'  => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/premium/" target="_blank">https://devs.redux.io/premium/</a>',
+			'desc'  => esc_html__('For full documentation on this field, visit: ', 'ITDS_Agency_test_2') . '<a href="https://devs.redux.io/premium/" target="_blank">https://devs.redux.io/premium/</a>',
 		)
 	);
 
@@ -546,42 +547,42 @@ require_once Redux_Core::$dir . '../sample/metaboxes.php';
 /**
  * Raw README
  */
-if ( file_exists( $dir . '/../README.md' ) ) {
+if (file_exists($dir . '/../README.md')) {
 	$section = array(
 		'icon'   => 'el el-list-alt',
-		'title'  => esc_html__( 'Documentation', 'your-textdomain-here' ),
+		'title'  => esc_html__('Documentation', 'ITDS_Agency_test_2'),
 		'fields' => array(
 			array(
 				'id'           => 'opt-raw-documentation',
 				'type'         => 'raw',
 				'markdown'     => true,
-				'content_path' => dirname( __FILE__ ) . '/../README.md', // FULL PATH, not relative please.
+				'content_path' => dirname(__FILE__) . '/../README.md', // FULL PATH, not relative please.
 			),
 		),
 	);
 
-	Redux::set_section( $opt_name, $section );
+	Redux::set_section($opt_name, $section);
 }
 
 Redux::set_section(
 	$opt_name,
 	array(
 		'icon'            => 'el el-list-alt',
-		'title'           => esc_html__( 'Customizer Only', 'your-textdomain-here' ),
-		'desc'            => '<p class="description">' . esc_html__( 'This Section should be visible only in Customizer', 'your-textdomain-here' ) . '</p>',
+		'title'           => esc_html__('Customizer Only', 'ITDS_Agency_test_2'),
+		'desc'            => '<p class="description">' . esc_html__('This Section should be visible only in Customizer', 'ITDS_Agency_test_2') . '</p>',
 		'customizer_only' => true,
 		'fields'          => array(
 			array(
 				'id'              => 'opt-customizer-only',
 				'type'            => 'select',
-				'title'           => esc_html__( 'Customizer Only Option', 'your-textdomain-here' ),
-				'subtitle'        => esc_html__( 'The subtitle is NOT visible in customizer', 'your-textdomain-here' ),
-				'desc'            => esc_html__( 'The field desc is NOT visible in customizer.', 'your-textdomain-here' ),
+				'title'           => esc_html__('Customizer Only Option', 'ITDS_Agency_test_2'),
+				'subtitle'        => esc_html__('The subtitle is NOT visible in customizer', 'ITDS_Agency_test_2'),
+				'desc'            => esc_html__('The field desc is NOT visible in customizer.', 'ITDS_Agency_test_2'),
 				'customizer_only' => true,
 				'options'         => array(
-					'1' => esc_html__( 'Opt 1', 'your-textdomain-here' ),
-					'2' => esc_html__( 'Opt 2', 'your-textdomain-here' ),
-					'3' => esc_html__( 'Opt 3', 'your-textdomain-here' ),
+					'1' => esc_html__('Opt 1', 'ITDS_Agency_test_2'),
+					'2' => esc_html__('Opt 2', 'ITDS_Agency_test_2'),
+					'3' => esc_html__('Opt 3', 'ITDS_Agency_test_2'),
 				),
 				'default'         => '2',
 			),
@@ -614,7 +615,7 @@ Redux::set_section(
 // Dynamically add a section. Can be also used to modify sections/fields.
 // add_filter('redux/options/' . $opt_name . '/sections', 'dynamic_section');
 // .
-if ( ! function_exists( 'compiler_action' ) ) {
+if (!function_exists('compiler_action')) {
 	/**
 	 * This is a test function that will let you see when the compiler hook occurs.
 	 * It only runs if a field's value has changed and compiler=>true is set.
@@ -623,11 +624,12 @@ if ( ! function_exists( 'compiler_action' ) ) {
 	 * @param string $css            Compiler selector CSS values  compiler => array( CSS SELECTORS ).
 	 * @param array  $changed_values Any values changed since last save.
 	 */
-	function compiler_action( array $options, string $css, array $changed_values ) {
+	function compiler_action(array $options, string $css, array $changed_values)
+	{
 		echo '<h1>The compiler hook has run!</h1>';
 		echo '<pre>';
 		// phpcs:ignore WordPress.PHP.DevelopmentFunctions
-		print_r( $changed_values ); // Values that have changed since the last save.
+		print_r($changed_values); // Values that have changed since the last save.
 		// echo '<br/>';
 		// print_r($options); //Option values.
 		// echo '<br/>';
@@ -636,7 +638,7 @@ if ( ! function_exists( 'compiler_action' ) ) {
 	}
 }
 
-if ( ! function_exists( 'redux_validate_callback_function' ) ) {
+if (!function_exists('redux_validate_callback_function')) {
 	/**
 	 * Custom function for the callback validation referenced above
 	 *
@@ -646,27 +648,28 @@ if ( ! function_exists( 'redux_validate_callback_function' ) ) {
 	 *
 	 * @return array
 	 */
-	function redux_validate_callback_function( array $field, $value, $existing_value ): array {
+	function redux_validate_callback_function(array $field, $value, $existing_value): array
+	{
 		$error   = false;
 		$warning = false;
 
 		// Do your validation.
-		if ( 1 === (int) $value ) {
+		if (1 === (int) $value) {
 			$error = true;
 			$value = $existing_value;
-		} elseif ( 2 === (int) $value ) {
+		} elseif (2 === (int) $value) {
 			$warning = true;
 			$value   = $existing_value;
 		}
 
 		$return['value'] = $value;
 
-		if ( true === $error ) {
+		if (true === $error) {
 			$field['msg']    = 'your custom error message';
 			$return['error'] = $field;
 		}
 
-		if ( true === $warning ) {
+		if (true === $warning) {
 			$field['msg']      = 'your custom warning message';
 			$return['warning'] = $field;
 		}
@@ -676,7 +679,7 @@ if ( ! function_exists( 'redux_validate_callback_function' ) ) {
 }
 
 
-if ( ! function_exists( 'dynamic_section' ) ) {
+if (!function_exists('dynamic_section')) {
 	/**
 	 * Custom function for filtering the sections array. Good for child themes to override or add to the sections.
 	 * Simply include this function in the child themes functions.php file.
@@ -687,10 +690,11 @@ if ( ! function_exists( 'dynamic_section' ) ) {
 	 *
 	 * @return array
 	 */
-	function dynamic_section( array $sections ): array {
+	function dynamic_section(array $sections): array
+	{
 		$sections[] = array(
-			'title'  => esc_html__( 'Section via hook', 'your-textdomain-here' ),
-			'desc'   => '<p class="description">' . esc_html__( 'This is a section created by adding a filter to the sections array. Can be used by child themes to add/remove sections from the options.', 'your-textdomain-here' ) . '</p>',
+			'title'  => esc_html__('Section via hook', 'ITDS_Agency_test_2'),
+			'desc'   => '<p class="description">' . esc_html__('This is a section created by adding a filter to the sections array. Can be used by child themes to add/remove sections from the options.', 'ITDS_Agency_test_2') . '</p>',
 			'icon'   => 'el el-paper-clip',
 
 			// Leave this as a blank section, no options just some intro text set above.
@@ -701,7 +705,7 @@ if ( ! function_exists( 'dynamic_section' ) ) {
 	}
 }
 
-if ( ! function_exists( 'change_arguments' ) ) {
+if (!function_exists('change_arguments')) {
 	/**
 	 * Filter hook for filtering the args.
 	 * Good for child themes to override or add to the args array. Can also be used in other functions.
@@ -710,14 +714,15 @@ if ( ! function_exists( 'change_arguments' ) ) {
 	 *
 	 * @return array
 	 */
-	function change_arguments( array $args ): array {
+	function change_arguments(array $args): array
+	{
 		$args['dev_mode'] = true;
 
 		return $args;
 	}
 }
 
-if ( ! function_exists( 'change_defaults' ) ) {
+if (!function_exists('change_defaults')) {
 	/**
 	 * Filter hook for filtering the default value of any given field. Very useful in development mode.
 	 *
@@ -725,14 +730,15 @@ if ( ! function_exists( 'change_defaults' ) ) {
 	 *
 	 * @return array
 	 */
-	function change_defaults( array $defaults ): array {
-		$defaults['str_replace'] = esc_html__( 'Testing filter hook!', 'your-textdomain-here' );
+	function change_defaults(array $defaults): array
+	{
+		$defaults['str_replace'] = esc_html__('Testing filter hook!', 'ITDS_Agency_test_2');
 
 		return $defaults;
 	}
 }
 
-if ( ! function_exists( 'redux_custom_sanitize' ) ) {
+if (!function_exists('redux_custom_sanitize')) {
 	/**
 	 * Function to be used if the field sanitize argument.
 	 * Return value MUST be the formatted or cleaned text to display.
@@ -741,13 +747,14 @@ if ( ! function_exists( 'redux_custom_sanitize' ) ) {
 	 *
 	 * @return string
 	 */
-	function redux_custom_sanitize( string $value ): string {
+	function redux_custom_sanitize(string $value): string
+	{
 		$return = '';
 
-		foreach ( explode( ' ', $value ) as $w ) {
-			foreach ( str_split( $w ) as $k => $v ) {
-				if ( ( $k + 1 ) % 2 !== 0 && ctype_alpha( $v ) ) {
-					$return .= mb_strtoupper( $v );
+		foreach (explode(' ', $value) as $w) {
+			foreach (str_split($w) as $k => $v) {
+				if (($k + 1) % 2 !== 0 && ctype_alpha($v)) {
+					$return .= mb_strtoupper($v);
 				} else {
 					$return .= $v;
 				}

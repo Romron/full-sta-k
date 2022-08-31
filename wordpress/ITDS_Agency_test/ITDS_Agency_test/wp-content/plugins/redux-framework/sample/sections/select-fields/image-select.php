@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Redux Framework image select config.
  * For full documentation, please visit: http://devs.redux.io/
@@ -6,22 +7,22 @@
  * @package Redux Framework
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'      => esc_html__( 'Image Select', 'your-textdomain-here' ),
+		'title'      => esc_html__('Image Select', 'ITDS_Agency_test_2'),
 		'id'         => 'select-image_select',
-		'desc'       => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/core-fields/image-select.html" target="_blank">https://devs.redux.io/core-fields/image-select.html</a>',
+		'desc'       => esc_html__('For full documentation on this field, visit: ', 'ITDS_Agency_test_2') . '<a href="https://devs.redux.io/core-fields/image-select.html" target="_blank">https://devs.redux.io/core-fields/image-select.html</a>',
 		'subsection' => true,
 		'fields'     => array(
 			array(
 				'id'       => 'opt-image-select-layout',
 				'type'     => 'image_select',
-				'title'    => esc_html__( 'Images Option for Layout', 'your-textdomain-here' ),
-				'subtitle' => esc_html__( 'No validation can be done on this field type', 'your-textdomain-here' ),
-				'desc'     => esc_html__( 'This uses some of the built in images, you can use them for layout options.', 'your-textdomain-here' ),
+				'title'    => esc_html__('Images Option for Layout', 'ITDS_Agency_test_2'),
+				'subtitle' => esc_html__('No validation can be done on this field type', 'ITDS_Agency_test_2'),
+				'desc'     => esc_html__('This uses some of the built in images, you can use them for layout options.', 'ITDS_Agency_test_2'),
 
 				// Must provide key => value(array:title|img) pairs for radio options.
 				'options'  => array(
@@ -56,17 +57,17 @@ Redux::set_section(
 				'id'       => 'opt-patterns',
 				'type'     => 'image_select',
 				'tiles'    => true,
-				'title'    => esc_html__( 'Images Option (with tiles => true)', 'your-textdomain-here' ),
-				'subtitle' => esc_html__( 'Select a background pattern.', 'your-textdomain-here' ),
+				'title'    => esc_html__('Images Option (with tiles => true)', 'ITDS_Agency_test_2'),
+				'subtitle' => esc_html__('Select a background pattern.', 'ITDS_Agency_test_2'),
 				'default'  => 0,
 				'options'  => $sample_patterns,
 			),
 			array(
 				'id'       => 'opt-image-select',
 				'type'     => 'image_select',
-				'title'    => esc_html__( 'Images Option', 'your-textdomain-here' ),
-				'subtitle' => esc_html__( 'No validation can be done on this field type', 'your-textdomain-here' ),
-				'desc'     => esc_html__( 'This is the description field, again good for additional info.', 'your-textdomain-here' ),
+				'title'    => esc_html__('Images Option', 'ITDS_Agency_test_2'),
+				'subtitle' => esc_html__('No validation can be done on this field type', 'ITDS_Agency_test_2'),
+				'desc'     => esc_html__('This is the description field, again good for additional info.', 'ITDS_Agency_test_2'),
 
 				// Must provide key => value(array:title|img) pairs for radio options.
 				'options'  => array(
@@ -94,10 +95,10 @@ Redux::set_section(
 				'type'       => 'image_select',
 				'presets'    => true,
 				'full_width' => true,
-				'title'      => esc_html__( 'Preset', 'your-textdomain-here' ),
-				'subtitle'   => esc_html__( 'This allows you to set a json string or array to override multiple preferences in your theme.', 'your-textdomain-here' ),
+				'title'      => esc_html__('Preset', 'ITDS_Agency_test_2'),
+				'subtitle'   => esc_html__('This allows you to set a json string or array to override multiple preferences in your theme.', 'ITDS_Agency_test_2'),
 				'default'    => 0,
-				'desc'       => esc_html__( 'This allows you to set a json string or array to override multiple preferences in your theme.', 'your-textdomain-here' ),
+				'desc'       => esc_html__('This allows you to set a json string or array to override multiple preferences in your theme.', 'ITDS_Agency_test_2'),
 				'options'    => array(
 					'1' => array(
 						'alt'     => 'Preset 1',

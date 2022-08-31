@@ -1,0 +1,19 @@
+2022-08-31T11:20:39+00:00 CRITICAL Uncaught TypeError: print_r(): Argument #2 ($return) must be of type bool, array given in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\single-product\related.php:55
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\single-product\related.php(55): print_r('$related_produc...', Array)
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full-sta...')
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2047): wc_get_template('single-product/...', Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2010): woocommerce_related_products(Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): woocommerce_output_related_products('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\content-single-product.php(72): do_action('woocommerce_aft...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('F:\\web\\full-sta...', false)
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product.php(37): wc_get_template_part('content', 'single-product')
+#11 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#12 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#13 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#14 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\single-product\related.php on line 55
+

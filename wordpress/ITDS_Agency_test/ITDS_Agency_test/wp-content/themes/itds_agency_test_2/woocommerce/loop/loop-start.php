@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Content wrappers
+ * Product Loop Start
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/global/wrapper-end.php.
+ * This template can be overridden by copying it to yourtheme/woocommerce/loop/loop-start.php.
  *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
@@ -17,9 +17,7 @@
  */
 
 if (!defined('ABSPATH')) {
-	exit; // Exit if accessed directly
+	exit;
 }
-
 ?>
-
-</div>
+<!-- <ul class="products columns-<?php echo esc_attr(wc_get_loop_prop('columns')); ?>"> -->

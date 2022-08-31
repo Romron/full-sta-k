@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ReduxFramework Barebones Sample Config File
  * For full documentation, please visit: http://devs.redux.io/
@@ -6,7 +7,7 @@
  * @package Redux Framework
  */
 
-if ( ! class_exists( 'Redux' ) ) {
+if (!class_exists('Redux')) {
 	return null;
 }
 
@@ -30,10 +31,10 @@ $args = array(
 	'opt_name'                  => $opt_name,
 
 	// Name that appears at the top of your panel.
-	'display_name'              => $theme->get( 'Name' ),
+	'display_name'              => $theme->get('Name'),
 
 	// Version that appears at the top of your panel.
-	'display_version'           => $theme->get( 'Version' ),
+	'display_version'           => $theme->get('Version'),
 
 	// Specify if the admin menu should appear or not. Options: menu or submenu (Under appearance only).
 	'menu_type'                 => 'menu',
@@ -41,8 +42,8 @@ $args = array(
 	// Show the sections below the admin menu item or not.
 	'allow_sub_menu'            => true,
 
-	'menu_title'                => esc_html__( 'Sample Options', 'your-textdomain-here' ),
-	'page_title'                => esc_html__( 'Sample Options', 'your-textdomain-here' ),
+	'menu_title'                => esc_html__('Sample Options', 'ITDS_Agency_test_2'),
+	'page_title'                => esc_html__('Sample Options', 'ITDS_Agency_test_2'),
 
 	// Disable this in case you want to create your own google fonts loader.
 	'disable_google_fonts_link' => false,
@@ -157,19 +158,19 @@ $args = array(
 $args['admin_bar_links'][] = array(
 	'id'    => 'redux-docs',
 	'href'  => '//devs.redux.io/',
-	'title' => esc_html__( 'Documentation', 'your-textdomain-here' ),
+	'title' => esc_html__('Documentation', 'ITDS_Agency_test_2'),
 );
 
 $args['admin_bar_links'][] = array(
 	'id'    => 'redux-support',
 	'href'  => '//github.com/ReduxFramework/redux-framework/issues',
-	'title' => esc_html__( 'Support', 'your-textdomain-here' ),
+	'title' => esc_html__('Support', 'ITDS_Agency_test_2'),
 );
 
 $args['admin_bar_links'][] = array(
 	'id'    => 'redux-extensions',
 	'href'  => 'redux.io/extensions',
-	'title' => esc_html__( 'Extensions', 'your-textdomain-here' ),
+	'title' => esc_html__('Extensions', 'ITDS_Agency_test_2'),
 );
 
 // SOCIAL ICONS -> Setup custom links in the footer for quick links in your panel footer icons.
@@ -180,36 +181,36 @@ $args['share_icons'][] = array(
 );
 $args['share_icons'][] = array(
 	'url'   => '//www.facebook.com/pages/Redux-Framework/243141545850368',
-	'title' => esc_html__( 'Like us on Facebook', 'your-textdomain-here' ),
+	'title' => esc_html__('Like us on Facebook', 'ITDS_Agency_test_2'),
 	'icon'  => 'el el-facebook',
 );
 $args['share_icons'][] = array(
 	'url'   => '//twitter.com/reduxframework',
-	'title' => esc_html__( 'Follow us on Twitter', 'your-textdomain-here' ),
+	'title' => esc_html__('Follow us on Twitter', 'ITDS_Agency_test_2'),
 	'icon'  => 'el el-twitter',
 );
 $args['share_icons'][] = array(
 	'url'   => '//www.linkedin.com/company/redux-framework',
-	'title' => esc_html__( 'FInd us on LinkedIn', 'your-textdomain-here' ),
+	'title' => esc_html__('FInd us on LinkedIn', 'ITDS_Agency_test_2'),
 	'icon'  => 'el el-linkedin',
 );
 
 // Panel Intro text -> before the form.
-if ( ! isset( $args['global_variable'] ) || false !== $args['global_variable'] ) {
-	if ( ! empty( $args['global_variable'] ) ) {
+if (!isset($args['global_variable']) || false !== $args['global_variable']) {
+	if (!empty($args['global_variable'])) {
 		$v = $args['global_variable'];
 	} else {
-		$v = str_replace( '-', '_', $args['opt_name'] );
+		$v = str_replace('-', '_', $args['opt_name']);
 	}
-	$args['intro_text'] = '<p>' . sprintf( __( 'Did you know that Redux sets a global variable for you? To access any of your saved options from within your code you can use your global variable: $s', 'your-textdomain-here' ) . '</p>', '<strong>' . $v . '</strong>' );
+	$args['intro_text'] = '<p>' . sprintf(__('Did you know that Redux sets a global variable for you? To access any of your saved options from within your code you can use your global variable: $s', 'ITDS_Agency_test_2') . '</p>', '<strong>' . $v . '</strong>');
 } else {
-	$args['intro_text'] = '<p>' . esc_html__( 'This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.', 'your-textdomain-here' ) . '</p>';
+	$args['intro_text'] = '<p>' . esc_html__('This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.', 'ITDS_Agency_test_2') . '</p>';
 }
 
 // Add content after the form.
-$args['footer_text'] = '<p>' . esc_html__( 'This text is displayed below the options panel. It isn\'t required, but more info is always better! The footer_text field accepts all HTML.', 'your-textdomain-here' ) . '</p>';
+$args['footer_text'] = '<p>' . esc_html__('This text is displayed below the options panel. It isn\'t required, but more info is always better! The footer_text field accepts all HTML.', 'ITDS_Agency_test_2') . '</p>';
 
-Redux::set_args( $opt_name, $args );
+Redux::set_args($opt_name, $args);
 
 /*
  * ---> END ARGUMENTS
@@ -222,22 +223,22 @@ Redux::set_args( $opt_name, $args );
 $help_tabs = array(
 	array(
 		'id'      => 'redux-help-tab-1',
-		'title'   => esc_html__( 'Theme Information 1', 'your-textdomain-here' ),
-		'content' => '<p>' . esc_html__( 'This is the tab content, HTML is allowed.', 'your-textdomain-here' ) . '</p>',
+		'title'   => esc_html__('Theme Information 1', 'ITDS_Agency_test_2'),
+		'content' => '<p>' . esc_html__('This is the tab content, HTML is allowed.', 'ITDS_Agency_test_2') . '</p>',
 	),
 
 	array(
 		'id'      => 'redux-help-tab-2',
-		'title'   => esc_html__( 'Theme Information 2', 'your-textdomain-here' ),
-		'content' => '<p>' . esc_html__( 'This is the tab content, HTML is allowed.', 'your-textdomain-here' ) . '</p>',
+		'title'   => esc_html__('Theme Information 2', 'ITDS_Agency_test_2'),
+		'content' => '<p>' . esc_html__('This is the tab content, HTML is allowed.', 'ITDS_Agency_test_2') . '</p>',
 	),
 );
 
-Redux::set_help_tab( $opt_name, $help_tabs );
+Redux::set_help_tab($opt_name, $help_tabs);
 
 // Set the help sidebar.
-$content = '<p>' . esc_html__( 'This is the sidebar content, HTML is allowed.', 'your-textdomain-here' ) . '</p>';
-Redux::set_help_sidebar( $opt_name, $content );
+$content = '<p>' . esc_html__('This is the sidebar content, HTML is allowed.', 'ITDS_Agency_test_2') . '</p>';
+Redux::set_help_sidebar($opt_name, $content);
 
 /*
  * <--- END HELP TABS
@@ -262,72 +263,72 @@ $kses_exceptions = array(
 );
 
 $section = array(
-	'title'  => esc_html__( 'Basic Field', 'your-textdomain-here' ),
+	'title'  => esc_html__('Basic Field', 'ITDS_Agency_test_2'),
 	'id'     => 'basic',
-	'desc'   => esc_html__( 'Basic field with no subsections.', 'your-textdomain-here' ),
+	'desc'   => esc_html__('Basic field with no subsections.', 'ITDS_Agency_test_2'),
 	'icon'   => 'el el-home',
 	'fields' => array(
 		array(
 			'id'       => 'opt-text',
 			'type'     => 'text',
-			'title'    => esc_html__( 'Example Text', 'your-textdomain-here' ),
-			'desc'     => esc_html__( 'Example description.', 'your-textdomain-here' ),
-			'subtitle' => esc_html__( 'Example subtitle.', 'your-textdomain-here' ),
+			'title'    => esc_html__('Example Text', 'ITDS_Agency_test_2'),
+			'desc'     => esc_html__('Example description.', 'ITDS_Agency_test_2'),
+			'subtitle' => esc_html__('Example subtitle.', 'ITDS_Agency_test_2'),
 			'hint'     => array(
-				'content' => wp_kses( __( 'This is a <strong>hint</strong> tool-tip for the text field.<br/><br/>Add any HTML based text you like here.', 'your-textdomain-here' ), $kses_exceptions ),
+				'content' => wp_kses(__('This is a <strong>hint</strong> tool-tip for the text field.<br/><br/>Add any HTML based text you like here.', 'ITDS_Agency_test_2'), $kses_exceptions),
 			),
 		),
 	),
 );
 
-Redux::set_section( $opt_name, $section );
+Redux::set_section($opt_name, $section);
 
 $section = array(
-	'title' => __( 'Basic Fields', 'your-textdomain-here' ),
+	'title' => __('Basic Fields', 'ITDS_Agency_test_2'),
 	'id'    => 'basic',
-	'desc'  => __( 'Basic fields as subsections.', 'your-textdomain-here' ),
+	'desc'  => __('Basic fields as subsections.', 'ITDS_Agency_test_2'),
 	'icon'  => 'el el-home',
 );
 
-Redux::set_section( $opt_name, $section );
+Redux::set_section($opt_name, $section);
 
 $section = array(
-	'title'      => esc_html__( 'Text', 'your-textdomain-here' ),
-	'desc'       => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/core-fields/text.html" target="_blank">https://devs.redux.io/core-fields/text.html</a>',
+	'title'      => esc_html__('Text', 'ITDS_Agency_test_2'),
+	'desc'       => esc_html__('For full documentation on this field, visit: ', 'ITDS_Agency_test_2') . '<a href="https://devs.redux.io/core-fields/text.html" target="_blank">https://devs.redux.io/core-fields/text.html</a>',
 	'id'         => 'opt-text-subsection',
 	'subsection' => true,
 	'fields'     => array(
 		array(
 			'id'       => 'text-example',
 			'type'     => 'text',
-			'title'    => esc_html__( 'Text Field', 'your-textdomain-here' ),
-			'subtitle' => esc_html__( 'Subtitle', 'your-textdomain-here' ),
-			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'title'    => esc_html__('Text Field', 'ITDS_Agency_test_2'),
+			'subtitle' => esc_html__('Subtitle', 'ITDS_Agency_test_2'),
+			'desc'     => esc_html__('Field Description', 'ITDS_Agency_test_2'),
 			'default'  => 'Default Text',
 		),
 	),
 );
 
-Redux::set_section( $opt_name, $section );
+Redux::set_section($opt_name, $section);
 
 $section = array(
-	'title'      => esc_html__( 'Text Area', 'your-textdomain-here' ),
-	'desc'       => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/core-fields/textarea.html" target="_blank">https://devs.redux.io/core-fields/textarea.html</a>',
+	'title'      => esc_html__('Text Area', 'ITDS_Agency_test_2'),
+	'desc'       => esc_html__('For full documentation on this field, visit: ', 'ITDS_Agency_test_2') . '<a href="https://devs.redux.io/core-fields/textarea.html" target="_blank">https://devs.redux.io/core-fields/textarea.html</a>',
 	'id'         => 'opt-textarea-subsection',
 	'subsection' => true,
 	'fields'     => array(
 		array(
 			'id'       => 'textarea-example',
 			'type'     => 'textarea',
-			'title'    => esc_html__( 'Text Area Field', 'your-textdomain-here' ),
-			'subtitle' => esc_html__( 'Subtitle', 'your-textdomain-here' ),
-			'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+			'title'    => esc_html__('Text Area Field', 'ITDS_Agency_test_2'),
+			'subtitle' => esc_html__('Subtitle', 'ITDS_Agency_test_2'),
+			'desc'     => esc_html__('Field Description', 'ITDS_Agency_test_2'),
 			'default'  => 'Default Text',
 		),
 	),
 );
 
-Redux::set_section( $opt_name, $section );
+Redux::set_section($opt_name, $section);
 
 /*
  * <--- END SECTIONS

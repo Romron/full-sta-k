@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Redux Framework spacing config.
  * For full documentation, please visit: http://devs.redux.io/
@@ -6,20 +7,20 @@
  * @package Redux Framework
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'      => esc_html__( 'Spacing', 'your-textdomain-here' ),
+		'title'      => esc_html__('Spacing', 'ITDS_Agency_test_2'),
 		'id'         => 'design-spacing',
-		'desc'       => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/core-fields/spacing.html" target="_blank">https://devs.redux.io/core-fields/spacing.html</a>',
+		'desc'       => esc_html__('For full documentation on this field, visit: ', 'ITDS_Agency_test_2') . '<a href="https://devs.redux.io/core-fields/spacing.html" target="_blank">https://devs.redux.io/core-fields/spacing.html</a>',
 		'subsection' => true,
 		'fields'     => array(
 			array(
 				'id'            => 'opt-spacing',
 				'type'          => 'spacing',
-				'output'        => array( '.site-header, header' ),
+				'output'        => array('.site-header, header'),
 
 				// absolute, padding, margin, defaults to padding.
 				'mode'          => 'margin',
@@ -32,9 +33,9 @@ Redux::set_section(
 
 				// Set to false to hide the units if the units are specified.
 				'display_units' => false,
-				'title'         => esc_html__( 'Padding/Margin Option', 'your-textdomain-here' ),
-				'subtitle'      => esc_html__( 'Allow your users to choose the spacing or margin they want.', 'your-textdomain-here' ),
-				'desc'          => esc_html__( 'You can enable or disable any piece of this field. Top, Right, Bottom, Left, or Units.', 'your-textdomain-here' ),
+				'title'         => esc_html__('Padding/Margin Option', 'ITDS_Agency_test_2'),
+				'subtitle'      => esc_html__('Allow your users to choose the spacing or margin they want.', 'ITDS_Agency_test_2'),
+				'desc'          => esc_html__('You can enable or disable any piece of this field. Top, Right, Bottom, Left, or Units.', 'ITDS_Agency_test_2'),
 				'default'       => array(
 					'margin-top'    => '1',
 					'margin-right'  => '2',
@@ -56,11 +57,11 @@ Redux::set_section(
 				'type'           => 'spacing',
 				'mode'           => 'margin',
 				'all'            => false,
-				'units'          => array( 'em', 'px', '%' ),
+				'units'          => array('em', 'px', '%'),
 				'units_extended' => true,
-				'title'          => __( 'Padding/Margin Option', 'your-textdomain-here' ),
-				'subtitle'       => __( 'Allow your users to choose the spacing or margin they want.', 'your-textdomain-here' ),
-				'desc'           => __( 'You can enable or disable any piece of this field. Top, Right, Bottom, Left, or Units.', 'your-textdomain-here' ),
+				'title'          => __('Padding/Margin Option', 'ITDS_Agency_test_2'),
+				'subtitle'       => __('Allow your users to choose the spacing or margin they want.', 'ITDS_Agency_test_2'),
+				'desc'           => __('You can enable or disable any piece of this field. Top, Right, Bottom, Left, or Units.', 'ITDS_Agency_test_2'),
 				'default'        => array(
 					'margin-top'    => '1',
 					'margin-right'  => '2',

@@ -69,32 +69,32 @@ function ITDS_goods_metabox_html($post)
 
 ?>
    <div class="filds-metabox" style="display: flex; flex-direction:column; width:70%;">
-      <label for="rating"> <?php esc_html_e('Рейтинг', 'ITDS_Agency_test') ?> </label>
+      <label for="rating"> <?php esc_html_e('Рейтинг', 'ITDS_Agency_test_2') ?> </label>
       <input type="text" id="rating" name="rating" value="<?php echo esc_attr($rating); ?>" />
-      <label for="status"> <?php esc_html_e('Статус', 'ITDS_Agency_test') ?> </label>
+      <label for="status"> <?php esc_html_e('Статус', 'ITDS_Agency_test_2') ?> </label>
       <input type="text" id="status" name="status" value="<?php echo esc_attr($status); ?>" />
-      <label for="old-price"> <?php esc_html_e('Старая цена', 'ITDS_Agency_test'); ?> </label>
+      <label for="old-price"> <?php esc_html_e('Старая цена', 'ITDS_Agency_test_2'); ?> </label>
       <input type="text" id="old-price" name="old-price" value="<?php echo esc_attr($old_price); ?>" />
-      <label for="new-pric"> <?php esc_html_e('Новая цена', 'ITDS_Agency_test') ?> </label>
+      <label for="new-pric"> <?php esc_html_e('Новая цена', 'ITDS_Agency_test_2') ?> </label>
       <input type="text" id="new-price" name="new-price" value="<?php echo esc_attr($new_price); ?>" />
-      <label for="article"> <?php esc_html_e('Артикул', 'ITDS_Agency_test') ?> </label>
+      <label for="article"> <?php esc_html_e('Артикул', 'ITDS_Agency_test_2') ?> </label>
       <input type="text" id="article" name="article" value="<?php echo esc_attr($article); ?>" />
-      <label for="collection"> <?php esc_html_e('Колекция', 'ITDS_Agency_test') ?> </label>
+      <label for="collection"> <?php esc_html_e('Колекция', 'ITDS_Agency_test_2') ?> </label>
       <input type="text" id="collection" name="collection" value="<?php echo esc_attr($collection); ?>" />
-      <label for="size"> <?php esc_html_e('Размер', 'ITDS_Agency_test'); ?> </label>
+      <label for="size"> <?php esc_html_e('Размер', 'ITDS_Agency_test_2'); ?> </label>
       <input type="text" id="size" name="size" value="<?php echo esc_attr($size); ?>" />
-      <label for="package"> <?php esc_html_e('Упаковка', 'ITDS_Agency_test') ?> </label>
+      <label for="package"> <?php esc_html_e('Упаковка', 'ITDS_Agency_test_2') ?> </label>
       <input type="text" id="package" name="package" value="<?php echo esc_attr($package); ?>" />
-      <label for="number-of-designs"> <?php esc_html_e('Количество дизайнеров', 'ITDS_Agency_test') ?> </label>
+      <label for="number-of-designs"> <?php esc_html_e('Количество дизайнеров', 'ITDS_Agency_test_2') ?> </label>
       <input type="text" id="number-of-designs" name="number-of-designs" value="<?php echo esc_attr($number_of_designs); ?>" />
-      <label for="material"> <?php esc_html_e('Материал', 'ITDS_Agency_test'); ?> </label>
+      <label for="material"> <?php esc_html_e('Материал', 'ITDS_Agency_test_2'); ?> </label>
       <input type="text" id="material" name="material" value="<?php echo esc_attr($material); ?>" />
-      <label for="category-goods"> <?php esc_html_e('Категория', 'ITDS_Agency_test') ?> </label>
+      <label for="category-goods"> <?php esc_html_e('Категория', 'ITDS_Agency_test_2') ?> </label>
       <input type="text" id="category-goods" name="category-goods" value="<?php echo esc_attr($category_goods); ?>" />
 
-      <label for="characteristics"> <?php esc_html_e('Характеристики товара', 'ITDS_Agency_test') ?> </label>
+      <label for="characteristics"> <?php esc_html_e('Характеристики товара', 'ITDS_Agency_test_2') ?> </label>
       <input type="text" id="characteristics" name="characteristics" value="<?php echo esc_attr($category_goods); ?>" />
-      <label for="delivery-payment"> <?php esc_html_e('Доставка/оплата', 'ITDS_Agency_test') ?> </label>
+      <label for="delivery-payment"> <?php esc_html_e('Доставка/оплата', 'ITDS_Agency_test_2') ?> </label>
       <input type="text" id="delivery-payment" name="delivery-payment" value="<?php echo esc_attr($category_goods); ?>" />
    </div>
 

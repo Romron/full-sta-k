@@ -18,8 +18,8 @@
 		<div class="wrap-intro-block">
 			<div class="intro-block">
 				<div class="intro-block__text-wrap">
-					<div class="intro-block__title"><?php esc_html_e($ITDS_Agency_options['intro_block-1__title'], 'ITDS_Agency_test'); ?></div>
-					<div class="intro-block__text"><?php esc_html_e($ITDS_Agency_options['intro_block-1__text'], 'ITDS_Agency_test'); ?></div>
+					<div class="intro-block__title"><?php esc_html_e($ITDS_Agency_options['intro_block-1__title'], 'ITDS_Agency_test_2'); ?></div>
+					<div class="intro-block__text"><?php esc_html_e($ITDS_Agency_options['intro_block-1__text'], 'ITDS_Agency_test_2'); ?></div>
 				</div>
 				<div class="intro-block__img">
 					<a href="#"><img src="img/intro-icon-harant.png" alt="icon harant"></a>
@@ -27,8 +27,8 @@
 			</div>
 			<div class="intro-block">
 				<div class="intro-block__text-wrap">
-					<div class="intro-block__title"><?php esc_html_e($ITDS_Agency_options['intro_block-2__title'], 'ITDS_Agency_test'); ?></div>
-					<div class="intro-block__text"><?php esc_html_e($ITDS_Agency_options['intro_block-2__text'], 'ITDS_Agency_test'); ?></div>
+					<div class="intro-block__title"><?php esc_html_e($ITDS_Agency_options['intro_block-2__title'], 'ITDS_Agency_test_2'); ?></div>
+					<div class="intro-block__text"><?php esc_html_e($ITDS_Agency_options['intro_block-2__text'], 'ITDS_Agency_test_2'); ?></div>
 				</div>
 				<div class="intro-block__img">
 					<a href="#"><img src="img/intro-icon-viber.png" alt="icon veber"></a>
@@ -36,8 +36,8 @@
 			</div>
 			<div class="intro-block">
 				<div class="intro-block__text-wrap">
-					<div class="intro-block__title"><?php esc_html_e($ITDS_Agency_options['intro_block-3__title'], 'ITDS_Agency_test'); ?></div>
-					<div class="intro-block__text"><?php esc_html_e($ITDS_Agency_options['intro_block-3__text'], 'ITDS_Agency_test'); ?></div>
+					<div class="intro-block__title"><?php esc_html_e($ITDS_Agency_options['intro_block-3__title'], 'ITDS_Agency_test_2'); ?></div>
+					<div class="intro-block__text"><?php esc_html_e($ITDS_Agency_options['intro_block-3__text'], 'ITDS_Agency_test_2'); ?></div>
 				</div>
 				<div class="intro-block__img">
 					<a href="#"><img src="img/intro-icon-parcel.png" alt="icon parcel"></a>
@@ -45,8 +45,8 @@
 			</div>
 			<div class="intro-block">
 				<div class="intro-block__text-wrap">
-					<div class="intro-block__title"><?php esc_html_e($ITDS_Agency_options['intro_block-4__title'], 'ITDS_Agency_test'); ?></div>
-					<div class="intro-block__text"><?php esc_html_e($ITDS_Agency_options['intro_block-4__text'], 'ITDS_Agency_test'); ?></div>
+					<div class="intro-block__title"><?php esc_html_e($ITDS_Agency_options['intro_block-4__title'], 'ITDS_Agency_test_2'); ?></div>
+					<div class="intro-block__text"><?php esc_html_e($ITDS_Agency_options['intro_block-4__text'], 'ITDS_Agency_test_2'); ?></div>
 				</div>
 				<div class="intro-block__img">
 					<a href="#"><img src="img/intro-icon-fast-delivery.png" alt="icon fast delivery"></a>
@@ -88,8 +88,8 @@
 		<div class="novelties__row">
 			<div class="novelties__title">Новинки</div>
 			<div class="arow-block">
-				<div class="arow-block__arow-left fon-white"><img src="img/arow-block__arow-left-green.png" alt=""></div>
-				<div class="arow-block__arow-right fon-white"><img src="img/arow-block__arow-right-green.png" alt=""></div>
+				<div class="arow-block__arow-left fon-white"><img src="<?php echo esc_url(get_template_directory_uri() . 'img/arow-block__arow-left-green.png'); ?>" alt=""></div>
+				<div class="arow-block__arow-right fon-white"><img src="<?php echo esc_url(get_template_directory_uri() . 'img/arow-block__arow-right-green.png'); ?>" alt=""></div>
 			</div>
 		</div>
 		<div class="novelties__cards-block">

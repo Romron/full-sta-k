@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Redux Pro User Meta config.
  * For full documentation, please visit: http:https://devs.redux.io/
@@ -6,9 +7,9 @@
  * @package Redux Pro
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
-if ( ! class_exists( 'Redux_Users' ) ) {
+if (!class_exists('Redux_Users')) {
 	return;
 }
 
@@ -24,55 +25,55 @@ Redux_Users::set_profile(
 	$opt_name,
 	array(
 		'id'       => 'demo-users',
-		'title'    => esc_html__( 'Cool Options', 'your-textdomain-here' ),
+		'title'    => esc_html__('Cool Options', 'ITDS_Agency_test_2'),
 		'style'    => 'wp',
 		'sections' => array(
 			array(
-				'title'  => esc_html__( 'Home Settings', 'your-textdomain-here' ),
+				'title'  => esc_html__('Home Settings', 'ITDS_Agency_test_2'),
 				'icon'   => 'el-icon-home',
 				'fields' => array(
 					array(
 						'id'    => 'user-text',
 						'type'  => 'text',
-						'title' => esc_html__( 'Input 1', 'your-textdomain-here' ),
+						'title' => esc_html__('Input 1', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'       => 'user-text-2',
 						'type'     => 'text',
-						'required' => array( 'user-text', '=', 'two' ),
-						'title'    => esc_html__( 'Input 2', 'your-textdomain-here' ),
+						'required' => array('user-text', '=', 'two'),
+						'title'    => esc_html__('Input 2', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'    => 'user-text-3',
 						'type'  => 'text',
-						'title' => esc_html__( 'Input 3', 'your-textdomain-here' ),
+						'title' => esc_html__('Input 3', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'       => 'webFonts',
 						'type'     => 'media',
-						'title'    => esc_html__( 'Web Fonts', 'your-textdomain-here' ),
+						'title'    => esc_html__('Web Fonts', 'ITDS_Agency_test_2'),
 						'compiler' => 'true',
 						'mode'     => false,
 						// Can be set to false to allow any media type, or can also be set to any mime type.
-						'desc'     => esc_html__( 'Basic media uploader with disabled URL input field.', 'your-textdomain-here' ),
-						'subtitle' => esc_html__( 'Upload any media using the WordPress native uploader', 'your-textdomain-here' ),
+						'desc'     => esc_html__('Basic media uploader with disabled URL input field.', 'ITDS_Agency_test_2'),
+						'subtitle' => esc_html__('Upload any media using the WordPress native uploader', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'       => 'section-media-start',
 						'type'     => 'section',
-						'title'    => esc_html__( 'Media Options', 'your-textdomain-here' ),
-						'subtitle' => esc_html__( 'With the "section" field you can create indent option sections.', 'your-textdomain-here' ),
+						'title'    => esc_html__('Media Options', 'ITDS_Agency_test_2'),
+						'subtitle' => esc_html__('With the "section" field you can create indent option sections.', 'ITDS_Agency_test_2'),
 						'indent'   => true,
 					),
 					array(
 						'id'       => 'mediaurl',
 						'type'     => 'media',
 						'url'      => true,
-						'title'    => esc_html__( 'Media w/ URL', 'your-textdomain-here' ),
+						'title'    => esc_html__('Media w/ URL', 'ITDS_Agency_test_2'),
 						'compiler' => 'true',
-						'desc'     => esc_html__( 'Basic media uploader with disabled URL input field.', 'your-textdomain-here' ),
-						'subtitle' => esc_html__( 'Upload any media using the WordPress native uploader', 'your-textdomain-here' ),
-						'default'  => array( 'url' => 'http://s.wordpress.org/style/images/codeispoetry.png' ),
+						'desc'     => esc_html__('Basic media uploader with disabled URL input field.', 'ITDS_Agency_test_2'),
+						'subtitle' => esc_html__('Upload any media using the WordPress native uploader', 'ITDS_Agency_test_2'),
+						'default'  => array('url' => 'http://s.wordpress.org/style/images/codeispoetry.png'),
 					),
 					array(
 						'id'     => 'section-media-end',
@@ -82,30 +83,30 @@ Redux_Users::set_profile(
 					array(
 						'id'       => 'media-nourl',
 						'type'     => 'media',
-						'title'    => esc_html__( 'Media w/o URL', 'your-textdomain-here' ),
-						'desc'     => esc_html__( 'This represents the minimalistic view. It does not have the preview box or the display URL in an input box. ', 'your-textdomain-here' ),
-						'subtitle' => esc_html__( 'Upload any media using the WordPress native uploader', 'your-textdomain-here' ),
+						'title'    => esc_html__('Media w/o URL', 'ITDS_Agency_test_2'),
+						'desc'     => esc_html__('This represents the minimalistic view. It does not have the preview box or the display URL in an input box. ', 'ITDS_Agency_test_2'),
+						'subtitle' => esc_html__('Upload any media using the WordPress native uploader', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'       => 'media-nopreview',
 						'type'     => 'media',
 						'preview'  => false,
-						'title'    => esc_html__( 'Media No Preview', 'your-textdomain-here' ),
-						'desc'     => esc_html__( 'This represents the minimalistic view. It does not have the preview box or the display URL in an input box. ', 'your-textdomain-here' ),
-						'subtitle' => esc_html__( 'Upload any media using the WordPress native uploader', 'your-textdomain-here' ),
+						'title'    => esc_html__('Media No Preview', 'ITDS_Agency_test_2'),
+						'desc'     => esc_html__('This represents the minimalistic view. It does not have the preview box or the display URL in an input box. ', 'ITDS_Agency_test_2'),
+						'subtitle' => esc_html__('Upload any media using the WordPress native uploader', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'       => 'gallery',
 						'type'     => 'gallery',
-						'title'    => esc_html__( 'Add/Edit Gallery', 'your-textdomain-here' ),
-						'subtitle' => esc_html__( 'Create a new Gallery by selecting existing or uploading new images using the WordPress native uploader', 'your-textdomain-here' ),
-						'desc'     => esc_html__( 'This is the description field, again good for additional info.', 'your-textdomain-here' ),
+						'title'    => esc_html__('Add/Edit Gallery', 'ITDS_Agency_test_2'),
+						'subtitle' => esc_html__('Create a new Gallery by selecting existing or uploading new images using the WordPress native uploader', 'ITDS_Agency_test_2'),
+						'desc'     => esc_html__('This is the description field, again good for additional info.', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'      => 'slider1bDOVY23',
 						'type'    => 'slider',
-						'title'   => esc_html__( 'JQuery UI Slider Example 1', 'your-textdomain-here' ),
-						'desc'    => esc_html__( 'JQuery UI slider description. Min: 1, max: 500, step: 3, default value: 45', 'your-textdomain-here' ),
+						'title'   => esc_html__('JQuery UI Slider Example 1', 'ITDS_Agency_test_2'),
+						'desc'    => esc_html__('JQuery UI slider description. Min: 1, max: 500, step: 3, default value: 45', 'ITDS_Agency_test_2'),
 						'default' => '46',
 						'min'     => '1',
 						'step'    => '3',
@@ -114,8 +115,8 @@ Redux_Users::set_profile(
 					array(
 						'id'      => 'slider2bc',
 						'type'    => 'slider',
-						'title'   => esc_html__( 'JQuery UI Slider Example 2 w/ Steps (5)', 'your-textdomain-here' ),
-						'desc'    => esc_html__( 'JQuery UI slider description. Min: 0, max: 300, step: 5, default value: 75', 'your-textdomain-here' ),
+						'title'   => esc_html__('JQuery UI Slider Example 2 w/ Steps (5)', 'ITDS_Agency_test_2'),
+						'desc'    => esc_html__('JQuery UI slider description. Min: 0, max: 300, step: 5, default value: 75', 'ITDS_Agency_test_2'),
 						'default' => '0',
 						'min'     => '0',
 						'step'    => '5',
@@ -124,8 +125,8 @@ Redux_Users::set_profile(
 					array(
 						'id'      => 'spinner1bcd',
 						'type'    => 'spinner',
-						'title'   => esc_html__( 'JQuery UI Spinner Example 1', 'your-textdomain-here' ),
-						'desc'    => esc_html__( 'JQuery UI spinner description. Min:20, max: 100, step:20, default value: 40', 'your-textdomain-here' ),
+						'title'   => esc_html__('JQuery UI Spinner Example 1', 'ITDS_Agency_test_2'),
+						'desc'    => esc_html__('JQuery UI spinner description. Min:20, max: 100, step:20, default value: 40', 'ITDS_Agency_test_2'),
 						'default' => '40',
 						'min'     => '20',
 						'step'    => '20',
@@ -134,8 +135,8 @@ Redux_Users::set_profile(
 					array(
 						'id'       => 'switch-parent',
 						'type'     => 'switch',
-						'title'    => esc_html__( 'Switch - Nested Children, Enable to show', 'your-textdomain-here' ),
-						'subtitle' => esc_html__( 'Look, it\'s on! Also hidden child elements!', 'your-textdomain-here' ),
+						'title'    => esc_html__('Switch - Nested Children, Enable to show', 'ITDS_Agency_test_2'),
+						'subtitle' => esc_html__('Look, it\'s on! Also hidden child elements!', 'ITDS_Agency_test_2'),
 						'default'  => 0,
 						'on'       => 'Enabled',
 						'off'      => 'Disabled',
@@ -143,16 +144,16 @@ Redux_Users::set_profile(
 					array(
 						'id'       => 'switch-child1',
 						'type'     => 'switch',
-						'required' => array( 'switch-parent', '=', '1' ),
-						'title'    => esc_html__( 'Switch - This and the next switch required for patterns to show', 'your-textdomain-here' ),
-						'subtitle' => esc_html__( 'Also called a "fold" parent.', 'your-textdomain-here' ),
-						'desc'     => esc_html__( 'Items set with a fold to this ID will hide unless this is set to the appropriate value.', 'your-textdomain-here' ),
+						'required' => array('switch-parent', '=', '1'),
+						'title'    => esc_html__('Switch - This and the next switch required for patterns to show', 'ITDS_Agency_test_2'),
+						'subtitle' => esc_html__('Also called a "fold" parent.', 'ITDS_Agency_test_2'),
+						'desc'     => esc_html__('Items set with a fold to this ID will hide unless this is set to the appropriate value.', 'ITDS_Agency_test_2'),
 						'default'  => false,
 					),
 				),
 			),
 			array(
-				'title'  => esc_html__( 'Home Layout', 'your-textdomain-here' ),
+				'title'  => esc_html__('Home Layout', 'ITDS_Agency_test_2'),
 				'icon'   => 'el-icon-home',
 				'fields' => array(
 					array(
@@ -161,7 +162,7 @@ Redux_Users::set_profile(
 						'title'    => 'Homepage Layout Manager',
 						'desc'     => 'Organize how you want the layout to appear on the homepage',
 						'compiler' => 'true',
-						'required' => array( 'layout', '=', '1' ),
+						'required' => array('layout', '=', '1'),
 						'options'  => array(
 							'enabled'  => array(
 								'highlights' => 'Highlights',
@@ -177,10 +178,10 @@ Redux_Users::set_profile(
 						'id'       => 'presets',
 						'type'     => 'image_select',
 						'presets'  => true,
-						'title'    => esc_html__( 'Preset', 'your-textdomain-here' ),
-						'subtitle' => esc_html__( 'This allows you to set a json string or array to override multiple preferences in your theme.', 'your-textdomain-here' ),
+						'title'    => esc_html__('Preset', 'ITDS_Agency_test_2'),
+						'subtitle' => esc_html__('This allows you to set a json string or array to override multiple preferences in your theme.', 'ITDS_Agency_test_2'),
 						'default'  => 0,
-						'desc'     => esc_html__( 'This allows you to set a json string or array to override multiple preferences in your theme.', 'your-textdomain-here' ),
+						'desc'     => esc_html__('This allows you to set a json string or array to override multiple preferences in your theme.', 'ITDS_Agency_test_2'),
 						'options'  => array(
 							'1' => array(
 								'alt'     => 'Preset 1',

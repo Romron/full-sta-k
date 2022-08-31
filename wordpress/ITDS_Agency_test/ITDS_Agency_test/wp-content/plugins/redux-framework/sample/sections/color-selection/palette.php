@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Redux Framework palette config.
  * For full documentation, please visit: http://devs.redux.io/
@@ -6,22 +7,22 @@
  * @package Redux Framework
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'      => esc_html__( 'Palette', 'your-textdomain-here' ),
-		'desc'       => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/core-fields/palette-color.html" target="_blank">https://devs.redux.io/core-fields/palette-color.html</a>',
+		'title'      => esc_html__('Palette', 'ITDS_Agency_test_2'),
+		'desc'       => esc_html__('For full documentation on this field, visit: ', 'ITDS_Agency_test_2') . '<a href="https://devs.redux.io/core-fields/palette-color.html" target="_blank">https://devs.redux.io/core-fields/palette-color.html</a>',
 		'id'         => 'palette',
 		'subsection' => true,
 		'fields'     => array(
 			array(
 				'id'       => 'opt-palette-color',
 				'type'     => 'palette',
-				'title'    => esc_html__( 'Palette Color Option', 'your-textdomain-here' ),
-				'subtitle' => esc_html__( 'Only color validation can be done on this field type', 'your-textdomain-here' ),
-				'desc'     => esc_html__( 'This is the description field, again good for additional info.', 'your-textdomain-here' ),
+				'title'    => esc_html__('Palette Color Option', 'ITDS_Agency_test_2'),
+				'subtitle' => esc_html__('Only color validation can be done on this field type', 'ITDS_Agency_test_2'),
+				'desc'     => esc_html__('This is the description field, again good for additional info.', 'ITDS_Agency_test_2'),
 				'default'  => 'red',
 				'palettes' => array(
 					'red'  => array(
