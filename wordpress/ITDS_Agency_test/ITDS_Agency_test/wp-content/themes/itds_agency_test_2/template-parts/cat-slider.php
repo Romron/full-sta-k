@@ -4,10 +4,24 @@
 
    <?php
 
-   $args_cat_slider = array(      // указать параметры выборки
-      'posts_per_page' => 4,
-   );
-   $product_query_cat_slider = wc_get_products($args_cat_slider);
+
+   if (empty($args)) {
+      $args_cat_slider = array(      // указать параметры выборки
+         'posts_per_page' => 4,
+      );
+      $product_query_cat_slider = wc_get_products($args_cat_slider);
+   } elseif ($args['type_slider'] == 'viewed_goods') {
+      if (!$_COOKIE['itds_woocommerce_recently_viewed']) {
+         echo 'нет просмотренных товаров';
+      } else {
+         $viewed_products = (array) explode('|', $_COOKIE['itds_woocommerce_recently_viewed']);
+         $viewed_products = array_reverse(array_map('absint', $viewed_products));
+         foreach ($viewed_products as $id_goods) {
+            $product_query_cat_slider[] = wc_get_product($id_goods);
+         }
+      }
+   }
+
    if (!empty($product_query_cat_slider)) {
       foreach ($product_query_cat_slider as $product) {
    ?>

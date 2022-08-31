@@ -18,7 +18,8 @@ remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
 
 remove_action('woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
-// remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
+remove_action('woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 
 
 
@@ -48,7 +49,6 @@ function itds_agency_test_2_woocommerce_breadcrumbs()
    );
 }
 
-
 // переделываю пагинацию 
 add_filter('woocommerce_pagination_args', 'itds_agency_test_2_woocommerce_pagination_args_filter');
 function itds_agency_test_2_woocommerce_pagination_args_filter($array)
@@ -62,9 +62,9 @@ function itds_agency_test_2_woocommerce_pagination_args_filter($array)
    return $array;
 }
 
-// Ставим куки
-add_action('template_redirect', 'truemisha_recently_viewed_product_cookie', 20);
-function truemisha_recently_viewed_product_cookie()
+// Ставим куки на ранее просмотренный товар
+add_action('template_redirect', 'itds_agency_test_2_viewed_product_cookie', 20);
+function itds_agency_test_2_viewed_product_cookie()
 {
 
    // если находимся не на странице товара, ничего не делаем
@@ -72,23 +72,27 @@ function truemisha_recently_viewed_product_cookie()
       return;
    }
 
-
-   if (empty($_COOKIE['woocommerce_recently_viewed_2'])) {
+   if (empty($_COOKIE['itds_woocommerce_recently_viewed'])) {
       $viewed_products = array();
    } else {
-      $viewed_products = (array) explode('|', $_COOKIE['woocommerce_recently_viewed_2']);
+      $viewed_products = (array) explode('|', $_COOKIE['itds_woocommerce_recently_viewed']);
    }
 
-   // добавляем в массив текущий товар
+   // есле текущий товар небыл добавлен ранее то добавляем его в массив 
    if (!in_array(get_the_ID(), $viewed_products)) {
       $viewed_products[] = get_the_ID();
    }
 
-   // нет смысла хранить там бесконечное количество товаров
-   if (sizeof($viewed_products) > 15) {
+   if (sizeof($viewed_products) > 15) {      // указать количество товатов которое нужно хранить при переполнении
       array_shift($viewed_products); // выкидываем первый элемент
    }
 
    // устанавливаем в куки
-   wc_setcookie('woocommerce_recently_viewed_2', join('|', $viewed_products));
+   wc_setcookie('itds_woocommerce_recently_viewed', join('|', $viewed_products));
+}
+
+add_action('woocommerce_after_main_content', 'itds_agency_test_2_after_main_content_action', 10);
+function itds_agency_test_2_after_main_content_action()
+{
+   get_template_part('/template-parts/cat-slider', null, array('type_slider' => 'viewed_goods'));
 }

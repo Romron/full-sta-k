@@ -17,3 +17,26 @@ Stack trace:
 #14 {main}
   thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\single-product\related.php on line 55
 
+2022-08-31T14:46:13+00:00 CRITICAL Uncaught TypeError: array_map(): Argument #2 ($array) must be of type array, null given in D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php:18
+Stack trace:
+#0 D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php(18): array_map('absint', NULL)
+#1 D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require('D:\\web\\full-sta...')
+#2 D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('D:\\web\\full-sta...', false, Array)
+#3 D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\single-product\related.php(45): get_template_part('/template-parts...', '', Array)
+#5 D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\web\\full-sta...')
+#6 D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2047): wc_get_template('single-product/...', Array)
+#7 D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2010): woocommerce_related_products(Array)
+#8 D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): woocommerce_output_related_products('')
+#9 D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#10 D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#11 D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\content-single-product.php(72): do_action('woocommerce_aft...')
+#12 D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require('D:\\web\\full-sta...')
+#13 D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('D:\\web\\full-sta...', false)
+#14 D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product.php(37): wc_get_template_part('content', 'single-product')
+#15 D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('D:\\web\\full-sta...')
+#16 D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('D:\\web\\full-sta...')
+#17 D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('D:\\web\\full-sta...')
+#18 {main}
+  thrown in D:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php on line 18
+
