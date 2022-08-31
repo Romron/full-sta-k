@@ -87,10 +87,10 @@ $args = array(
    'allow_sub_menu'            => false,
 
    // The text to appear in the admin menu.
-   'menu_title'                => esc_html__('Расширенные настройки', 'your-textdomain-here'),
+   'menu_title'                => esc_html__('Расширенные настройки', 'ITDS_Agency_test_2'),
 
    // The text to appear on the page title.
-   'page_title'                => esc_html__('Расширенные настройки', 'your-textdomain-here'),
+   'page_title'                => esc_html__('Расширенные настройки', 'ITDS_Agency_test_2'),
 
    // Disable to create your own Google fonts loader.
    'disable_google_fonts_link' => false,
@@ -254,22 +254,22 @@ Redux::set_args($opt_name, $args);     //! если эту строку удал
 Redux::set_section(
    $opt_name,
    array(
-      'title'            => esc_html__('Социальные сети', 'ITDS_Agency_test'),
+      'title'            => esc_html__('Социальные сети', 'ITDS_Agency_test_2'),
       'id'               => 'social_networks',
-      'desc'             => esc_html__('Адреса страниц в соц. сетях', 'ITDS_Agency_test'),
+      'desc'             => esc_html__('Адреса страниц в соц. сетях', 'ITDS_Agency_test_2'),
       'customizer_width' => '400px',
       'icon'             => 'el el-network',
       'fields'           => array(
          array(
             'id'       => 'social_networks_fb-link',
             'type'     => 'text',
-            'title'    => esc_html__('Ссылка на страницу в Facebook', 'ITDS_Agency_test'),
+            'title'    => esc_html__('Ссылка на страницу в Facebook', 'ITDS_Agency_test_2'),
             'default'  => '',
          ),
          array(
             'id'       => 'social_networks_Inst-link',
             'type'     => 'text',
-            'title'    => esc_html__('Ссылка на страницу в Instagram', 'ITDS_Agency_test'),
+            'title'    => esc_html__('Ссылка на страницу в Instagram', 'ITDS_Agency_test_2'),
             'default'  => '',
          ),
       ),
@@ -280,34 +280,34 @@ Redux::set_section(
 Redux::set_section(
    $opt_name,
    array(
-      'title'            => esc_html__('Контакты', 'ITDS_Agency_test'),
+      'title'            => esc_html__('Контакты', 'ITDS_Agency_test_2'),
       'id'               => 'Contacts',
-      'desc'             => esc_html__('Адреса страниц в соц. сетях', 'ITDS_Agency_test'),
+      'desc'             => esc_html__('Адреса страниц в соц. сетях', 'ITDS_Agency_test_2'),
       'customizer_width' => '400px',
       'icon'             => 'el el-tasks',
       'fields'           => array(
          array(
             'id'       => 'contact_fone-number',
             'type'     => 'text',
-            'title'    => esc_html__('Контактный номер телефона', 'ITDS_Agency_test'),
+            'title'    => esc_html__('Контактный номер телефона', 'ITDS_Agency_test_2'),
             'default'  => '',
          ),
          array(
             'id'       => 'contact_viber-number',
             'type'     => 'text',
-            'title'    => esc_html__('Контактный номер в viber', 'ITDS_Agency_test'),
+            'title'    => esc_html__('Контактный номер в viber', 'ITDS_Agency_test_2'),
             'default'  => '',
          ),
          array(
             'id'       => 'contact_email',
             'type'     => 'text',
-            'title'    => esc_html__('Адрес электронной почты', 'ITDS_Agency_test'),
+            'title'    => esc_html__('Адрес электронной почты', 'ITDS_Agency_test_2'),
             'default'  => '',
          ),
          array(
             'id'       => 'contact_map-link',
             'type'     => 'text',
-            'title'    => esc_html__('Ссылка на карту', 'ITDS_Agency_test'),
+            'title'    => esc_html__('Ссылка на карту', 'ITDS_Agency_test_2'),
             'default'  => '',
          ),
       ),
@@ -318,9 +318,9 @@ Redux::set_section(
 Redux::set_section(
    $opt_name,
    array(
-      'title'            => esc_html__('Интро', 'ITDS_Agency_test'),
+      'title'            => esc_html__('Интро', 'ITDS_Agency_test_2'),
       'id'               => 'intro',
-      'desc'             => esc_html__('Адреса страниц в соц. сетях', 'ITDS_Agency_test'),
+      'desc'             => esc_html__('Адреса страниц в соц. сетях', 'ITDS_Agency_test_2'),
       'customizer_width' => '400px',
       'icon'             => 'el el-graph-alt',
       'fields'           => array(
@@ -328,56 +328,56 @@ Redux::set_section(
             'id'           => 'intro_foto',
             'type'         => 'media',
             'url'          => true,
-            'title'        => esc_html__('Изображение', 'ITDS_Agency_test'),
+            'title'        => esc_html__('Изображение', 'ITDS_Agency_test_2'),
             'compiler'     => 'true',
             'preview_size' => 'full',
          ),
          array(
             'id'       => 'intro_block-1__title',
             'type'     => 'text',
-            'title'    => esc_html__('Заголовок первого блока', 'ITDS_Agency_test'),
+            'title'    => esc_html__('Заголовок первого блока', 'ITDS_Agency_test_2'),
             'default'  => '',
          ),
          array(
             'id'       => 'intro_block-1__text',
             'type'     => 'text',
-            'title'    => esc_html__('текст первого блока', 'ITDS_Agency_test'),
+            'title'    => esc_html__('текст первого блока', 'ITDS_Agency_test_2'),
             'default'  => '',
          ),
          array(
             'id'       => 'intro_block-2__title',
             'type'     => 'text',
-            'title'    => esc_html__('Заголовок второго блока', 'ITDS_Agency_test'),
+            'title'    => esc_html__('Заголовок второго блока', 'ITDS_Agency_test_2'),
             'default'  => '',
          ),
          array(
             'id'       => 'intro_block-2__text',
             'type'     => 'text',
-            'title'    => esc_html__('текст втрого блока', 'ITDS_Agency_test'),
+            'title'    => esc_html__('текст втрого блока', 'ITDS_Agency_test_2'),
             'default'  => '',
          ),
          array(
             'id'       => 'intro_block-3__title',
             'type'     => 'text',
-            'title'    => esc_html__('Заголовок третьего блока', 'ITDS_Agency_test'),
+            'title'    => esc_html__('Заголовок третьего блока', 'ITDS_Agency_test_2'),
             'default'  => '',
          ),
          array(
             'id'       => 'intro_block-3__text',
             'type'     => 'text',
-            'title'    => esc_html__('текст третьего блока', 'ITDS_Agency_test'),
+            'title'    => esc_html__('текст третьего блока', 'ITDS_Agency_test_2'),
             'default'  => '',
          ),
          array(
             'id'       => 'intro_block-4__title',
             'type'     => 'text',
-            'title'    => esc_html__('Заголовок четвёртого блока', 'ITDS_Agency_test'),
+            'title'    => esc_html__('Заголовок четвёртого блока', 'ITDS_Agency_test_2'),
             'default'  => '',
          ),
          array(
             'id'       => 'intro_block-4__text',
             'type'     => 'text',
-            'title'    => esc_html__('текст четвёртого блока', 'ITDS_Agency_test'),
+            'title'    => esc_html__('текст четвёртого блока', 'ITDS_Agency_test_2'),
             'default'  => '',
          ),
       ),

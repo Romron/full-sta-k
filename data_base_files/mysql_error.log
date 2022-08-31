@@ -571,3 +571,36 @@ Version: '10.4.24-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribut
 2022-08-30 11:57:56 0 [Note] Added new Master_info '' to hash table
 2022-08-30 11:57:56 0 [Note] c:\xampp\mysql\bin\mysqld.exe: ready for connections.
 Version: '10.4.24-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2022-08-31 10:11:50 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2022-08-31 10:11:50 0 [Note] InnoDB: Uses event mutexes
+2022-08-31 10:11:50 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2022-08-31 10:11:50 0 [Note] InnoDB: Number of pools: 1
+2022-08-31 10:11:50 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2022-08-31 10:11:50 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2022-08-31 10:11:50 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-08-31 10:11:50 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=42064141
+2022-08-31 10:11:51 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2022-08-31 10:11:51 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2022-08-31 10:11:51 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-08-31 10:11:51 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-08-31 10:11:51 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2022-08-31 10:11:51 0 [Note] InnoDB: Waiting for purge to start
+2022-08-31 10:11:51 0 [Note] InnoDB: 10.4.24 started; log sequence number 42064150; transaction id 30298
+2022-08-31 10:11:51 0 [Note] InnoDB: Loading buffer pool(s) from F:\web\full-sta-k\data_base_files\ib_buffer_pool
+2022-08-31 10:11:51 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-08-31 10:11:51 0 [Note] Server socket created on IP: '::'.
+2022-08-31 10:11:51 0 [Note] InnoDB: Buffer pool(s) load completed at 220831 10:11:51
+2022-08-31 10:11:51 0 [Note] Reading of all Master_info entries succeeded
+2022-08-31 10:11:51 0 [Note] Added new Master_info '' to hash table
+2022-08-31 10:11:51 0 [Note] c:\xampp\mysql\bin\mysqld.exe: ready for connections.
+Version: '10.4.24-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2022-08-31 12:55:48 238 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2022-08-31 12:55:52 240 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2022-08-31 12:55:52 244 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2022-08-31 12:55:53 248 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2022-08-31 12:55:53 250 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2022-08-31 12:55:56 252 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2022-08-31 13:19:47 420 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2022-08-31 13:24:09 433 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2022-08-31 13:24:29 435 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2022-08-31 13:24:31 437 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'

@@ -87,10 +87,10 @@ $args = array(
    'allow_sub_menu'            => false,
 
    // The text to appear in the admin menu.
-   'menu_title'                => esc_html__('Расширенные настройки', 'your-textdomain-here'),
+   'menu_title'                => esc_html__('Расширенные настройки', 'ITDS_Agency_test_2'),
 
    // The text to appear on the page title.
-   'page_title'                => esc_html__('Расширенные настройки', 'your-textdomain-here'),
+   'page_title'                => esc_html__('Расширенные настройки', 'ITDS_Agency_test_2'),
 
    // Disable to create your own Google fonts loader.
    'disable_google_fonts_link' => false,

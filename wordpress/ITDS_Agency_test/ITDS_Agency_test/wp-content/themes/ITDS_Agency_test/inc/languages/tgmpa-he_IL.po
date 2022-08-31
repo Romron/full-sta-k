@@ -1,5 +1,5 @@
 # Translation of TGM Plugin Activation in Hebrew
-# This file is distributed under the same license as the TGMPA package.
+# This file is distributed under the same license as the ITDS_Agency_test_2 package.
 msgid ""
 msgstr ""
 "Project-Id-Version: TGM Plugin Activation v2.6.1\n"
@@ -204,8 +204,8 @@ msgstr "ו"
 #. translators: %s: version number
 #: class-tgm-plugin-activation.php:2075
 #, fuzzy, php-format
-msgid "TGMPA v%s"
-msgstr "TGMPA v%s"
+msgid "ITDS_Agency_test_2 v%s"
+msgstr "ITDS_Agency_test_2 v%s"
 
 #: class-tgm-plugin-activation.php:2366
 msgid "Required"

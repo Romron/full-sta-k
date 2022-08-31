@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Redux Framework select image config.
  * For full documentation, please visit: http://devs.redux.io/
@@ -6,21 +7,21 @@
  * @package Redux Framework
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'      => esc_html__( 'Select Image', 'your-textdomain-here' ),
+		'title'      => esc_html__('Select Image', 'ITDS_Agency_test_2'),
 		'id'         => 'select-select_image',
-		'desc'       => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/core-fields/select-image.html" target="_blank">https://devs.redux.io/core-fields/select-image.html</a>',
+		'desc'       => esc_html__('For full documentation on this field, visit: ', 'ITDS_Agency_test_2') . '<a href="https://devs.redux.io/core-fields/select-image.html" target="_blank">https://devs.redux.io/core-fields/select-image.html</a>',
 		'subsection' => true,
 		'fields'     => array(
 			array(
 				'id'      => 'opt-select_image',
 				'type'    => 'select_image',
 				'presets' => true,
-				'title'   => esc_html__( 'Select Image', 'your-textdomain-here' ),
+				'title'   => esc_html__('Select Image', 'ITDS_Agency_test_2'),
 				'options' => array(
 					array(
 						'alt'     => 'Preset 1',
@@ -42,8 +43,8 @@ Redux::set_section(
 			array(
 				'id'       => 'opt-select-image',
 				'type'     => 'select_image',
-				'title'    => esc_html__( 'Select Image', 'your-textdomain-here' ),
-				'subtitle' => esc_html__( 'A preview of the selected image will appear underneath the select box.', 'your-textdomain-here' ),
+				'title'    => esc_html__('Select Image', 'ITDS_Agency_test_2'),
+				'subtitle' => esc_html__('A preview of the selected image will appear underneath the select box.', 'ITDS_Agency_test_2'),
 				'options'  => $sample_patterns,
 				'default'  => Redux_Core::$url . '../sample/patterns/triangular.png',
 			),

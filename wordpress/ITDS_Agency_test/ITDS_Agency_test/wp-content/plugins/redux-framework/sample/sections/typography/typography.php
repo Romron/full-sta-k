@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Redux Framework typography config.
  * For full documentation, please visit: http://devs.redux.io/
@@ -6,21 +7,21 @@
  * @package Redux Framework
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'  => esc_html__( 'Typography', 'your-textdomain-here' ),
+		'title'  => esc_html__('Typography', 'ITDS_Agency_test_2'),
 		'id'     => 'typography',
-		'desc'   => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/core-fields/typography.html" target="_blank">https://devs.redux.io/core-fields/typography.html</a>',
+		'desc'   => esc_html__('For full documentation on this field, visit: ', 'ITDS_Agency_test_2') . '<a href="https://devs.redux.io/core-fields/typography.html" target="_blank">https://devs.redux.io/core-fields/typography.html</a>',
 		'icon'   => 'el el-font',
 		'fields' => array(
 			array(
 				'id'                => 'opt-typography-body',
 				'type'              => 'typography',
-				'title'             => esc_html__( 'Body Font', 'your-textdomain-here' ),
-				'subtitle'          => esc_html__( 'Specify the body font properties.', 'your-textdomain-here' ),
+				'title'             => esc_html__('Body Font', 'ITDS_Agency_test_2'),
+				'subtitle'          => esc_html__('Specify the body font properties.', 'ITDS_Agency_test_2'),
 				'google'            => true,
 				'font_family_clear' => false,
 				'default'           => array(
@@ -29,12 +30,12 @@ Redux::set_section(
 					'font-family' => 'Arial, Helvetica, sans-serif',
 					'font-weight' => 'Normal',
 				),
-				'output'            => array( 'p' ),
+				'output'            => array('p'),
 			),
 			array(
 				'id'          => 'opt-typography',
 				'type'        => 'typography',
-				'title'       => esc_html__( 'Typography Site Description', 'your-textdomain-here' ),
+				'title'       => esc_html__('Typography Site Description', 'ITDS_Agency_test_2'),
 
 				// Use if you want to hook in your own CSS compiler.
 				'compiler'    => true,
@@ -46,7 +47,7 @@ Redux::set_section(
 				'all-styles'  => true,
 				'all-subsets' => true,
 				'units'       => 'px',
-				'subtitle'    => esc_html__( 'Typography option with each property can be called individually.', 'your-textdomain-here' ),
+				'subtitle'    => esc_html__('Typography option with each property can be called individually.', 'ITDS_Agency_test_2'),
 				'default'     => array(
 					'color'       => '#333',
 					'font-style'  => '700',
@@ -55,7 +56,7 @@ Redux::set_section(
 					'font-size'   => '33px',
 					'line-height' => '40px',
 				),
-				'output'      => array( 'h2.site-description, h2.entry-title, .site-description, h2.wp-block-post-title' ),
+				'output'      => array('h2.site-description, h2.entry-title, .site-description, h2.wp-block-post-title'),
 				// Disable google fonts.
 				// 'google'      => false,.
 
@@ -90,8 +91,8 @@ Redux::set_section(
 			array(
 				'id'                => 'opt-typography-body-shadow',
 				'type'              => 'typography',
-				'title'             => esc_html__( 'Title Font', 'your-textdomain-here' ),
-				'subtitle'          => esc_html__( 'Specify the body font properties.', 'your-textdomain-here' ),
+				'title'             => esc_html__('Title Font', 'ITDS_Agency_test_2'),
+				'subtitle'          => esc_html__('Specify the body font properties.', 'ITDS_Agency_test_2'),
 				'google'            => true,
 				'font_family_clear' => false,
 				'text-shadow'       => true,
@@ -106,7 +107,7 @@ Redux::set_section(
 					'margin-top'    => '20px',
 					'margin-bottom' => '20px',
 				),
-				'output'            => array( '.site-title, .wp-block-site-title' ),
+				'output'            => array('.site-title, .wp-block-site-title'),
 			),
 		),
 	)

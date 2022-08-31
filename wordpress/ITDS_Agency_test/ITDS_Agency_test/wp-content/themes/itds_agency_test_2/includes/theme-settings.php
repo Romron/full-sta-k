@@ -66,9 +66,9 @@ function ITDS_Agency_test_register_required_plugins()
    );
 
    $config = array(
-      'id'           => 'ITDS_Agency_test',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+      'id'           => 'ITDS_Agency_test_2',                 // Unique ID for hashing notices for multiple instances of ITDS_Agency_test_2.
       'default_path' => '',                      // Default absolute path to bundled plugins.
-      'menu'         => 'tgmpa-install-plugins', // Menu slug.
+      'menu'         => 'ITDS_Agency_test_2-install-plugins', // Menu slug.
       'has_notices'  => true,                    // Show admin notices or not.
       'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
       'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
@@ -78,9 +78,9 @@ function ITDS_Agency_test_register_required_plugins()
 
    );
 
-   tgmpa($plugins, $config);
+   ITDS_Agency_test_2($plugins, $config);
 }
-add_action('tgmpa_register', 'ITDS_Agency_test_register_required_plugins');
+add_action('ITDS_Agency_test_2_register', 'ITDS_Agency_test_register_required_plugins');
 
 function itds_agency_test_2_content_width()
 {

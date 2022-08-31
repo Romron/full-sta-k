@@ -39,7 +39,7 @@
 						<span class="block-icon">
 							<img src="img/icon-telephone.png" alt="">
 						</span>
-						<span class="footer-contacts__text-text"><?php esc_html_e($ITDS_Agency_options['contact_fone-number'], 'ITDS_Agency_test'); ?></span>
+						<span class="footer-contacts__text-text"><?php esc_html_e($ITDS_Agency_options['contact_fone-number'], 'ITDS_Agency_test_2'); ?></span>
 					</span>
 				</a>
 				<a href="#">
@@ -47,7 +47,7 @@
 						<span class="block-icon">
 							<img src="img/icon-maile.png" alt="">
 						</span>
-						<span class="footer-contacts__text-text"><?php esc_html_e($ITDS_Agency_options['contact_email'], 'ITDS_Agency_test'); ?></span>
+						<span class="footer-contacts__text-text"><?php esc_html_e($ITDS_Agency_options['contact_email'], 'ITDS_Agency_test_2'); ?></span>
 					</span>
 				</a>
 				<a href="<?php echo esc_url($ITDS_Agency_options['contact_map-link']); ?>">

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Redux Pro Icon Select Sample config.
  * For full documentation, please visit: http:https://devs.redux.io/
@@ -6,22 +7,22 @@
  * @package Redux Pro
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 require_once Redux_Pro::$dir . 'core/inc/extensions/icon_select/font-awesome-5-free.php';
 
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'      => esc_html__( 'Icon Select', 'your-textdomain-here' ),
-		'desc'       => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/premium/icon-select.html" target="_blank">https://devs.redux.io/premium/icon-select.html</a>',
+		'title'      => esc_html__('Icon Select', 'ITDS_Agency_test_2'),
+		'desc'       => esc_html__('For full documentation on this field, visit: ', 'ITDS_Agency_test_2') . '<a href="https://devs.redux.io/premium/icon-select.html" target="_blank">https://devs.redux.io/premium/icon-select.html</a>',
 		'subsection' => true,
 		'fields'     => array(
 			array(
 				'id'               => 'icon_select_field',
 				'type'             => 'icon_select',
-				'title'            => esc_html__( 'Icon Select', 'your-textdomain-here' ),
-				'subtitle'         => esc_html__( 'Select an icon.', 'your-textdomain-here' ),
+				'title'            => esc_html__('Icon Select', 'ITDS_Agency_test_2'),
+				'subtitle'         => esc_html__('Select an icon.', 'ITDS_Agency_test_2'),
 				'default'          => '',
 				'options'          => redux_icon_select_fa_5_free(),
 

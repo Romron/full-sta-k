@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Redux Pro Color Scheme Sample config.
  *
@@ -7,21 +8,21 @@
  * @package Redux Pro
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'      => esc_html__( 'Color Schemes', 'your-textdomain-here' ),
-		'desc'       => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/premium/color-schemes.html" target="_blank">https://devs.redux.io/premium/color-schemes.html</a>',
+		'title'      => esc_html__('Color Schemes', 'ITDS_Agency_test_2'),
+		'desc'       => esc_html__('For full documentation on this field, visit: ', 'ITDS_Agency_test_2') . '<a href="https://devs.redux.io/premium/color-schemes.html" target="_blank">https://devs.redux.io/premium/color-schemes.html</a>',
 		'subsection' => true,
 		'fields'     => array(
 			array(
 				'id'       => 'opt-color-scheme',
 				'type'     => 'color_scheme',
-				'title'    => esc_html__( 'Color Schemes', 'your-textdomain-here' ),
-				'subtitle' => esc_html__( 'Save and load color schemes', 'your-textdomain-here' ),
-				'desc'     => esc_html__( 'If you\'re using the theme 2014, you will be able to see many changes on the current site.', 'your-textdomain-here' ),
+				'title'    => esc_html__('Color Schemes', 'ITDS_Agency_test_2'),
+				'subtitle' => esc_html__('Save and load color schemes', 'ITDS_Agency_test_2'),
+				'desc'     => esc_html__('If you\'re using the theme 2014, you will be able to see many changes on the current site.', 'ITDS_Agency_test_2'),
 				'output'   => true,
 				'compiler' => true,
 				'simple'   => false,
@@ -42,14 +43,14 @@ Redux::set_section(
 					'palette'                => null,  // show default.
 				),
 				'groups'   => array(
-					esc_html__( 'Header', 'your-textdomain-here' ) => array(
-						'desc'           => esc_html__( 'Set header and nav colors here. (Group open by default)', 'your-textdomain-here' ),
+					esc_html__('Header', 'ITDS_Agency_test_2') => array(
+						'desc'           => esc_html__('Set header and nav colors here. (Group open by default)', 'ITDS_Agency_test_2'),
 						'hidden'         => false,
 						'accordion_open' => true,
 					),
-					esc_html__( 'Body', 'your-textdomain-here' )   => esc_html__( 'Set body and content colors here.', 'your-textdomain-here' ),
-					esc_html__( 'Widget', 'your-textdomain-here' ) => '',
-					''                                             => esc_html__( 'These colors are not asigned to any group.', 'your-textdomain-here' ),
+					esc_html__('Body', 'ITDS_Agency_test_2')   => esc_html__('Set body and content colors here.', 'ITDS_Agency_test_2'),
+					esc_html__('Widget', 'ITDS_Agency_test_2') => '',
+					''                                             => esc_html__('These colors are not asigned to any group.', 'ITDS_Agency_test_2'),
 				),
 				'default'  => array(
 					array(
@@ -63,7 +64,7 @@ Redux::set_section(
 						),
 						'mode'      => 'background-color',
 						'important' => true,
-						'group'     => esc_html__( 'Header', 'your-textdomain-here' ),
+						'group'     => esc_html__('Header', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'        => 'site-header-border',
@@ -73,7 +74,7 @@ Redux::set_section(
 						'selector'  => '.site-header',
 						'mode'      => 'border-color',
 						'important' => true,
-						'group'     => esc_html__( 'Header', 'your-textdomain-here' ),
+						'group'     => esc_html__('Header', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'        => 'home-link',     // ID.
@@ -83,7 +84,7 @@ Redux::set_section(
 						'selector'  => '.home-link',    // CSS selector.
 						'mode'      => 'color',         // CSS mode.
 						'important' => true,            // CSS important.
-						'group'     => esc_html__( 'Header', 'your-textdomain-here' ),
+						'group'     => esc_html__('Header', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'        => 'site-description',
@@ -93,7 +94,7 @@ Redux::set_section(
 						'selector'  => 'h2.site-description',
 						'mode'      => 'color',
 						'important' => true,
-						'group'     => esc_html__( 'Header', 'your-textdomain-here' ),
+						'group'     => esc_html__('Header', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'       => 'navbar',
@@ -102,7 +103,7 @@ Redux::set_section(
 						'alpha'    => 1,
 						'selector' => '.navbar',
 						'mode'     => 'background-color',
-						'group'    => esc_html__( 'Header', 'your-textdomain-here' ),
+						'group'    => esc_html__('Header', 'ITDS_Agency_test_2'),
 
 					),
 					array(
@@ -110,9 +111,9 @@ Redux::set_section(
 						'title'    => 'body text',
 						'color'    => '#000000',
 						'alpha'    => 1,
-						'selector' => esc_html__( 'Body', 'your-textdomain-here' ),
+						'selector' => esc_html__('Body', 'ITDS_Agency_test_2'),
 						'mode'     => 'color',
-						'group'    => esc_html__( 'Body', 'your-textdomain-here' ),
+						'group'    => esc_html__('Body', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'       => 'site-content',
@@ -121,7 +122,7 @@ Redux::set_section(
 						'alpha'    => 1,
 						'selector' => '.site-content',
 						'mode'     => 'background-color',
-						'group'    => esc_html__( 'Body', 'your-textdomain-here' ),
+						'group'    => esc_html__('Body', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'       => 'entry-content',
@@ -130,7 +131,7 @@ Redux::set_section(
 						'alpha'    => 1,
 						'selector' => '.entry-content',
 						'mode'     => 'background-color',
-						'group'    => esc_html__( 'Body', 'your-textdomain-here' ),
+						'group'    => esc_html__('Body', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'       => 'entry-title',
@@ -139,7 +140,7 @@ Redux::set_section(
 						'alpha'    => 1,
 						'selector' => '.entry-title a',
 						'mode'     => 'color',
-						'group'    => esc_html__( 'Body', 'your-textdomain-here' ),
+						'group'    => esc_html__('Body', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'       => 'entry-title-hover',
@@ -148,7 +149,7 @@ Redux::set_section(
 						'alpha'    => 1,
 						'selector' => '.entry-title a:hover',
 						'mode'     => 'color',
-						'group'    => esc_html__( 'Body', 'your-textdomain-here' ),
+						'group'    => esc_html__('Body', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'       => 'entry-meta',
@@ -157,7 +158,7 @@ Redux::set_section(
 						'alpha'    => 1,
 						'selector' => '.entry-meta a',
 						'mode'     => 'color',
-						'group'    => esc_html__( 'Body', 'your-textdomain-here' ),
+						'group'    => esc_html__('Body', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'       => 'widget-container',
@@ -166,7 +167,7 @@ Redux::set_section(
 						'alpha'    => .5,
 						'selector' => '.widget',
 						'mode'     => 'background-color',
-						'group'    => esc_html__( 'Widget', 'your-textdomain-here' ),
+						'group'    => esc_html__('Widget', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'        => 'widget-title',
@@ -176,7 +177,7 @@ Redux::set_section(
 						'selector'  => '.widget-title',
 						'mode'      => 'color',
 						'important' => true,
-						'group'     => esc_html__( 'Widget', 'your-textdomain-here' ),
+						'group'     => esc_html__('Widget', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'        => 'widget-text',
@@ -186,7 +187,7 @@ Redux::set_section(
 						'selector'  => '.widget a',
 						'mode'      => 'color',
 						'important' => true,
-						'group'     => esc_html__( 'Widget', 'your-textdomain-here' ),
+						'group'     => esc_html__('Widget', 'ITDS_Agency_test_2'),
 					),
 					array(
 						'id'        => 'sidebar-container',

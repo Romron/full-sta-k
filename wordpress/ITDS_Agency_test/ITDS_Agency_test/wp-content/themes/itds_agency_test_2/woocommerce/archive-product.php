@@ -23,8 +23,8 @@ defined('ABSPATH') || exit;
 			<div class="view">
 				<div class="view__title">Вид</div>
 				<div class="view__preview">
-					<img src="<?php echo get_template_directory_uri() . '\assets\img\view-1.png' ?>" alt="">
-					<img src="<?php echo get_template_directory_uri() . '\assets\img\view-2.png' ?>" alt="">
+					<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/view-1.png') ?>" alt="">
+					<img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/view-2.png') ?>" alt="">
 				</div>
 			</div>
 			<div class="sorting-block">

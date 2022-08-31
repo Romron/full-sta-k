@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Redux Framework text config.
  * For full documentation, please visit: http://devs.redux.io/
@@ -6,13 +7,13 @@
  * @package Redux Framework
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'            => esc_html__( 'Text', 'your-textdomain-here' ),
-		'desc'             => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/core-fields/text.html" target="_blank">https://devs.redux.io/core-fields/text.html</a>',
+		'title'            => esc_html__('Text', 'ITDS_Agency_test_2'),
+		'desc'             => esc_html__('For full documentation on this field, visit: ', 'ITDS_Agency_test_2') . '<a href="https://devs.redux.io/core-fields/text.html" target="_blank">https://devs.redux.io/core-fields/text.html</a>',
 		'id'               => 'basic-text',
 		'subsection'       => true,
 		'customizer_width' => '700px',
@@ -20,17 +21,17 @@ Redux::set_section(
 			array(
 				'id'       => 'text-example',
 				'type'     => 'text',
-				'title'    => esc_html__( 'Text Field', 'your-textdomain-here' ),
-				'subtitle' => esc_html__( 'Subtitle', 'your-textdomain-here' ),
-				'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+				'title'    => esc_html__('Text Field', 'ITDS_Agency_test_2'),
+				'subtitle' => esc_html__('Subtitle', 'ITDS_Agency_test_2'),
+				'desc'     => esc_html__('Field Description', 'ITDS_Agency_test_2'),
 				'default'  => 'Default Text',
 			),
 			array(
 				'id'       => 'text-example-hint',
 				'type'     => 'text',
-				'title'    => esc_html__( 'Text Field w/ Hint', 'your-textdomain-here' ),
-				'subtitle' => esc_html__( 'Subtitle', 'your-textdomain-here' ),
-				'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+				'title'    => esc_html__('Text Field w/ Hint', 'ITDS_Agency_test_2'),
+				'subtitle' => esc_html__('Subtitle', 'ITDS_Agency_test_2'),
+				'desc'     => esc_html__('Field Description', 'ITDS_Agency_test_2'),
 				'default'  => 'Default Text',
 				'hint'     => array(
 					'title'   => 'Hint Title',
@@ -40,11 +41,11 @@ Redux::set_section(
 			array(
 				'id'          => 'text-placeholder',
 				'type'        => 'text',
-				'title'       => esc_html__( 'Text Field w/ placeholder using custom data object.', 'your-textdomain-here' ),
-				'subtitle'    => esc_html__( 'Subtitle', 'your-textdomain-here' ),
-				'desc'        => esc_html__( 'Field Description', 'your-textdomain-here' ),
+				'title'       => esc_html__('Text Field w/ placeholder using custom data object.', 'ITDS_Agency_test_2'),
+				'subtitle'    => esc_html__('Subtitle', 'ITDS_Agency_test_2'),
+				'desc'        => esc_html__('Field Description', 'ITDS_Agency_test_2'),
 				'placeholder' => 'Placeholder Text',
-				'data'        => array( 'box1', 'box2' ),
+				'data'        => array('box1', 'box2'),
 			),
 		),
 	)
