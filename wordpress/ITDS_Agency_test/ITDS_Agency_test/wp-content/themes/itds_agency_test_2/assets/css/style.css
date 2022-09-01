@@ -1026,6 +1026,7 @@ main {
 }
 
 .cat-slider {
+	/* width: 1110px; */
 	height: 283px;
 	background: #0E4243;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
@@ -1042,13 +1043,15 @@ main {
 	line-height: 22px;
 	text-align: center;
 	color: #FFFFFF;
+
+	padding: 0px 15px;
 }
 
 .arrow-cat-slider__right,
 .arrow-cat-slider__left {
 	position: absolute;
 	top: 50%;
-	transform: translate(0, -50%);
+	transform: translate(0, -55%);
 	z-index: 5;
 }
 
@@ -1919,14 +1922,19 @@ a[class="page-numbers"],
 
 	position: absolute;
 	left: 0px;
-	top: 200px;
+	/* top: 200px; */
 	width: 1500px;
 	min-height: 100px;
 	background: rgb(224, 213, 248);
 	border: 1px solid #0515fd;
 	margin: 20px;
+	color: #000;
 	z-index: 999;
 
+}
+
+.test-php-block a {
+	color: #000;
 }
 
 .filds-metabox {

@@ -59,8 +59,8 @@
 		<div class="popular-goods__row">
 			<div class="popular-goods__title">популярные товары</div>
 			<div class="arow-block">
-				<div class="arow-block__arow-left"><img src="img/arow-block__arow-left.png" alt=""></div>
-				<div class="arow-block__arow-right"><img src="img/arow-block__arow-right.png" alt=""></div>
+				<div class="arow-block__arow-left"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/arow-block__arow-left.png'); ?>" alt=""></div>
+				<div class="arow-block__arow-right"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/arow-block__arow-right.png'); ?>" alt=""></div>
 			</div>
 		</div>
 		<div class="popular-goods__cards-block">
@@ -84,44 +84,20 @@
 </main>
 
 <div class="wrap-novelties">
-	<div class="novelties">
-		<div class="novelties__row">
-			<div class="novelties__title">Новинки</div>
-			<div class="arow-block">
-				<div class="arow-block__arow-left fon-white"><img src="<?php echo esc_url(get_template_directory_uri() . 'img/arow-block__arow-left-green.png'); ?>" alt=""></div>
-				<div class="arow-block__arow-right fon-white"><img src="<?php echo esc_url(get_template_directory_uri() . 'img/arow-block__arow-right-green.png'); ?>" alt=""></div>
-			</div>
-		</div>
-		<div class="novelties__cards-block">
-			<?php
-			$args_novelties = array(		// указать параметры выборки 
-				'posts_per_page' => 4,
-			);
-			$product_query_novelties = wc_get_products($args_novelties);
-			if (!empty($product_query_novelties)) {
-				foreach ($product_query_novelties as $product) {
 
-					$products_type = $product->get_type();
+	<?php get_template_part('template-parts/products-tape'); ?>
 
-					get_template_part('/template-parts/product-card', null, array('product' => $product));
-				};
-			} else {
-				echo 'постов нет';
-			};
-			wp_reset_postdata();
-			?>
-
-		</div>
-	</div>
 </div>
+
 
 <div class="instagram">
 	<?php get_template_part('template-parts/instagram-tape'); ?>
 </div>
 
+<?php get_template_part('template-parts/about'); ?>
 
 <div class="wrap-about">
-	<div class="about">
+	<!-- <div class="about">
 		<div class="about__foto"><img src="img/about-foto.png" alt="about-foto"></div>
 
 		<div class="about__text">
@@ -136,7 +112,7 @@
 			</div>
 		</div>
 
-	</div>
+	</div> -->
 </div>
 
 

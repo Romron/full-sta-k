@@ -1,0 +1,274 @@
+2022-09-01T06:43:07+00:00 CRITICAL Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php:24
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php(24): array_push(NULL, Array)
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require('F:\\web\\full-sta...')
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php(97): get_template_part('/template-parts...', '', Array)
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): itds_agency_test_2_after_main_content_action('')
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product.php(48): do_action('woocommerce_aft...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#11 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#12 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php on line 24
+
+2022-09-01T06:43:40+00:00 CRITICAL Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php:24
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php(24): array_push(NULL, Array)
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require('F:\\web\\full-sta...')
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php(97): get_template_part('/template-parts...', '', Array)
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): itds_agency_test_2_after_main_content_action('')
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product.php(48): do_action('woocommerce_aft...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#11 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#12 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php on line 24
+
+2022-09-01T06:46:06+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on array in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php:38
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php(97): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): itds_agency_test_2_after_main_content_action('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product.php(48): do_action('woocommerce_aft...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#11 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php on line 38
+
+2022-09-01T06:51:44+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on array in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php:51
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php(97): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): itds_agency_test_2_after_main_content_action('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product.php(48): do_action('woocommerce_aft...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#11 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php on line 51
+
+2022-09-01T06:55:47+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on bool in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php:53
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php(97): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): itds_agency_test_2_after_main_content_action('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product.php(48): do_action('woocommerce_aft...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#11 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php on line 53
+
+2022-09-01T06:55:54+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on bool in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php:53
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php(97): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): itds_agency_test_2_after_main_content_action('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product.php(48): do_action('woocommerce_aft...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#11 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php on line 53
+
+2022-09-01T06:56:26+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on bool in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php:39
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php(97): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): itds_agency_test_2_after_main_content_action('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product.php(48): do_action('woocommerce_aft...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#11 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php on line 39
+
+2022-09-01T06:57:54+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on bool in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php:53
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php(97): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): itds_agency_test_2_after_main_content_action('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product.php(48): do_action('woocommerce_aft...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#11 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php on line 53
+
+2022-09-01T06:59:05+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on bool in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php:53
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php(97): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): itds_agency_test_2_after_main_content_action('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product.php(48): do_action('woocommerce_aft...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#11 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php on line 53
+
+2022-09-01T07:00:56+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on bool in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php:53
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php(97): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): itds_agency_test_2_after_main_content_action('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product.php(48): do_action('woocommerce_aft...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#11 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php on line 53
+
+2022-09-01T07:01:31+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on bool in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php:53
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php(97): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): itds_agency_test_2_after_main_content_action('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product.php(48): do_action('woocommerce_aft...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#11 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php on line 53
+
+2022-09-01T07:02:57+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on bool in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php:54
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php(97): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): itds_agency_test_2_after_main_content_action('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product.php(48): do_action('woocommerce_aft...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#11 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php on line 54
+
+2022-09-01T07:03:14+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on bool in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php:54
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php(97): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): itds_agency_test_2_after_main_content_action('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product.php(48): do_action('woocommerce_aft...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#11 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php on line 54
+
+2022-09-01T07:06:42+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on bool in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php:55
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php(97): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): itds_agency_test_2_after_main_content_action('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product.php(48): do_action('woocommerce_aft...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#11 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php on line 55
+
+2022-09-01T07:08:30+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on bool in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php:56
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php(97): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): itds_agency_test_2_after_main_content_action('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product.php(48): do_action('woocommerce_aft...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#11 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php on line 56
+
+2022-09-01T07:09:05+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on bool in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php:56
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php(97): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): itds_agency_test_2_after_main_content_action('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product.php(48): do_action('woocommerce_aft...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#11 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php on line 56
+
+2022-09-01T07:09:36+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on bool in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php:56
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\wc-functions.php(97): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(307): itds_agency_test_2_after_main_content_action('')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\single-product.php(48): do_action('woocommerce_aft...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#9 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#10 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#11 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\cat-slider.php on line 56
+

@@ -7,15 +7,30 @@
 
    if (empty($args)) {
       $args_cat_slider = array(      // указать параметры выборки
-         'posts_per_page' => 4,
+         'posts_per_page' => 6,
       );
       $product_query_cat_slider = wc_get_products($args_cat_slider);
    } elseif ($args['type_slider'] == 'viewed_goods') {
-      if (!$_COOKIE['itds_woocommerce_recently_viewed']) {
-         echo 'нет просмотренных товаров';
+      $viewed_products = (array) explode('|', $_COOKIE['itds_woocommerce_recently_viewed']);
+      $viewed_products = array_reverse(array_map('absint', $viewed_products));
+
+      $amount_viewed_products = count($viewed_products);
+      // $product_query_cat_slider = [];
+      if ($amount_viewed_products < 6) {
+
+         $args_cat_slider = array(      // указать параметры выборки
+            'posts_per_page' => (7 - $amount_viewed_products),
+         );
+         $product_query_cat_slider = wc_get_products($args_cat_slider);
+
+
+         foreach ($viewed_products as $id_goods) {
+            if (get_the_ID() == $id_goods) {
+               continue;
+            }
+            $product_query_cat_slider[] = wc_get_product($id_goods);
+         }
       } else {
-         $viewed_products = (array) explode('|', $_COOKIE['itds_woocommerce_recently_viewed']);
-         $viewed_products = array_reverse(array_map('absint', $viewed_products));
          foreach ($viewed_products as $id_goods) {
             $product_query_cat_slider[] = wc_get_product($id_goods);
          }
