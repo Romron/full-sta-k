@@ -94,5 +94,8 @@ function itds_agency_test_2_viewed_product_cookie()
 add_action('woocommerce_after_main_content', 'itds_agency_test_2_after_main_content_action', 10);
 function itds_agency_test_2_after_main_content_action()
 {
-   get_template_part('/template-parts/cat-slider', null, array('type_slider' => 'viewed_goods'));
+   // get_template_part('/template-parts/cat-slider', null, array('type_slider' => 'viewed_goods'));
+   get_template_part('/template-parts/products-tape');
+
+   get_template_part('/template-parts/about');
 }
