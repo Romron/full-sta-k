@@ -320,7 +320,7 @@ Redux::set_section(
    array(
       'title'            => esc_html__('Интро', 'ITDS_Agency_test_2'),
       'id'               => 'intro',
-      'desc'             => esc_html__('Адреса страниц в соц. сетях', 'ITDS_Agency_test_2'),
+      'desc'             => esc_html__('Блок интро', 'ITDS_Agency_test_2'),
       'customizer_width' => '400px',
       'icon'             => 'el el-graph-alt',
       'fields'           => array(
@@ -380,6 +380,76 @@ Redux::set_section(
             'title'    => esc_html__('текст четвёртого блока', 'ITDS_Agency_test_2'),
             'default'  => '',
          ),
+      ),
+   )
+
+);
+
+Redux::set_section(
+   $opt_name,
+   array(
+      'title'            => esc_html__('Блок "ABOUT"', 'ITDS_Agency_test_2'),
+      'id'               => 'about',
+      'desc'             => esc_html__('Информация о магазине и категориях', 'ITDS_Agency_test_2'),
+      'customizer_width' => '400px',
+      'icon'             => 'el el-graph-alt',
+      'fields'           => array(
+         array(
+            'id'           => 'about_shop_foto',
+            'type'         => 'media',
+            'url'          => true,
+            'title'        => esc_html__('Изображение блока о магазине', 'ITDS_Agency_test_2'),
+            'compiler'     => 'true',
+            'preview_size' => 'full',
+         ),
+         array(
+            'id'       => 'about_shop_text',
+            'type'     => 'textarea',
+            'title'    => esc_html__('О магазине', 'ITDS_Agency_test_2'),
+            'default'  => 'расскажите о своём магазине',
+         ),
+         // array(
+         //    'id'       => 'intro_block-1__text',
+         //    'type'     => 'text',
+         //    'title'    => esc_html__('текст первого блока', 'ITDS_Agency_test_2'),
+         //    'default'  => '',
+         // ),
+         // array(
+         //    'id'       => 'intro_block-2__title',
+         //    'type'     => 'text',
+         //    'title'    => esc_html__('Заголовок второго блока', 'ITDS_Agency_test_2'),
+         //    'default'  => '',
+         // ),
+         // array(
+         //    'id'       => 'intro_block-2__text',
+         //    'type'     => 'text',
+         //    'title'    => esc_html__('текст втрого блока', 'ITDS_Agency_test_2'),
+         //    'default'  => '',
+         // ),
+         // array(
+         //    'id'       => 'intro_block-3__title',
+         //    'type'     => 'text',
+         //    'title'    => esc_html__('Заголовок третьего блока', 'ITDS_Agency_test_2'),
+         //    'default'  => '',
+         // ),
+         // array(
+         //    'id'       => 'intro_block-3__text',
+         //    'type'     => 'text',
+         //    'title'    => esc_html__('текст третьего блока', 'ITDS_Agency_test_2'),
+         //    'default'  => '',
+         // ),
+         // array(
+         //    'id'       => 'intro_block-4__title',
+         //    'type'     => 'text',
+         //    'title'    => esc_html__('Заголовок четвёртого блока', 'ITDS_Agency_test_2'),
+         //    'default'  => '',
+         // ),
+         // array(
+         //    'id'       => 'intro_block-4__text',
+         //    'type'     => 'text',
+         //    'title'    => esc_html__('текст четвёртого блока', 'ITDS_Agency_test_2'),
+         //    'default'  => '',
+         // ),
       ),
    )
 

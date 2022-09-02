@@ -1,4 +1,3 @@
-<!-- <div class="test-php-block"> -->
 <?php
 $product = $args['product'];
 ?>
