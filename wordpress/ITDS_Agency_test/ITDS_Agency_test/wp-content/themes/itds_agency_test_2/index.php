@@ -94,14 +94,10 @@
 	<?php get_template_part('template-parts/instagram-tape'); ?>
 </div>
 
-<?php get_template_part('template-parts/about-sop'); ?>
+<?php get_template_part('template-parts/about-shop'); ?>
 
 
 
-
-<script>
-	document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-</script>
 
 
 <?php get_footer() ?>
