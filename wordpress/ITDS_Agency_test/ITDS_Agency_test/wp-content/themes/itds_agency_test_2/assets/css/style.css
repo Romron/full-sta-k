@@ -1166,21 +1166,44 @@ main {
 	min-height: 1076px;
 }
 
-.goods-foto-wiht-slider {
+.goods-foto-wiht-slider,
+.woocommerce-product-gallery {
 	width: 535px;
 	height: 426px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+
+	border: 3px solid #f30707;
+
 }
 
-.goods-foto-wiht-slider__foto {
+
+.flex-viewport {
+	/*для картинки продукта на странице продукта*/
+	margin-bottom: 0px !important;
+}
+
+.woocommerce-product-gallery__trigger {
+	right: 5em !important;
+	/*значёк линзы на картинке продукта на странице продукта */
+}
+
+
+
+
+.goods-foto-wiht-slider__foto,
+.woocommerce-product-gallery__image {
 	position: relative;
 	width: 426px;
 	height: 426px;
 	background: #FFFFFF;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 	border-radius: 5px;
+
+	border: 3px solid #35c012;
+
 
 }
 
@@ -1922,7 +1945,7 @@ a[class="page-numbers"],
 
 	position: absolute;
 	left: 0px;
-	/* top: 200px; */
+	top: 600px;
 	width: 1500px;
 	min-height: 100px;
 	background: rgb(224, 213, 248);

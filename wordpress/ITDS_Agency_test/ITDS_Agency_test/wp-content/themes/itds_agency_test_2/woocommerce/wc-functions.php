@@ -20,7 +20,8 @@ remove_action('woocommerce_after_main_content', 'woocommerce_output_content_wrap
 remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
 remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
 remove_action('woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
-
+// удалить стандартный вывод картинки на странице продукта
+// remove_action('woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20);
 
 
 
@@ -62,7 +63,9 @@ function itds_agency_test_2_woocommerce_pagination_args_filter($array)
    return $array;
 }
 
+
 // Ставим куки на ранее просмотренный товар
+// wc_setcookie("itds_woocommerce_recently_viewed", "", time() - 3600); // удалить cookie
 add_action('template_redirect', 'itds_agency_test_2_viewed_product_cookie', 20);
 function itds_agency_test_2_viewed_product_cookie()
 {
@@ -88,14 +91,54 @@ function itds_agency_test_2_viewed_product_cookie()
    }
 
    // устанавливаем в куки
-   wc_setcookie('itds_woocommerce_recently_viewed', join('|', $viewed_products));
+   wc_setcookie('itds_woocommerce_recently_viewed', join('|', $viewed_products), time() + 600);    // время жизни куки 10 мин
 }
 
+
+// добавляю свой контент после карты товара на странице товара
 add_action('woocommerce_after_main_content', 'itds_agency_test_2_after_main_content_action', 10);
 function itds_agency_test_2_after_main_content_action()
 {
    // get_template_part('/template-parts/cat-slider', null, array('type_slider' => 'viewed_goods'));
    get_template_part('/template-parts/products-tape');
-
    get_template_part('/template-parts/about-shop');
 }
+
+// картинка товара на странице товара. Работает но не сохранён функционал WP и WC 
+// add_action('woocommerce_before_single_product_summary', 'my_woocommerce_show_product_images', 20);
+// function my_woocommerce_show_product_images()
+// {
+//    global $product;
+// 
+?>
+
+<!-- <div class="goods-foto-wiht-slider"> -->
+<!-- <div class="goods-foto-wiht-slider__foto"> -->
+<?php // echo $product->get_image('woocommerce_thumbnail'); 
+?>
+<!-- </div> -->
+<!-- <div class="goods-foto-wiht-slider__slider"> -->
+<!-- <div class="goods-slider-arrow-up"><img src="img/goods-slider-arrow-up.png" alt=""></div> -->
+<!-- <div class="goods-foto-wiht-slider__slider-card"> -->
+<?php // echo $product->get_image('woocommerce_thumbnail'); 
+?>
+<!-- </div> -->
+<?php
+// $arr_gallery_image_ids = $product->get_gallery_image_ids();
+// foreach ($arr_gallery_image_ids as $gallery_image_id) {
+?>
+<!-- <div class="goods-foto-wiht-slider__slider-card"> -->
+<!-- <img src="<?php // echo esc_url(wp_get_attachment_url($gallery_image_id)); 
+               ?>" alt="produkt foto"> -->
+<!-- </div> -->
+<?php
+// }
+?>
+<!-- <div class="goods-slider-arrow-down"><img src="img/goods-slider-arrow-down.png" alt=""></div> -->
+<!-- </div> -->
+<!-- </div> -->
+
+
+
+<?php
+//}

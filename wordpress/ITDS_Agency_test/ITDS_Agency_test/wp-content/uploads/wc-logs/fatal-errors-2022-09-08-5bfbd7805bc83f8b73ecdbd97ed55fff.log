@@ -1,0 +1,196 @@
+2022-09-08T09:23:33+00:00 CRITICAL Uncaught Error: Call to a member function get_average_rating() on null in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:8
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\archive-product.php(63): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full-sta...')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#9 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 8
+
+2022-09-08T09:23:42+00:00 CRITICAL Uncaught Error: Call to a member function get_average_rating() on null in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:8
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\archive-product.php(63): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full-sta...')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#9 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 8
+
+2022-09-08T09:24:26+00:00 CRITICAL Uncaught Error: Call to a member function get_average_rating() on null in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:8
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\archive-product.php(63): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full-sta...')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#9 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 8
+
+2022-09-08T09:27:53+00:00 CRITICAL Uncaught Error: Call to a member function get_average_rating() on null in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:8
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\archive-product.php(63): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full-sta...')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#9 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 8
+
+2022-09-08T09:28:07+00:00 CRITICAL Uncaught Error: Call to a member function get_average_rating() on null in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:8
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\archive-product.php(63): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full-sta...')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#9 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 8
+
+2022-09-08T09:29:44+00:00 CRITICAL Uncaught Error: Call to a member function get_average_rating() on null in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:8
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\archive-product.php(63): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full-sta...')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#9 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 8
+
+2022-09-08T09:34:35+00:00 CRITICAL Uncaught Error: Call to a member function get_average_rating() on null in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:8
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\archive-product.php(63): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full-sta...')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#9 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 8
+
+2022-09-08T09:49:08+00:00 CRITICAL Uncaught Error: Call to a member function get_average_rating() on null in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:8
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\archive-product.php(63): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full-sta...')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#9 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 8
+
+2022-09-08T09:52:54+00:00 CRITICAL Uncaught Error: Call to a member function get_average_rating() on null in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:8
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\archive-product.php(63): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full-sta...')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#9 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 8
+
+2022-09-08T09:53:53+00:00 CRITICAL Uncaught Error: Call to a member function get_average_rating() on null in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:8
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\archive-product.php(63): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full-sta...')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#9 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 8
+
+2022-09-08T09:54:53+00:00 CRITICAL Uncaught Error: Call to a member function get_average_rating() on null in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:8
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\archive-product.php(63): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full-sta...')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#9 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 8
+
+2022-09-08T10:06:49+00:00 CRITICAL Uncaught Error: Call to a member function get_average_rating() on null in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:8
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\archive-product.php(63): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full-sta...')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#9 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 8
+
+2022-09-08T10:10:19+00:00 CRITICAL Uncaught Error: Call to a member function get_average_rating() on null in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:8
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\archive-product.php(63): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full-sta...')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#9 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 8
+
+2022-09-08T10:10:35+00:00 CRITICAL Uncaught Error: Call to a member function get_average_rating() on null in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php:8
+Stack trace:
+#0 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(772): require()
+#1 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template.php(716): load_template('F:\\web\\full-sta...', false, Array)
+#2 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\woocommerce\archive-product.php(63): get_template_part('/template-parts...', '', Array)
+#4 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('F:\\web\\full-sta...')
+#5 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#6 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-includes\template-loader.php(106): include('F:\\web\\full-sta...')
+#7 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-blog-header.php(19): require_once('F:\\web\\full-sta...')
+#8 F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\index.php(17): require('F:\\web\\full-sta...')
+#9 {main}
+  thrown in F:\web\full-sta-k\wordpress\ITDS_Agency_test\ITDS_Agency_test\wp-content\themes\itds_agency_test_2\template-parts\product-card.php on line 8
+

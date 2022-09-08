@@ -2,6 +2,7 @@
    <div class="arow-block__arow-left fon-white arrow-cat-slider__left"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/arow-block__arow-left-green.png') ?>" alt=""></div>
    <div class="arow-block__arow-right fon-white arrow-cat-slider__right"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/arow-block__arow-right-green.png') ?>" alt=""></div>
 
+
    <?php
 
 

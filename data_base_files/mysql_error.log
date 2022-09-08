@@ -1526,3 +1526,25 @@ Version: '10.4.24-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribut
 2022-09-05  9:50:20 20 [ERROR] InnoDB: Transaction id 0x855f associated with recordCOMPACT RECORD(info_bits=0, 2 fields): {[7]pending(0x70656E64696E67),[8]       p(0x0000000000000070)} in index `status` of table `itds_agency_test`.`wp_itds_actionscheduler_actions` is greater than the global counter 34007! The table is corrupted.
 2022-09-05  9:50:20 22 [ERROR] InnoDB: Transaction id 0x855f associated with recordCOMPACT RECORD(info_bits=0, 2 fields): {[7]pending(0x70656E64696E67),[8]       p(0x0000000000000070)} in index `status` of table `itds_agency_test`.`wp_itds_actionscheduler_actions` is greater than the global counter 34013! The table is corrupted.
 2022-09-05  9:50:20 21 [ERROR] InnoDB: Transaction id 0x855f associated with recordCOMPACT RECORD(info_bits=0, 2 fields): {[7]pending(0x70656E64696E67),[8]       p(0x0000000000000070)} in index `status` of table `itds_agency_test`.`wp_itds_actionscheduler_actions` is greater than the global counter 34019! The table is corrupted.
+2022-09-08 12:19:00 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2022-09-08 12:19:00 0 [Note] InnoDB: Uses event mutexes
+2022-09-08 12:19:00 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2022-09-08 12:19:00 0 [Note] InnoDB: Number of pools: 1
+2022-09-08 12:19:00 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2022-09-08 12:19:00 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2022-09-08 12:19:00 0 [Note] InnoDB: Completed initialization of buffer pool
+2022-09-08 12:19:01 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=48492156
+2022-09-08 12:19:01 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2022-09-08 12:19:01 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2022-09-08 12:19:01 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2022-09-08 12:19:01 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2022-09-08 12:19:01 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2022-09-08 12:19:01 0 [Note] InnoDB: 10.4.24 started; log sequence number 48492165; transaction id 35241
+2022-09-08 12:19:01 0 [Note] InnoDB: Loading buffer pool(s) from F:\web\full-sta-k\data_base_files\ib_buffer_pool
+2022-09-08 12:19:01 0 [Note] Plugin 'FEEDBACK' is disabled.
+2022-09-08 12:19:01 0 [Note] Server socket created on IP: '::'.
+2022-09-08 12:19:01 0 [Note] InnoDB: Buffer pool(s) load completed at 220908 12:19:01
+2022-09-08 12:19:01 0 [Note] Reading of all Master_info entries succeeded
+2022-09-08 12:19:01 0 [Note] Added new Master_info '' to hash table
+2022-09-08 12:19:01 0 [Note] c:\xampp\mysql\bin\mysqld.exe: ready for connections.
+Version: '10.4.24-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
