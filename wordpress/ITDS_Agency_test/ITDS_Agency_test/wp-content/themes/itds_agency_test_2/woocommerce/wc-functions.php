@@ -144,6 +144,8 @@ function itds_agency_test_2_after_main_content_action()
 //}
 
 
+https: //youtu.be/kcu1GEkyQzA  // страница товара
+
 add_filter('woocommerce_single_product_carousel_options', 'product_gallery_arrows');
 function product_gallery_arrows($options)
 {
