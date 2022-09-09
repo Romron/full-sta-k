@@ -142,3 +142,16 @@ function itds_agency_test_2_after_main_content_action()
 
 <?php
 //}
+
+
+add_filter('woocommerce_single_product_carousel_options', 'product_gallery_arrows');
+function product_gallery_arrows($options)
+{
+   $options['directionNav'] = true;
+   // $options['controlsContainer'] = 'ul class="goods-slider-arrow-up"';
+   // $options['controlsContainer'] = ".flex-control-nav";
+   // $options['controlNav'] = "thumbnails";
+
+
+   return $options;
+}

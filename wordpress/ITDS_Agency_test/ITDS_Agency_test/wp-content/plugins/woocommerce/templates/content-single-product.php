@@ -33,8 +33,6 @@ if (post_password_required()) {
 }
 ?>
 
-<!-- <div id="product-<?php the_ID(); ?>" <?php // wc_product_class('', $product); 
-														?> style="border: 1px solid #0515fd;"> -->
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class('', $product); ?>>
 
 	<?php
@@ -47,7 +45,6 @@ if (post_password_required()) {
 	do_action('woocommerce_before_single_product_summary');
 	?>
 
-	<!-- <div class="summary entry-summary" style="border: 1px solid #050505;"> -->
 	<div class="summary entry-summary">
 		<?php
 		/**
