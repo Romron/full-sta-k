@@ -59,8 +59,8 @@
 		<div class="popular-goods__row">
 			<div class="popular-goods__title">популярные товары</div>
 			<div class="arow-block">
-				<div class="arow-block__arow-left"><img src="img/arow-block__arow-left.png" alt=""></div>
-				<div class="arow-block__arow-right"><img src="img/arow-block__arow-right.png" alt=""></div>
+				<div class="arow-block__arow-left"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/arow-block__arow-left.png'); ?>" alt=""></div>
+				<div class="arow-block__arow-right"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/arow-block__arow-right.png'); ?>" alt=""></div>
 			</div>
 		</div>
 		<div class="popular-goods__cards-block">
@@ -84,65 +84,20 @@
 </main>
 
 <div class="wrap-novelties">
-	<div class="novelties">
-		<div class="novelties__row">
-			<div class="novelties__title">Новинки</div>
-			<div class="arow-block">
-				<div class="arow-block__arow-left fon-white"><img src="<?php echo esc_url(get_template_directory_uri() . 'img/arow-block__arow-left-green.png'); ?>" alt=""></div>
-				<div class="arow-block__arow-right fon-white"><img src="<?php echo esc_url(get_template_directory_uri() . 'img/arow-block__arow-right-green.png'); ?>" alt=""></div>
-			</div>
-		</div>
-		<div class="novelties__cards-block">
-			<?php
-			$args_novelties = array(		// указать параметры выборки 
-				'posts_per_page' => 4,
-			);
-			$product_query_novelties = wc_get_products($args_novelties);
-			if (!empty($product_query_novelties)) {
-				foreach ($product_query_novelties as $product) {
 
-					$products_type = $product->get_type();
+	<?php get_template_part('template-parts/products-tape'); ?>
 
-					get_template_part('/template-parts/product-card', null, array('product' => $product));
-				};
-			} else {
-				echo 'постов нет';
-			};
-			wp_reset_postdata();
-			?>
-
-		</div>
-	</div>
 </div>
+
 
 <div class="instagram">
 	<?php get_template_part('template-parts/instagram-tape'); ?>
 </div>
 
-
-<div class="wrap-about">
-	<div class="about">
-		<div class="about__foto"><img src="img/about-foto.png" alt="about-foto"></div>
-
-		<div class="about__text">
-			<div class="about__title">О магазине</div>
-			<div class="about__text-text">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor mattis egestas arcu vitae, habitant elit. Egestas rhoncus, libero tincidunt integer euismod iaculis netus tristique. Quam sed ultricies molestie nullam. Erat non nunc id sed. Cursus lorem mattis sagittis dui ultricies felis erat. Proin bibendum aliquam,
-				</p>
-				<p>Tincidunt morbi nunc donec congue tincidunt est mi non semper. Id id integer amet sit at lectus turpis at sed. Nulla mauris curabitur diam, in. In dictumst diam id vel fames. Blandit vulputate vel mi nulla. Tempus consectetur donec gravida phasellus. Id justo, volutpat leo pellentesque. Aliquam ut ultricies vel sed. Aliquet quisque aliquam nam amet faucibus. Molestie tincidunt est etiam vitae orci enim, turpis. Mi nullam tincidunt elit ut.
-				</p>
-				<p>pellentesque purus. Elementum ac blandit odio massa vestibulum, erat pulvinar sed cursus. Aenean eget ullamcorper nisl amet. Nulla tincidunt sagittis, morbi sit rhoncus mattis porttitor ac. Elit ultricies sed tincidunt libero feugiat. Augue nulla purus elit ac, leo, eget.
-				</p>
-			</div>
-		</div>
-
-	</div>
-</div>
+<?php get_template_part('template-parts/about-shop'); ?>
 
 
-<script>
-	document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-</script>
+
 
 
 <?php get_footer() ?>

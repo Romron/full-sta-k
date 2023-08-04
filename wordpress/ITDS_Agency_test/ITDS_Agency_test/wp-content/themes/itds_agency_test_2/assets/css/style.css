@@ -1026,6 +1026,7 @@ main {
 }
 
 .cat-slider {
+	/* width: 1110px; */
 	height: 283px;
 	background: #0E4243;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
@@ -1042,13 +1043,15 @@ main {
 	line-height: 22px;
 	text-align: center;
 	color: #FFFFFF;
+
+	padding: 0px 15px;
 }
 
 .arrow-cat-slider__right,
 .arrow-cat-slider__left {
 	position: absolute;
 	top: 50%;
-	transform: translate(0, -50%);
+	transform: translate(0, -55%);
 	z-index: 5;
 }
 
@@ -1163,54 +1166,88 @@ main {
 	min-height: 1076px;
 }
 
-.goods-foto-wiht-slider {
-	width: 535px;
+.goods-foto-wiht-slider,
+.woocommerce-product-gallery {
+	width: 527px !important;
 	height: 426px;
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	align-items: center;
+
 }
 
-.goods-foto-wiht-slider__foto {
+
+.flex-viewport {
+	/*для картинки продукта на странице продукта*/
+	margin-bottom: 0px !important;
+	background-color: #fff !important;
+}
+
+/*значёк линзы на картинке продукта на странице продукта */
+.woocommerce-product-gallery__trigger {
+	right: 8em !important;
+}
+
+
+
+
+.goods-foto-wiht-slider__foto,
+.woocommerce-product-gallery__image {
 	position: relative;
-	width: 426px;
-	height: 426px;
+	width: 427px !important;
+	height: 416px !important;
 	background: #FFFFFF;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 	border-radius: 5px;
 
 }
 
-.goods-foto-wiht-slider__foto>img {
+.goods-foto-wiht-slider__foto>img,
+.woocommerce-product-gallery__image img {
 	position: absolute;
 	left: 0px;
 	top: 0;
 	width: 100%;
 	height: 100%;
-	object-fit: contain;
+	object-fit: cover;
 	object-position: center;
+
+
 }
 
 
-.goods-foto-wiht-slider__slider {
-	width: 85px;
-	height: 426px;
+.goods-foto-wiht-slider__slider,
+.flex-control-thumbs {
+	min-width: 85px;
+	height: 375px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	flex-shrink: 0;
+
+	padding: 0px 10px !important;
+	overflow: hidden;
+	border: 1px solid #1074f7;
+
+
 }
 
-.goods-foto-wiht-slider__slider-card {
-	width: 85px;
-	height: 85px;
+.goods-foto-wiht-slider__slider-card,
+.flex-control-nav>li {
+	width: 85px !important;
+	height: 85px !important;
 	background: #FFFFFF;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 	border-radius: 5px;
 	position: relative;
+
+	flex-shrink: 0;
+	margin: 4px 0px;
 }
 
-.goods-foto-wiht-slider__slider-card>img {
+.goods-foto-wiht-slider__slider-card>img,
+.flex-control-nav>li img {
 	position: absolute;
 	left: 0px;
 	top: 0;
@@ -1225,6 +1262,12 @@ main {
 	width: 20px;
 	height: 10px;
 }
+
+.flex-direction-nav {
+	border: 2px solid #0515fd !important;
+
+}
+
 
 /* .goods-slider-arrow-down {} */
 
@@ -1919,14 +1962,19 @@ a[class="page-numbers"],
 
 	position: absolute;
 	left: 0px;
-	top: 200px;
+	top: 600px;
 	width: 1500px;
 	min-height: 100px;
 	background: rgb(224, 213, 248);
 	border: 1px solid #0515fd;
 	margin: 20px;
+	color: #000;
 	z-index: 999;
 
+}
+
+.test-php-block a {
+	color: #000;
 }
 
 .filds-metabox {

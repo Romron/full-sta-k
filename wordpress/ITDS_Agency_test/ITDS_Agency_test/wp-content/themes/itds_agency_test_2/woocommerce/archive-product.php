@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Мой шаблон страницы
+Template Name: categories page
 */
 
 get_header();
