@@ -6354,6 +6354,7 @@ Version: '10.4.24-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribut
 2022-10-03 13:33:32 0 [Note] Added new Master_info '' to hash table
 2022-10-03 13:33:32 0 [Note] c:\xampp\mysql\bin\mysqld.exe: ready for connections.
 Version: '10.4.24-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+<<<<<<< HEAD
 >>>>>>> 8b0cb5ba1f489de1332897bf911af8b043b7912c
 2022-10-04 20:19:29 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
 2022-10-04 20:19:29 0 [Note] InnoDB: Uses event mutexes
@@ -6980,4 +6981,157 @@ Version: '10.4.24-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribut
 2022-10-04 20:19:30 0 [Note] Reading of all Master_info entries succeeded
 2022-10-04 20:19:30 0 [Note] Added new Master_info '' to hash table
 2022-10-04 20:19:30 0 [Note] mysql\bin\mysqld.exe: ready for connections.
+=======
+2023-02-13  8:58:15 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-02-13  8:58:15 0 [Note] InnoDB: Uses event mutexes
+2023-02-13  8:58:15 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-02-13  8:58:15 0 [Note] InnoDB: Number of pools: 1
+2023-02-13  8:58:15 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-02-13  8:58:15 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2023-02-13  8:58:15 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-02-13  8:58:15 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=58500392
+2023-02-13  8:58:15 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-02-13  8:58:15 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-02-13  8:58:15 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-02-13  8:58:15 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-02-13  8:58:15 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-02-13  8:58:15 0 [Note] InnoDB: Waiting for purge to start
+2023-02-13  8:58:15 0 [Note] InnoDB: 10.4.24 started; log sequence number 58500401; transaction id 41222
+2023-02-13  8:58:15 0 [Note] InnoDB: Loading buffer pool(s) from F:\web\full-sta-k\data_base_files\ib_buffer_pool
+2023-02-13  8:58:15 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-02-13  8:58:15 0 [Note] Server socket created on IP: '::'.
+2023-02-13  8:58:16 0 [Note] InnoDB: Buffer pool(s) load completed at 230213  8:58:16
+2023-02-13  8:58:16 0 [Note] Reading of all Master_info entries succeeded
+2023-02-13  8:58:16 0 [Note] Added new Master_info '' to hash table
+2023-02-13  8:58:16 0 [Note] c:\xampp\mysql\bin\mysqld.exe: ready for connections.
+Version: '10.4.24-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2023-02-13  9:23:20 10 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:23:22 12 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:23:23 14 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:23:23 18 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:23:23 22 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:23:26 24 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:23:26 26 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:24:01 28 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:24:01 30 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:24:01 32 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:24:02 34 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:24:02 36 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:24:02 38 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:44:26 90 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:44:27 92 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:44:27 94 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:44:27 96 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:44:28 102 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:44:30 104 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:44:30 106 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:44:30 108 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:44:30 110 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:44:45 112 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:44:45 114 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:44:48 116 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:44:48 118 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:44:51 120 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:44:51 122 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:45:05 124 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:45:05 126 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:45:10 128 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:45:11 130 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:45:14 132 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13  9:45:14 134 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13 10:09:10 209 [ERROR] mysqld.exe: Некорректная информация в файле '.\mysql\user.frm'
+2023-02-13 15:20:53 876 [Warning] Aborted connection 876 to db: 'dimaso-test' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2023-02-13 15:20:53 874 [Warning] Aborted connection 874 to db: 'dimaso-test' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2023-02-13 15:20:53 878 [Warning] Aborted connection 878 to db: 'dimaso-test' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2023-02-13 15:20:57 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-02-13 15:20:57 0 [Note] InnoDB: Uses event mutexes
+2023-02-13 15:20:57 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-02-13 15:20:57 0 [Note] InnoDB: Number of pools: 1
+2023-02-13 15:20:57 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-02-13 15:20:57 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2023-02-13 15:20:57 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-02-13 15:20:57 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=65673629
+2023-02-13 15:20:57 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-02-13 15:20:57 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-02-13 15:20:57 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-02-13 15:20:57 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-02-13 15:20:57 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-02-13 15:20:57 0 [Note] InnoDB: 10.4.24 started; log sequence number 65673638; transaction id 44790
+2023-02-13 15:20:57 0 [Note] InnoDB: Loading buffer pool(s) from F:\web\full-sta-k\data_base_files\ib_buffer_pool
+2023-02-13 15:20:57 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-02-13 15:20:58 0 [Note] Server socket created on IP: '::'.
+2023-02-13 15:20:58 0 [Note] InnoDB: Buffer pool(s) load completed at 230213 15:20:58
+2023-02-13 15:20:58 0 [Note] Reading of all Master_info entries succeeded
+2023-02-13 15:20:58 0 [Note] Added new Master_info '' to hash table
+2023-02-13 15:20:58 0 [Note] c:\xampp\mysql\bin\mysqld.exe: ready for connections.
+Version: '10.4.24-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2023-02-13 15:31:42 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-02-13 15:31:42 0 [Note] InnoDB: Uses event mutexes
+2023-02-13 15:31:42 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-02-13 15:31:42 0 [Note] InnoDB: Number of pools: 1
+2023-02-13 15:31:42 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-02-13 15:31:42 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2023-02-13 15:31:42 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-02-13 15:31:42 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=65818492
+2023-02-13 15:31:46 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-02-13 15:31:46 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-02-13 15:31:46 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-02-13 15:31:46 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-02-13 15:31:46 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-02-13 15:31:46 0 [Note] InnoDB: Waiting for purge to start
+2023-02-13 15:31:46 0 [Note] InnoDB: 10.4.24 started; log sequence number 65818501; transaction id 44991
+2023-02-13 15:31:46 0 [Note] InnoDB: Loading buffer pool(s) from F:\web\full-sta-k\data_base_files\ib_buffer_pool
+2023-02-13 15:31:46 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-02-13 15:31:46 0 [Note] Server socket created on IP: '::'.
+2023-02-13 15:31:46 0 [Note] InnoDB: Buffer pool(s) load completed at 230213 15:31:46
+2023-02-13 15:31:46 0 [Note] Reading of all Master_info entries succeeded
+2023-02-13 15:31:46 0 [Note] Added new Master_info '' to hash table
+2023-02-13 15:31:46 0 [Note] c:\xampp\mysql\bin\mysqld.exe: ready for connections.
+Version: '10.4.24-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2023-02-14  8:35:57 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-02-14  8:35:57 0 [Note] InnoDB: Uses event mutexes
+2023-02-14  8:35:57 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-02-14  8:35:57 0 [Note] InnoDB: Number of pools: 1
+2023-02-14  8:35:57 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-02-14  8:35:57 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2023-02-14  8:35:57 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-02-14  8:35:58 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=66494647
+2023-02-14  8:36:02 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-02-14  8:36:02 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-02-14  8:36:02 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-02-14  8:36:02 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-02-14  8:36:02 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-02-14  8:36:02 0 [Note] InnoDB: Waiting for purge to start
+2023-02-14  8:36:02 0 [Note] InnoDB: 10.4.24 started; log sequence number 66494656; transaction id 45485
+2023-02-14  8:36:02 0 [Note] InnoDB: Loading buffer pool(s) from F:\web\full-sta-k\data_base_files\ib_buffer_pool
+2023-02-14  8:36:02 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-02-14  8:36:02 0 [Note] Server socket created on IP: '::'.
+2023-02-14  8:36:02 0 [Note] InnoDB: Buffer pool(s) load completed at 230214  8:36:02
+2023-02-14  8:36:02 0 [Note] Reading of all Master_info entries succeeded
+2023-02-14  8:36:02 0 [Note] Added new Master_info '' to hash table
+2023-02-14  8:36:02 0 [Note] c:\xampp\mysql\bin\mysqld.exe: ready for connections.
+Version: '10.4.24-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2023-02-16  8:22:56 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-02-16  8:22:56 0 [Note] InnoDB: Uses event mutexes
+2023-02-16  8:22:56 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-02-16  8:22:56 0 [Note] InnoDB: Number of pools: 1
+2023-02-16  8:22:56 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-02-16  8:22:56 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2023-02-16  8:22:56 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-02-16  8:22:56 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=72980819
+2023-02-16  8:22:58 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-02-16  8:22:58 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-02-16  8:22:58 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-02-16  8:22:58 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-02-16  8:22:58 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-02-16  8:22:58 0 [Note] InnoDB: Waiting for purge to start
+2023-02-16  8:22:58 0 [Note] InnoDB: 10.4.24 started; log sequence number 72980828; transaction id 50119
+2023-02-16  8:22:58 0 [Note] InnoDB: Loading buffer pool(s) from F:\web\full-sta-k\data_base_files\ib_buffer_pool
+2023-02-16  8:22:58 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-02-16  8:22:58 0 [Note] Server socket created on IP: '::'.
+2023-02-16  8:22:58 0 [Note] InnoDB: Buffer pool(s) load completed at 230216  8:22:58
+2023-02-16  8:22:59 0 [Note] Reading of all Master_info entries succeeded
+2023-02-16  8:22:59 0 [Note] Added new Master_info '' to hash table
+2023-02-16  8:22:59 0 [Note] c:\xampp\mysql\bin\mysqld.exe: ready for connections.
+>>>>>>> ad0b3dd0f273370312dfcfbcc9d881fd0c975444
 Version: '10.4.24-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
